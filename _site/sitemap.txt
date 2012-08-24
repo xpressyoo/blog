@@ -1,0 +1,10 @@
+
+http://blog.xpressyoo.com/atom.xml
+http://blog.xpressyoo.com/pages.html
+http://blog.xpressyoo.com/archive.html
+http://blog.xpressyoo.com/index.html
+http://blog.xpressyoo.com/tags.html
+http://blog.xpressyoo.com/sitemap.txt
+http://blog.xpressyoo.com/categories.html
+
+http://blog.xpressyoo.com/lessons/2011/12/29/jekyll-introduction
