@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Florian Bersier | Blog
-tagline: Online rating made smarter
+tagline: 
 author :
   name : Florian Bersier
   email : blah@email.test
@@ -55,7 +55,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  #BASE_PATH : http://xpressyoo-com.github.com/blog
+  BASE_PATH : http://xpressyoo.github.com/blog
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
@@ -99,7 +99,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-12817064-1''
     getclicky :
       site_id : 
     mixpanel :
