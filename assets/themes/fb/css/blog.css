@@ -14,6 +14,10 @@
 
 .wrapper-blog .row h2{margin-top:5%}
 
+.wrapper-blog .row h3{margin-top:4%}
+
+.wrapper-blog .right h3 i{text-shadow:1px 1px 1px #bbb}
+
 .wrapper-blog .row p:first-child{font-size:1.1em;font-style:italic;line-height:1.5em}
 
 .wrapper-blog .right ul{list-style:none}
@@ -169,3 +173,14 @@ pre code{padding:0;color:inherit;background-color:transparent;border:0;}
 	
 #closef{width:100px;height:30px;line-height:30px;background-color:#2584d4;margin:0 auto;border-radius:0 0 10px 10px;cursor:pointer;}
 #closef:hover{height:40px;line-height:50px;color:#fff;background-color:#D54432}	#closef i{color:#fff}
+
+/********************************************** Mobile Screens ***************************************/
+
+@media only screen and (max-width: 48.5em) {
+
+.post-details{margin:0 0 4% 0;padding:0}
+.post-read{float:none;text-align:center;display:block;width:100%;margin:20px 0}
+.post-read a{border:1px solid #d5d5d5}
+.post-read a:hover{border:1px solid #999}
+
+}
