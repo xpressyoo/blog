@@ -1,10 +1,11 @@
 
-/atom.xml
-/pages.html
-/archive.html
-/index.html
-/tags.html
-/sitemap.txt
-/categories.html
+http://blog.florianbersier.com/atom.xml
+http://blog.florianbersier.com/pages.html
+http://blog.florianbersier.com/index.html
+http://blog.florianbersier.com/archive.html
+http://blog.florianbersier.com/tags.html
+http://blog.florianbersier.com/sitemap.txt
+http://blog.florianbersier.com/categories.html
 
-/lessons/2011/12/29/jekyll-introduction.html
+http://blog.florianbersier.com/elysee-2012-hadopi
+http://blog.florianbersier.com/etrust-homo-facebookiens

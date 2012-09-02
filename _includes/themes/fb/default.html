@@ -1,59 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
+<html itemscope itemtype="http://schema.org/Person" dir="ltr" lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ page.title }} | Florian Bersier</title>
+<!--STYLE-->
+<link rel="stylesheet" type="text/css" href="http://florianbersier.com/css/style.css">
+<link rel="stylesheet" type="text/css" href="http://florianbersier.com/css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/blog.css" />
+<!--[if IE 7]>
+	<link rel="stylesheet" href="http://florianbersier.com/css/ie.css">
+<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--META-->
+{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+<meta name="author" content="Florian Bersier">
+<meta itemprop="name" content="Florian Bersier">
+<meta property="fb:admins" content="10150829234450007" />
+<meta property="fb:app_id" content="205602882797935" />
+<!--Analytics-->
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12817064-1']);
+  _gaq.push(['_setDomainName', 'florianbersier.com']);
+  _gaq.push(['_trackPageview']);
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
 
-    <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+<body>
+<!--FEATURED-->
+<div id="featured"><div id="closef" class="transition"><i class="icon-remove space"></i> close</div>
+<!--data--><div id="vide0" data-id="Xqw4wo8vdY8"></div>
+</div>
 
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
-  </head>
+<!--NAV-->
+<div id="nav" class="fixed">
 
-  <body>
+<a id="logo" class="" href="http://florianbersier.com" title="FB | Back home"></a>
 
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
-        </div>
-      </div>
-    </div>
+<ul>
+<li><a class="" href="http://florianbersier.com/about/">Bio</a>
+<li><a class="" href="http://florianbersier.com/hacking/">Hacking</a>
+<li><a class="" href="http://florianbersier.com/research/">Research</a>
+<li><a class="selected" href="http://blog.florianbersier.com">Blog</a>
+<li><a href="http://be.net/bersier" target="_blank">Folio</a>
+<li><a id="contact" href="#contact">Contact</a>
+<li><a id="back-top" class="mob" title="Scroll to Top"><i class="icon-chevron-up"></i> <span>top</span></a>
+</ul>
+</div>
+<!--#NAV-->
 
-    <div class="container">
+<div class="wrapper-blog">
+<!--CONTENT-->
+<div class="content">
+<div class="left">
 
-      <div class="content">
-        {{ content }}
-      </div>
+<!--Track of the Week-->
+<div id="openf" class="mob">
+<ul class="ulno">
+<li class="opa gradient">This Week's Track: <span id="track"></span> 
+<li class="opb transition"><span><i class="icon-headphones space"></i>Discover it</span>
+</ul>
+</div>
+<!-- Excerpts -->
+{{ content }}
+</div><!--#left-->
 
-      <footer>
-        <p>&copy; {{ site.author.name }} 2012 
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
+<div class="right">
+<h3><i class="icon-info-sign bggray"></i> About</h3>
+<p class="about">
+<img src="{{ ASSET_PATH }}/img/i.png" width="100" height="100" alt="" />
+This is the weblog of <a href="http://florianbersier.com/about/" title="About Florian">Florian Bersier</a>; a PhD student and behavioral economic engineer who researches the formation of reputation and trust in online economies at the university of Oxford, a hacker, a geek, a libertarian and an open source advocate. The basic idea of this space is to share excerpts from my code, work, research and play. 
+</p>
+<div class="sep"></div>
+<h3><i class="icon-bullhorn bggray"></i> Stay in the Know</h3>
+<p>New posts are announced on the following SNS.</p>
+<ul class="subscribe">
+<li><a class="twi transition" href="https://twitter.com/xpressyoo" target="_blank" title="Subscribe on Twitter"><i class="icon-twitter"></i><span>Twitter</span></a>
+<li><a class="fac transition" href="https://facebook.com/bersier" target="_blank" title="Subscribe on Facebook"><i class="icon-facebook"></i><span>Facebook</span></a>
+<li><a class="goo transition" href="https://plus.google.com/111297306144520956414" target="_blank" title="Subscribe on Google+"><i class="icon-google-plus"></i><span>Google+</span></a>
+</ul>
+<div class="sep"></div>
+<h3><i class="icon-calendar bggray"></i> Latest Entries</h3>
+<ul class="feeds">
+  {% for post in site.posts %}
+    {% unless post.next %}
+      <h4>{{ post.date | date: '%Y' }}</h4>
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        <h4>{{ post.date | date: '%Y' }}</h4>
+      {% endif %}
+    {% endunless %}
+    <li>{{ post.date | date:"%b" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
 
-    </div> <!-- /container -->
+<a id="xcf" class="blog-back gradient transition" href="http://blog.florianbersier.com"><i class="icon-circle-arrow-left space"></i> Back to the index</a>
+<br /><br />
+</div><!--#right-->
 
-    {% include JB/analytics %}
-  </body>
+</div>
+<!--#CONTENT-->
+
+<!--FOOTER-->
+<div class="clear" id="footer">
+<ul>
+<li>&copy; <span id="yr"></span> Florian Bersier
+<li class="mob"><a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">Legal stuff</a>
+<li><span class="myem"></span>
+<li class="mob"><a href="http://blog.florianbersier.com/sitemap.xml" target="_blank">Sitemap</a>
+<li class="mob"><a href="http://florianbersier.com/humans.txt" target="_blank">Humans</a>
+<li class="no sp"><a href="https://twitter.com/xpressyoo" target="_blank" title="Florian on Twitter"><i class="icon-twitter"></i></a>
+<li class="no"><a href="https://facebook.com/bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook"></i></a>
+<li class="no"><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus"></i></a>
+<li class="no"><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin"></i></a>
+<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github"></i></a>
+</ul>
+</div>
+<!--#FOOTER-->
+</div><!--#WRAP-->
+
+
+<!--CONTACT-->
+<div id="contact-box" class="hidden">
+<a id="close" title="close window"><i class="icon-remove icon-large"></i></a>
+<div class="txt">
+<h2>Let's keep in touch</h2>
+<h3>Email me</h3>
+<p>For job enquiries, press information, research questions and stuff related to Gmelius or XpressYoo, please send a good ol' email to:</p>
+<div class="cinb">
+<ul class="cinbox">
+<li><span id="myemb"><i class="icon-envelope"></i> </span>
+<li><i class="icon-globe"></i> UTC time (<span id="time"></span>)
+<li><i class="icon-dashboard"></i> My inbox status is <i id="mstatusi" class=""></i>
+</ul>
+</div>
+<p class="legend shadow">NB: Current status of my inbox is <span id="mstatus"></span>, implying a minimum delay of <span id="mdelay"></span> hours before any reply.</p>
+
+<h3>Follow me</h3>
+<p>It would be nice to keep in touch, so don't hesitate to add me to your network. The social platforms where I'm the most active are the following ones:</p>
+<div class="socials">
+<ul>
+<li><a href="https://twitter.com/xpressyoo" target="_blank" title="Florian on Twitter"><i class="icon-twitter-sign twitter"></i></a>
+<li><a href="https://facebook.com/bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook-sign facebook"></i></a>
+<li><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus-sign googleplus"></i></a>
+<li><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin-sign linkedin"></i></a>
+<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github-sign github"></i></a>
+</ul>
+</div><!--#socials-->
+</div><!--#txt-->
+</div><!--#contactbox-->
+
+<!--JS-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="http://florianbersier.com/js/global.js"></script>
+<script src="{{ ASSET_PATH }}/js/blog.js"></script>
+</body>
 </html>

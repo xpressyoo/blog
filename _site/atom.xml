@@ -1,340 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title></title>
- <link href="/atom.xml" rel="self"/>
- <link href=""/>
- <updated>2012-08-25T11:44:24+01:00</updated>
- <id></id>
+ <title>Florian Bersier | Blog</title>
+ <link href="http://blog.florianbersier.com/atom.xml" rel="self"/>
+ <link href="http://blog.florianbersier.com"/>
+ <updated>2012-09-02T19:59:31+01:00</updated>
+ <id>http://blog.florianbersier.com</id>
  <author>
-   <name></name>
-   <email></email>
+   <name>Florian Bersier</name>
+   <email>blah@email.test</email>
  </author>
 
  
  <entry>
-   <title>Jekyll Introduction</title>
-   <link href="/lessons/2011/12/29/jekyll-introduction.html"/>
-   <updated>2011-12-29T00:00:00+00:00</updated>
-   <id>/lessons/2011/12/29/jekyll-introduction</id>
-   <content type="html">&lt;p&gt;This Jekyll introduction will outline specifically what Jekyll is and why you would want to use it. Directly following the intro we&amp;#8217;ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;/p&gt;
+   <title>Lettre Ouverte aux Candidats de l'Élection Présidentielle 2012 (Fr)</title>
+   <link href="http://blog.florianbersier.com/elysee-2012-hadopi"/>
+   <updated>2012-01-12T00:00:00+00:00</updated>
+   <id>http://blog.florianbersier.com/elysee-2012-hadopi</id>
+   <content type="html">&lt;p&gt;Alors que le 6 mai approche à grands pas et que les campagnes respectives des candidats à la présidence de la République Française vont s&amp;#8217;intensifier dans les jours et semaines à venir, il semble opportun de proposer sous la forme d&amp;#8217;une lettre ouverte un ensemble de mesures traîtant de la place et de l&amp;#8217;utilisation du numérique dans une France et une Europe en crise, dans un monde en changement et dans une société humaine toujours plus connectée et digitale.&lt;/p&gt;
 
-&lt;h2 id='overview'&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Parce que la loi Hadopi est l&amp;#8217;un des premiers projets tangibles (après la &lt;a href='http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000266350&amp;amp;dateTexte='&gt;loi DADVSI&lt;/a&gt; de 2006) du gouvernement français visant uniquement et spécifiquement Internet mais aussi parce que la création d&amp;#8217;une &amp;#8220;Haute autorité pour la diffusion des œuvres et la protection des droits sur Internet&amp;#8221; capture de manière évidente les problèmes engendrés par une volonté trop régulatrice d&amp;#8217;un Etat associée à une vision inadaptée et trop peu prospective de ce qu&amp;#8217;est le Net, il apparaît logique et naturel de débuter cette lettre par un argumentaire en faveur de l&amp;#8217;abrogation de Hadopi.&lt;/p&gt;
 
-&lt;h3 id='what_is_jekyll'&gt;What is Jekyll?&lt;/h3&gt;
+&lt;h3 id='hadopi__quid'&gt;HADOPI - Quid?&lt;/h3&gt;
 
-&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;#8220;a simple, blog aware, static site generator&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;La loi Hadopi ou loi &amp;#8220;Création Internet&amp;#8221; est une loi promulguée le 12 juin 2009 dont le but originel est de mettre un terme aux partages de fichiers en pair à pair (P2P) lorsque ces partages se font en infraction avec les droits d&amp;#8217;auteur. Elle se base sur une &amp;#8220;réponse graduée&amp;#8221; composée de trois étapes, deux étapes préventives puis éventuellement une étape finale répressive : d&amp;#8217;abord un courrier d&amp;#8217;avertissement par courriel, puis un courrier d&amp;#8217;avertissement par lettre recommandée, et enfin la suspension de l&amp;#8217;abonnement à l&amp;#8217;Internet pour une durée déterminée. Cette même loi crée une &amp;#8220;Haute Autorité pour la diffusion des œuvres et la protection des droits sur Internet&amp;#8221; dont elle tire son nom (Hadopi: &lt;a href='http://www.hadopi.fr/'&gt;www.hadopi.fr&lt;/a&gt;), autorité publique indépendante chargée de la surveillance des droits d&amp;#8217;auteur sur Internet. Voilà pour la brève description de ce qu&amp;#8217;est Hadopi, les paragraphes suivants ont pour intention de complèter ces quelques lignes en s&amp;#8217;attachant aux spécificités de la loi. (Source : &lt;a href='http://fr.wikipedia.org/wiki/Loi_Cr%C3%A9ation_et_Internet'&gt;Wikipedia&lt;/a&gt;)&lt;/p&gt;
 
-&lt;h3 id='examples'&gt;Examples&lt;/h3&gt;
+&lt;h3 id='une_vision_trop_peu_prospective'&gt;Une Vision Trop Peu Prospective&lt;/h3&gt;
 
-&lt;p&gt;This website is created with Jekyll. &lt;a href='https://github.com/mojombo/jekyll/wiki/Sites'&gt;Other Jekyll websites&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Un Modèle Économique Dépassé -&lt;/strong&gt; Le fondement d&amp;#8217;Hadopi, c&amp;#8217;est une vision remontant à l&amp;#8217;époque où les biens musicaux et vidéographiques étaient tous indivisibles, s&amp;#8217;échangeant uniquement sous forme physique (e.g. CD, DVD), et essentiellement exclusifs (payants). La loi tente d&amp;#8217;appliquer ce même modèle de distribution/consommation linéaire à des biens devenus digitaux et donc, par définition, devenus divisibles et non-exclusifs. Or, il est clair que cette vision hadopienne de la distribution musicale et vidéographique n&amp;#8217;est plus d&amp;#8217;actualité dans notre société digitale.&lt;/p&gt;
 
-&lt;h3 id='what_does_jekyll_do'&gt;What does Jekyll Do?&lt;/h3&gt;
+&lt;p&gt;Pour citer Paul Krugman, prix Nobel d&amp;#8217;Economie 2008, &amp;#8220;Octet après octet, tout ce qui peut-être numérisé sera numérisé, rendant la propriété intellectuelle toujours plus facile à copier et toujours plus difficile à vendre plus cher qu&amp;#8217;un prix nominal. Et nous devrons trouver les modèles économiques et les modèles d&amp;#8217;affaires qui prennent cette réalité en compte&amp;#8221; (Source: &lt;a href='http://www.numerama.com/magazine/10833-le-nobel-d-economie-p-krugman-favorable-au-telechargement-gratuit.html'&gt;Numerama&lt;/a&gt;). L&amp;#8217;Internet tend en effet à créer une économie d&amp;#8217;abondance où les biens consommés ne doivent plus être comptés en unités mais en trafic estimé. C&amp;#8217;est pour cette raison qu&amp;#8217;il semble intéressant d&amp;#8217;encourager de nouveaux modèles économiques basés sur des systèmes de licence, de forfait, voire de publicité ciblée.&lt;/p&gt;
 
-&lt;p&gt;Jekyll is a ruby gem you install on your local system. Once there you can call &lt;code&gt;jekyll --server&lt;/code&gt; on a directory and provided that directory is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files, compute categories, tags, permalinks, and construct your pages from layout templates and partials.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Un Modèle de Consommation Numérique Dépassé -&lt;/strong&gt; Comme déjà mentionné, le but originel d&amp;#8217;Hadopi est de protéger les droits d&amp;#8217;auteur en surveillant les échanges de fichiers (musique, vidéo) ayant lieu sur les réseaux P2P (peer-to-peer), c&amp;#8217;est-à-dire des réseaux informatiques où des ordinateurs interconnectés grâce à Internet jouent à la fois le rôle de client et de serveur. Cependant, il apparaît clairement en 2012 que le modèle P2P de consommation musicale et vidéographique n&amp;#8217;est plus à l&amp;#8217;ordre du jour. A l&amp;#8217;ère du &amp;#8221;&lt;a href='http://fr.wikipedia.org/wiki/Cloud_computing'&gt;cloud computing&lt;/a&gt;&amp;#8221;, de la fibre optique, du 4G et d&amp;#8217;un Internet toujours plus mobile et multi-support, de nouveaux modèles ont émergé et supplanté le P2P. Ces nouveaux modèles de consommation digitale ne se reposent ainsi plus sur la copie ou le téléchargement de fichiers entre deux ordinateurs mais sur la lecture en transit, sans téléchargment, de ces mêmes fichiers, id est le streaming. Pensez, par exemple, aux plateformes musicales telles que &lt;a href='http://www.spotify.com'&gt;Spotify&lt;/a&gt;, &lt;a href='http://www.deezer.com'&gt;Deezer&lt;/a&gt; et &lt;a href='http://www.rara.com'&gt;Rara&lt;/a&gt; ou vidéographiques telles que &lt;a href='http://www.netflix.com'&gt;Netflix&lt;/a&gt;. Ces sites web basés sur un modèle économique dit de &lt;a href='http://fr.wikipedia.org/wiki/Freemium'&gt;freemium&lt;/a&gt; proposent &lt;a href='http://www.spotify.com/fr/work-with-us/labels-and-artists/'&gt;légalement&lt;/a&gt; de la musique et des films en streaming et les rendent disponibles sur une grande variété de supports grâce à des applications mobiles (e.g iPod, iPhone, Android, etc.) et/ou des appareils spécifiques (e.g. Apple TV, Google TV, Boxee Box, etc.).&lt;/p&gt;
 
-&lt;p&gt;Once parsed, Jekyll stores the result in a self-contained static &lt;code&gt;_site&lt;/code&gt; folder. The intention here is that you can serve all contents in this folder statically from a plain static web-server.&lt;/p&gt;
+&lt;p&gt;L&amp;#8217;Hadopi ayant vu le vent tourner, l&amp;#8217;autorité a publié le 25 novembre dernier un &lt;a href='http://www.hadopi.fr/sites/default/files/page/pdf/CP_Hadopi_251111.pdf'&gt;communiqué&lt;/a&gt; où elle indiquait vouloir réfléchir à de nouveaux moyens pour protéger les droits d&amp;#8217;auteur sur les fichiers streamés. Bien que peu surprenant, ce communiqué ne fait que souligner et confirmer un peu plus les problèmes fondamentaux d&amp;#8217;Hadopi. Premièrement, il démontre encore et toujours un manque de vision à moyen/long terme. La consommation numérique de musique et vidéo converge rapidement vers des plateformes de streaming légales, qui protègent les droits d&amp;#8217;auteur en se basant sur de nouveaux modèles économiques, principalement freemium. S&amp;#8217;attaquer aux plateformes de streaming &amp;#8220;illégales&amp;#8221; est inutile dans le sens où de telles plateformes n&amp;#8217;arriveront de toute manière pas à survivre face à une concurrence faite de plateformes &amp;#8220;légales&amp;#8221; qui auront les moyens de proposer une offre toujours plus importante et de meilleure qualité. Pour résumer le premier problème, le manque de vision d&amp;#8217;Hadopi lui empêche de remarquer que dans un environnment de consommation numérique dynamique, légiférer est inefficace voire même contre-productif (cf. plus bas) et que l&amp;#8217;auto-régulation du marché est à terme la seule solution au problème de la protection des droits d&amp;#8217;auteur.&lt;/p&gt;
 
-&lt;p&gt;You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags on each request, Jekyll does this once &lt;em&gt;beforehand&lt;/em&gt; and caches the &lt;em&gt;entire website&lt;/em&gt; in a folder for serving statically.&lt;/p&gt;
+&lt;h3 id='une_absurdit_technologique'&gt;Une Absurdité Technologique&lt;/h3&gt;
 
-&lt;h3 id='jekyll_is_not_blogging_software'&gt;Jekyll is Not Blogging Software&lt;/h3&gt;
+&lt;p&gt;Deuxièmement, ce communiqué renforce l&amp;#8217;une des principales critiques émises à l&amp;#8217;encontre de la loi, i.e. son manque de &amp;#8220;réalisme&amp;#8221; technologique qui rend son application délicate, voire difficile. En effet, que ce soit par l&amp;#8217;identification d&amp;#8217;utilisateurs P2P via leurs adresses IP, par le filtrage et blocage de serveurs de streaming sur le territoire français ou par la demande de coupure à l&amp;#8217;Internet, Hadopi pose le principe que la technologie a un caractère absolu, incontournable et indétournable. Or, une telle hypothèse est bien évidemment fausse. L&amp;#8217;identification d&amp;#8217;un contrevenant via une adresse IP est peu fiable pour la simple raison que ces adresses sont facilement falsifiables (e.g. &lt;a href='https://www.torproject.org/'&gt;TOR&lt;/a&gt;, &lt;a href='http://www.hidemyass.com/'&gt;Proxy&lt;/a&gt;, VPN, &lt;a href='http://www.aircrack-ng.org/'&gt;WEP cracking&lt;/a&gt;) et ne garantissent donc pas le lien direct entre un individu et son adresse IP. De même, le blocage de serveurs de streaming (étrangers) allant à l&amp;#8217;encontre de la loi sera toujours une mesure inutile puisque contournable en adoptant une adresse IP non française (e.g. &lt;a href='http://www.hidemyass.com/'&gt;Proxy&lt;/a&gt;, VPN) ou en créant des sites miroirs (cf. affaire Wikileaks). Même inefficacité pour un blocage via &amp;#8220;take-down&amp;#8221; prévu par la Loi pour la Confiance dans l’Economie Numérique (&lt;a href='http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000801164&amp;amp;dateTexte='&gt;LCEN&lt;/a&gt;) de 2004 puisqu&amp;#8217;il suffira à un serveur de streaming d&amp;#8217;être hébergé dans un pays sans équivalent d&amp;#8217;Hadopi pour y échapper. Finalement, la sanction finale prévue par Hadopi qui n&amp;#8217;est autre que la coupure pure et simple de l&amp;#8217;accès à Internet du contrevenant est inconcevable dans un pays ou la connexion à l&amp;#8217;Internet fait presque toujours partie de packages &amp;#8220;téléphone-télévision-Internet&amp;#8221;. Demander la coupure de l&amp;#8217;accès au réseau à un FAI reviendrait dans beaucoup de cas à couper également l&amp;#8217;accès au téléphone et à la télévision.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Jekyll is a parsing engine.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id='le_risque_du_toujours_plus'&gt;Le Risque du &amp;#8220;Toujours Plus&amp;#8221;&lt;/h3&gt;
 
-&lt;p&gt;Jekyll does not come with any content nor does it have any templates or design elements. This is a common source of confusion when getting started. Jekyll does not come with anything you actually use or see on your website - you have to make it.&lt;/p&gt;
+&lt;p&gt;Troisièmement, le communiqué du 25 novembre 2011 cristallise l&amp;#8217;un des principaux dangers de légiférer en faveur d&amp;#8217;une surveillance et/ou régulation de l&amp;#8217;Internet: le besoin d&amp;#8217;aller toujours plus loin. En effet, dans un environnement changeant tel que le net, le législateur doit constamment s&amp;#8217;adapter, au risque de devenir trop oppressant et -volontairement ou involontairement- d&amp;#8217;étouffer de son poids le flux d&amp;#8217;échanges numériques. L&amp;#8217;Hadopi, en passant du P2P au streaming, en est l&amp;#8217;exemple parfait. Faisant face à de nouveaux mécanismes d&amp;#8217;échanges, la haute autorité doit choisir d&amp;#8217;autres variables d&amp;#8217;action dont le nombre est extrêmement limité et converge vers une seule direction: le filtrage et le blocage de l&amp;#8217;Internet. Hors, une telle dérive signerait, à moyen terme, l&amp;#8217;arrêt de mort de l&amp;#8217;Internet français. Pourquoi cela?&lt;/p&gt;
 
-&lt;h3 id='why_should_i_care'&gt;Why Should I Care?&lt;/h3&gt;
+&lt;p&gt;Le fait d&amp;#8217;instaurer un filtrage du réseau implique, tout d&amp;#8217;abord, que toutes les données doivent passer par quelques points de passage définis et obligatoires, diminuant ainsi le débit et le flux de ces mêmes données à travers le réseau - ce qui pourrait aller jusqu&amp;#8217;à une saturation du réseau français en cas d&amp;#8217;extrême centralisation du routage du trafic. Le fait de proposer une infrastructure de moins bonne qualité conjugué à un filtrage de certains types de contenus decourageront dans un second temps l&amp;#8217;innovation et affaibliront la croissance économique du pays. Enfin, un réseau filtré sera plus sujet aux pannes et attaques à cause d&amp;#8217;une architecture proposant un nombre amoindri de points d&amp;#8217;entrée et de sortie du trafic.&lt;/p&gt;
 
-&lt;p&gt;Jekyll is very minimalistic and very efficient. The most important thing to realize about Jekyll is that it creates a static representation of your website requiring only a static web-server. Traditional dynamic blogs like Wordpress require a database and server-side code. Heavily trafficked dynamic blogs must employ a caching layer that ultimately performs the same job Jekyll sets out to do; serve static content.&lt;/p&gt;
+&lt;p&gt;Il est important de rappeler que la force d&amp;#8217;un réseau tel qu&amp;#8217;Internet réside dans le fait qu&amp;#8217;il est, par définition, un réseau ouvert et neutre. Son ouverture associée à sa neutralité sont les deux valeurs essentielles qui ont garanti, garantissent et garantiront le succès du net et sa valeur pour la société humaine. Le fait qu&amp;#8217;un gouvernement fasse pression sur des fournisseurs d&amp;#8217;accès à Internet (FAI) pour surveiller et contrôler les échanges qui se passent au sein du réseau vont directement à l&amp;#8217;encontre de ces 2 principes de base reconnus et défendus par l&amp;#8217;&lt;a href='http://www.europarl.europa.eu/news/fr/pressroom/content/20111117IPR31726/html/Internet-doit-rester-ouvert-et-neutre'&gt;Union Européenne&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Therefore if you like to keep things simple and you prefer the command-line over an admin panel UI then give Jekyll a try.&lt;/p&gt;
+&lt;h3 id='une_loi_indigne_du_pays_des_droits_de_lhomme'&gt;Une Loi indigne du Pays des Droits de l&amp;#8217;Homme&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Developers like Jekyll because we can write content like we write code:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Quatrièmement, l&amp;#8217;Hadopi est par quelques-uns des ses aspects en contradiction avec les valeurs républicaines.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Ability to write content in markdown or textile in your favorite text-editor.&lt;/li&gt;
+&lt;p&gt;&lt;strong&gt;Coupure de l&amp;#8217;Accès à Internet -&lt;/strong&gt; L&amp;#8217;une des sanctions finales décidées par l&amp;#8217;autorité judiciaire qui doit punir l&amp;#8217;internaute ayant ignoré les avertissements préalables pour du téléchargement illégal ou un défaut de sécurisation de son accès Internet est la coupure pure et son simple de son accès au réseau. Or, dans une société ou l&amp;#8217;Internet est de plus en plus présent dans la vie des citoyens et de plus en plus nécessaire à l&amp;#8217;execution des échanges sociaux et économiques du quotidien, et où il tend à devenir le principal portail de la connaissance (e.g. bibliothèques et médiathèques numériques), interdire son accès va à l&amp;#8217;encontre à la fois des valeurs de la République et du &amp;#8220;droit à l&amp;#8217;accès à la connaissance pour tous&amp;#8221; consacré par l&amp;#8217;ONU, le Conseil de l&amp;#8217;Europe et la France (entre autres). Sans aller jusqu&amp;#8217;à l&amp;#8217;inscription de l&amp;#8217;accès à l&amp;#8217;Internet comme un droit de l&amp;#8217;Homme, la technologie étant un catalyseur de droits, pas un droit en elle-même pour paraphraser Vinton Cerf, père fondateur de l&amp;#8217;Internet (&amp;#8220;technology is an enabler of rights, not a right itself&amp;#8221; &lt;a href='http://www.nytimes.com/2012/01/05/opinion/internet-access-is-not-a-human-right.html'&gt;New York Times&lt;/a&gt; - Janvier 2012), l&amp;#8217;Hadopi va clairement à l&amp;#8217;encontre des droits primaires de chaque Homme.&lt;/p&gt;
 
-&lt;li&gt;Ability to write and preview your content via localhost.&lt;/li&gt;
+&lt;p&gt;Il est également intéressant de noter que dans son &lt;a href='http://www.article19.org/data/files/pdfs/reports/report-of-the-special-rapporteur-on-the-promotion-and-protection-of-the-righ.pdf'&gt;rapport de mai 2011&lt;/a&gt; sur la promotion et la protection du droit de la liberté d&amp;#8217;opinion et d&amp;#8217;expression, l&amp;#8217;ONU &amp;#8221;s&amp;#8217;alarme des propositions qui visent à déconnecter l&amp;#8217;utilisateur d&amp;#8217;Internet lorsqu&amp;#8217;il violent les droits de propriété intellectuelle. Cela inclut les législations basées sur le concept de riposte graduée qui imposent une série de sanctions et qui peuvent mener à la suspension de la fourniture de la connexion Internet comme la riposte graduée en France ou le Digital Economy Act 2010 en Grande-Bretagne&amp;#8221; &lt;span&gt;Chapitre D&lt;/span&gt;.&lt;/p&gt;
 
-&lt;li&gt;No internet connection required.&lt;/li&gt;
+&lt;p&gt;&lt;strong&gt;Présomption de culpabilité -&lt;/strong&gt;Hadopi repose sur la &lt;a href='http://fr.wikipedia.org/wiki/Loi_Cr%C3%A9ation_et_Internet#Pr.C3.A9somption_de_culpabilit.C3.A9'&gt;présomption de culpabilité&lt;/a&gt;, c&amp;#8217;est-à-dire que la charge de la preuve est portée sur le demandeur. Or, dans un pays où la présemption d&amp;#8217;innocence est reconnue depuis la Déclaration des droits de l&amp;#8217;homme et du citoyen du 26 août 1789 et où &amp;#8220;tout homme &lt;span&gt;est&lt;/span&gt; présumé innocent jusqu&amp;#8217;à ce qu&amp;#8217;il ait été déclaré coupable&amp;#8230;&amp;#8221;, il est clair que la démarche juridique d&amp;#8217;Hadopi va à l&amp;#8217;encontre des fondements de la République.&lt;/p&gt;
 
-&lt;li&gt;Ability to publish via git.&lt;/li&gt;
+&lt;p&gt;&lt;strong&gt;Protection de la Vie Privée -&lt;/strong&gt; Que ce soit par l&amp;#8217;introduction de mouchards dans les ordinateurs de contrevenants ou par la volonté affichée de surveiller le trafic s&amp;#8217;écoulant à travers Internet, Hadopi représente un danger certain pour la protection des données personnelles et de la sphère privée.&lt;/p&gt;
 
-&lt;li&gt;Ability to host your blog on a static web-server.&lt;/li&gt;
+&lt;h3 id='conclusion'&gt;CONCLUSION&lt;/h3&gt;
 
-&lt;li&gt;Ability to host freely on GitHub Pages.&lt;/li&gt;
+&lt;p&gt;Parce que les lois Hadopi sont basées sur des modèles économiques et numériques dépassés, reposent sur des moyens de surveillance, de contrôle et de punition contournables et inapplicables, mettent en péril l&amp;#8217;ouverture et la neutralité de l&amp;#8217;Internet, limitent et découragent l&amp;#8217;innovation et la croissance économique et vont à l&amp;#8217;encontre des valeurs républicaines, il apparaît important et nécessaire de proposer une abrogation de ces dernières.&lt;/p&gt;
 
-&lt;li&gt;No database required.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Finalement, dans un monde fait de gouvernments qui tendent à mettre de plus en plus en danger la Neutralité et l&amp;#8217;ouverture de l&amp;#8217;Internet, et en ce faisant, à limiter de plus en plus les libertés de leur citoyens (e.g. Projet &lt;a href='http://fr.wikipedia.org/wiki/Stop_Online_Piracy_Act'&gt;SOPA&lt;/a&gt; aux USA), le fait d&amp;#8217;abroger Hadopi semble être une décision courageuse et économiquement intéressante. En effet, cela enverrait premièrement un message clair à la communauté internationale, montrant que la France se pose en porte-drapeau de la défense de la Neutralité du Net, redorant ainsi l&amp;#8217;image du pays des Droits de l&amp;#8217;Homme dans le monde. Deuxièmement, le fait de garantir et défendre un Internet neutre et ouvert redonnerait un avantage comparatif à la France, attirerait les talents du monde tech et favoriserait l&amp;#8217;innovation et la croissance.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>eTrust, How Homo-Facebookiens will kill Homo-Sapiens?</title>
+   <link href="http://blog.florianbersier.com/etrust-homo-facebookiens"/>
+   <updated>2011-09-23T00:00:00+01:00</updated>
+   <id>http://blog.florianbersier.com/etrust-homo-facebookiens</id>
+   <content type="html">&lt;p&gt;I will start this post with a simple question: How much of your daily time spent on the Web is spent on Google products or Facebook? A very large proportion I presume and this should not be very surprising since the Internet favourites a winner-takes-the-most scheme, i.e. a market in which only an extremely small number of players can survive economic competition, the winning player taking all the market-share.&lt;/p&gt;
 
-&lt;h1 id='how_jekyll_works'&gt;How Jekyll Works&lt;/h1&gt;
+&lt;p&gt;Nowadays, two big &amp;#8216;survivors&amp;#8217; that are Facebook and Google are engaged in a bloody battle in which the weapons are &lt;span&gt;ways to gather more&lt;/span&gt; information/data about their users. More than never, the Summer and early Fall have made obvious this information war and the &amp;#8216;weapons&amp;#8217; used. Think of Google+&lt;sup&gt;1&lt;/sup&gt;, Google Wallet&lt;sup&gt;2&lt;/sup&gt;, Google Offers&lt;sup&gt;3&lt;/sup&gt;, Facebook Timeline&lt;sup&gt;4&lt;/sup&gt;, Facebook Open Graph&lt;sup&gt;5&lt;/sup&gt;&amp;#8230;&lt;/p&gt;
 
-&lt;p&gt;The following is a complete but concise outline of exactly how Jekyll works.&lt;/p&gt;
+&lt;p&gt;Because the main casualties of this war will be, at the end, us, their users and the Internet in general, I feel the need to share my viewpoint about the direction or vision those two companies want to impose to the Internet and the dangers they represent for our (e)Society.&lt;/p&gt;
 
-&lt;p&gt;Be aware that core concepts are introduced in rapid succession without code examples. This information is not intended to specifically teach you how to do anything, rather it is intended to give you the &lt;em&gt;full picture&lt;/em&gt; relative to what is going on in Jekyll-world.&lt;/p&gt;
+&lt;p&gt;In what follows, I will focus on Facebook, more precisely on the Facebook post-F8. Why this choice? 1) Articles about F8 are trendy :) 2) F8 parametrizes well the dangers of the info-war.&lt;/p&gt;
 
-&lt;p&gt;Learning these core concepts should help you avoid common frustrations and ultimately help you better understand the code examples contained throughout Jekyll-Bootstrap.&lt;/p&gt;
-
-&lt;h2 id='initial_setup'&gt;Initial Setup&lt;/h2&gt;
-
-&lt;p&gt;After &lt;a href='/index.html#start-now'&gt;installing jekyll&lt;/a&gt; you&amp;#8217;ll need to format your website directory in a way jekyll expects. Jekyll-bootstrap conveniently provides the base directory format.&lt;/p&gt;
-
-&lt;h3 id='the_jekyll_application_base_format'&gt;The Jekyll Application Base Format&lt;/h3&gt;
-
-&lt;p&gt;Jekyll expects your website directory to be laid out like so:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.
-|-- _config.yml
-|-- _includes
-|-- _layouts
-|   |-- default.html
-|   |-- post.html
-|-- _posts
-|   |-- 20011-10-25-open-source-is-good.markdown
-|   |-- 20011-04-26-hello-world.markdown
-|-- _site
-|-- index.html
-|-- assets
-    |-- css
-        |-- style.css
-    |-- javascripts&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_config.yml&lt;/strong&gt;&lt;br /&gt;Stores configuration data.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_includes&lt;/strong&gt;&lt;br /&gt;This folder is for partial views.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_layouts&lt;/strong&gt; &lt;br /&gt;This folder is for the main templates your content will be inserted into. You can have different layouts for different pages or page sections.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_posts&lt;/strong&gt;&lt;br /&gt;This folder contains your dynamic content/posts. the naming format is required to be &lt;code&gt;@YEAR-MONTH-DATE-title.MARKUP@&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;_site&lt;/strong&gt;&lt;br /&gt;This is where the generated site will be placed once Jekyll is done transforming it.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;assets&lt;/strong&gt;&lt;br /&gt;This folder is not part of the standard jekyll structure. The assets folder represents &lt;em&gt;any generic&lt;/em&gt; folder you happen to create in your root directory. Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;(read more: &lt;a href='https://github.com/mojombo/jekyll/wiki/Usage'&gt;https://github.com/mojombo/jekyll/wiki/Usage&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h3 id='jekyll_configuration'&gt;Jekyll Configuration&lt;/h3&gt;
-
-&lt;p&gt;Jekyll supports various configuration options that are fully outlined here: &lt;a href='https://github.com/mojombo/jekyll/wiki/Configuration'&gt;https://github.com/mojombo/jekyll/wiki/Configuration&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id='content_in_jekyll'&gt;Content in Jekyll&lt;/h2&gt;
-
-&lt;p&gt;Content in Jekyll is either a post or a page. These content &amp;#8220;objects&amp;#8221; get inserted into one or more templates to build the final output for its respective static-page.&lt;/p&gt;
-
-&lt;h3 id='posts_and_pages'&gt;Posts and Pages&lt;/h3&gt;
-
-&lt;p&gt;Both posts and pages should be written in markdown, textile, or HTML and may also contain Liquid templating syntax. Both posts and pages can have meta-data assigned on a per-page basis such as title, url path, as well as arbitrary custom meta-data.&lt;/p&gt;
-
-&lt;h3 id='working_with_posts'&gt;Working With Posts&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Creating a Post&lt;/strong&gt; &lt;br /&gt;Posts are created by properly formatting a file and placing it the &lt;code&gt;_posts&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br /&gt;A post must have a valid filename in the form &lt;code&gt;YEAR-MONTH-DATE-title.MARKUP&lt;/code&gt; and be placed in the &lt;code&gt;_posts&lt;/code&gt; directory. If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file. Additionally, each file must have &lt;a href='https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter'&gt;YAML Front-Matter&lt;/a&gt; prepended to its content. YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Order&lt;/strong&gt;&lt;br /&gt;Ordering is an important part of Jekyll but it is hard to specify a custom ordering strategy. Only reverse chronological and chronological ordering is supported in Jekyll.&lt;/p&gt;
-
-&lt;p&gt;Since the date is hard-coded into the filename format, to change the order, you must change the dates in the filenames.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt; &lt;br /&gt;Posts can have tags associated with them as part of their meta-data. Tags may be placed on posts by providing them in the post&amp;#8217;s YAML front matter. You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Categories&lt;/strong&gt; &lt;br /&gt;Posts may be categorized by providing one or more categories in the YAML front matter. Categories offer more significance over tags in that they can be reflected in the URL path to the given post. Note categories in Jekyll work in a specific way. If you define more than one category you are defining a category hierarchy &amp;#8220;set&amp;#8221;. Example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-title :  Hello World
-categories : [lessons, beginner]
----&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This defines the category hierarchy &amp;#8220;lessons/beginner&amp;#8221;. Note this is &lt;em&gt;one category&lt;/em&gt; node in Jekyll. You won&amp;#8217;t find &amp;#8220;lessons&amp;#8221; and &amp;#8220;beginner&amp;#8221; as two separate categories unless you define them elsewhere as singular categories.&lt;/p&gt;
-
-&lt;h3 id='working_with_pages'&gt;Working With Pages&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Creating a Page&lt;/strong&gt;&lt;br /&gt;Pages are created by properly formatting a file and placing it anywhere in the root directory or subdirectories that do &lt;em&gt;not&lt;/em&gt; start with an underscore.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br /&gt;In order to register as a Jekyll page the file must contain &lt;a href='https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter'&gt;YAML Front-Matter&lt;/a&gt;. Registering a page means 1) that Jekyll will process the page and 2) that the page object will be available in the &lt;code&gt;site.pages&lt;/code&gt; array for inclusion into your templates.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Categories and Tags&lt;/strong&gt;&lt;br /&gt;Pages do not compute categories nor tags so defining them will have no effect.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Sub-Directories&lt;/strong&gt;&lt;br /&gt;If pages are defined in sub-directories, the path to the page will be reflected in the url. Example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.
-|-- people
-    |-- bob
-        |-- essay.html&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This page will be available at &lt;code&gt;http://yourdomain.com/people/bob/essay.html&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Recommended Pages&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;index.html&lt;/strong&gt;&lt;br /&gt;You will always want to define the root index.html page as this will display on your root URL.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;404.html&lt;/strong&gt;&lt;br /&gt;Create a root 404.html page and GitHub Pages will serve it as your 404 response.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;sitemap.html&lt;/strong&gt;&lt;br /&gt;Generating a sitemap is good practice for SEO.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;about.html&lt;/strong&gt;&lt;br /&gt;A nice about page is easy to do and gives the human perspective to your website.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id='templates_in_jekyll'&gt;Templates in Jekyll&lt;/h2&gt;
-
-&lt;p&gt;Templates are used to contain a page&amp;#8217;s or post&amp;#8217;s content. All templates have access to a global site object variable: &lt;code&gt;site&lt;/code&gt; as well as a page object variable: &lt;code&gt;page&lt;/code&gt;. The site variable holds all accessible content and metadata relative to the site. The page variable holds accessible data for the given page or post being rendered at that point.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Create a Template&lt;/strong&gt;&lt;br /&gt;Templates are created by properly formatting a file and placing it in the &lt;code&gt;_layouts&lt;/code&gt; directory.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br /&gt;Templates should be coded in HTML and contain YAML Front Matter. All templates can contain Liquid code to work with your site&amp;#8217;s data.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Rending Page/Post Content in a Template&lt;/strong&gt;&lt;br /&gt;There is a special variable in all templates named : &lt;code&gt;content&lt;/code&gt;. The &lt;code&gt;content&lt;/code&gt; variable holds the page/post content including any sub-template content previously defined. Render the content variable wherever you want your main content to be injected into your template:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;...
-&amp;lt;body&amp;gt;
-  &amp;lt;div id=&quot;sidebar&quot;&amp;gt; ... &amp;lt;/div&amp;gt;
-  &amp;lt;div id=&quot;main&quot;&amp;gt;
-    &amp;#123;{content}&amp;#125;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/body&amp;gt;
-...&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id='subtemplates'&gt;Sub-Templates&lt;/h3&gt;
-
-&lt;p&gt;Sub-templates are exactly templates with the only difference being they define another &amp;#8220;root&amp;#8221; layout/template within their YAML Front Matter. This essentially means a template will render inside of another template.&lt;/p&gt;
-
-&lt;h3 id='includes'&gt;Includes&lt;/h3&gt;
-
-&lt;p&gt;In Jekyll you can define include files by placing them in the &lt;code&gt;_includes&lt;/code&gt; folder. Includes are NOT templates, rather they are just code snippets that get included into templates. In this way, you can treat the code inside includes as if it was native to the parent template.&lt;/p&gt;
-
-&lt;p&gt;Any valid template code may be used in includes.&lt;/p&gt;
-
-&lt;h2 id='using_liquid_for_templating'&gt;Using Liquid for Templating&lt;/h2&gt;
-
-&lt;p&gt;Templating is perhaps the most confusing and frustrating part of Jekyll. This is mainly due to the fact that Jekyll templates must use the Liquid Templating Language.&lt;/p&gt;
-
-&lt;h3 id='what_is_liquid'&gt;What is Liquid?&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href='https://github.com/Shopify/liquid'&gt;Liquid&lt;/a&gt; is a secure templating language developed by &lt;a href='http://shopify.com'&gt;Shopify&lt;/a&gt;. Liquid is designed for end-users to be able to execute logic within template files without imposing any security risk on the hosting server.&lt;/p&gt;
-
-&lt;p&gt;Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with your site and post/page data.&lt;/p&gt;
-
-&lt;h3 id='why_do_we_have_to_use_liquid'&gt;Why Do We Have to Use Liquid?&lt;/h3&gt;
-
-&lt;p&gt;GitHub uses Jekyll to power &lt;a href='http://pages.github.com/'&gt;GitHub Pages&lt;/a&gt;. GitHub cannot afford to run arbitrary code on their servers so they lock developers down via Liquid.&lt;/p&gt;
-
-&lt;h3 id='liquid_is_not_programmerfriendly'&gt;Liquid is Not Programmer-Friendly.&lt;/h3&gt;
-
-&lt;p&gt;The short story is liquid is not real code and its not intended to execute real code. The point being you can&amp;#8217;t do jackshit in liquid that hasn&amp;#8217;t been allowed explicitly by the implementation. What&amp;#8217;s more you can only access data-structures that have been explicitly passed to the template.&lt;/p&gt;
-
-&lt;p&gt;In Jekyll&amp;#8217;s case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins. Both of which cannot be supported by GitHub Pages.&lt;/p&gt;
-
-&lt;p&gt;As a programmer - this is very frustrating.&lt;/p&gt;
-
-&lt;p&gt;But rather than look a gift horse in the mouth we are going to suck it up and view it as an opportunity to work around limitations and adopt client-side solutions when possible.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Aside&lt;/strong&gt; &lt;br /&gt;My personal stance is to not invest time trying to hack liquid. It&amp;#8217;s really unnecessary &lt;em&gt;from a programmer&amp;#8217;s&lt;/em&gt; perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code) you are better off sticking with ruby. Toward that end I&amp;#8217;ve built &lt;a href='http://github.com/plusjade/mustache-with-jekyll'&gt;Mustache-with-Jekyll&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id='static_assets'&gt;Static Assets&lt;/h2&gt;
-
-&lt;p&gt;Static assets are any file in the root or non-underscored subfolders that are not pages. That is they have no valid YAML Front Matter and are thus not treated as Jekyll Pages.&lt;/p&gt;
-
-&lt;p&gt;Static assets should be used for images, css, and javascript files.&lt;/p&gt;
-
-&lt;h2 id='how_jekyll_parses_files'&gt;How Jekyll Parses Files&lt;/h2&gt;
-
-&lt;p&gt;Remember Jekyll is a processing engine. There are two main types of parsing in Jekyll.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Content parsing.&lt;/strong&gt; &lt;br /&gt;This is done with textile or markdown.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;Template parsing.&lt;/strong&gt; &lt;br /&gt;This is done with the liquid templating language.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And thus there are two main types of file formats needed for this parsing.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Post and Page files.&lt;/strong&gt;&lt;br /&gt;All content in Jekyll is either a post or a page so valid posts and pages are parsed with markdown or textile.&lt;/li&gt;
-
-&lt;li&gt;&lt;strong&gt;Template files.&lt;/strong&gt; &lt;br /&gt;These files go in &lt;code&gt;_layouts&lt;/code&gt; folder and contain your blogs &lt;strong&gt;templates&lt;/strong&gt;. They should be made in HTML with the help of Liquid syntax. Since include files are simply injected into templates they are essentially parsed as if they were native to the template.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Arbitrary files and folders.&lt;/strong&gt; &lt;br /&gt;Files that &lt;em&gt;are not&lt;/em&gt; valid pages are treated as static content and pass through Jekyll untouched and reside on your blog in the exact structure and format they originally existed in.&lt;/p&gt;
-
-&lt;h3 id='formatting_files_for_parsing'&gt;Formatting Files for Parsing.&lt;/h3&gt;
-
-&lt;p&gt;We&amp;#8217;ve outlined the need for valid formatting using &lt;strong&gt;YAML Front Matter&lt;/strong&gt;. Templates, posts, and pages all need to provide valid YAML Front Matter even if the Matter is empty. This is the only way Jekyll knows you want the file processed.&lt;/p&gt;
-
-&lt;p&gt;YAML Front Matter must be prepended to the top of template/post/page files:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-layout: post
-category : pages
-tags : [how-to, jekyll]
----
-
-... contents ...&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block. The data inside the block must be valid YAML.&lt;/p&gt;
-
-&lt;p&gt;Configuration parameters for YAML Front-Matter is outlined here: &lt;a href='https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter'&gt;A comprehensive explanation of YAML Front Matter&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id='defining_layouts_for_posts_and_templates_parsing'&gt;Defining Layouts for Posts and Templates Parsing.&lt;/h4&gt;
-
-&lt;p&gt;The &lt;code&gt;layout&lt;/code&gt; parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into. If a template file specifies its own layout, it is effectively being used as a &lt;code&gt;sub-template.&lt;/code&gt; That is to say loading a post file into a template file that refers to another template file with work in the way you&amp;#8217;d expect; as a nested sub-template.&lt;/p&gt;
-
-&lt;h2 id='how_jekyll_generates_the_final_static_files'&gt;How Jekyll Generates the Final Static Files.&lt;/h2&gt;
-
-&lt;p&gt;Ultimately, Jekyll&amp;#8217;s job is to generate a static representation of your website. The following is an outline of how that&amp;#8217;s done:&lt;/p&gt;
+&lt;p&gt;In case you just came back to Earth and missed &lt;strike&gt;yesterday's&lt;/strike&gt; Facebook conference called F8 on the 22nd of September, here is a summary of the main changes the social platform has already put in place or is going to implement in the next few days/weeks:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jekyll collects data.&lt;/strong&gt; &lt;br /&gt;Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;A new Profile, the “Facebook Timeline”: &lt;a href='https://www.facebook.com/about/timeline'&gt;https://www.facebook.com/about/timeline&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jekyll computes data.&lt;/strong&gt; &lt;br /&gt;Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one big &lt;code&gt;site&lt;/code&gt; object that holds all the posts, pages, layouts, and respective metadata. At this stage your site is one big computed ruby object.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jekyll liquifies posts and templates.&lt;/strong&gt;&lt;br /&gt;Next jekyll loops through each post file and converts (through markdown or textile) and &lt;strong&gt;liquifies&lt;/strong&gt; the post inside of its respective layout(s). Once the post is parsed and liquified inside the the proper layout structure, the layout itself is &amp;#8220;liquified&amp;#8221;. &lt;br /&gt;&lt;strong&gt;Liquification&lt;/strong&gt; is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jekyll generates output.&lt;/strong&gt; &lt;br /&gt;Finally the liquid templates are &amp;#8220;rendered&amp;#8221;, thereby processing any liquid syntax provided in the templates and saving the final, static representation of the file.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;A better and “smarter” Open Graph: &lt;a href='https://developers.facebook.com/docs/beta/'&gt;https://developers.facebook.com/docs/beta/&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;Notes.&lt;/strong&gt;&lt;br /&gt;Because Jekyll computes the entire site in one fell swoop, each template is given access to a global &lt;code&gt;site&lt;/code&gt; hash that contains useful data. It is this data that you&amp;#8217;ll iterate through and format using the Liquid tags and filters in order to render it onto a given page.&lt;/p&gt;
+&lt;p&gt;To be concise, the latter two changes have the potential to transform deeply how nearly 1 billion individuals&lt;sup&gt;6&lt;/sup&gt; will interact online, by making the amount of information about people more open/visible, more precise and more important, and by making our interactions more integrated and inclusive to our (digital) lives.&lt;/p&gt;
 
-&lt;p&gt;Remember, in Jekyll you are an end-user. Your API has only two components:&lt;/p&gt;
+&lt;p&gt;On paper, this sounds exciting and those new features are surely impressive and well-thought both on the front-end side and back-end. Nevertheless, they ask, in my opinion, several important questions. Since I want to keep this post short, I will only highlight two of them:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;The manner in which you setup your directory.&lt;/li&gt;
+&lt;li&gt;Do we build eTrust by making interactions unconscious?&lt;/li&gt;
 
-&lt;li&gt;The liquid syntax and variables passed into the liquid templates.&lt;/li&gt;
+&lt;li&gt;How do we ensure eTrust by leaving an increasing amount of data in the hands of a unique private company, without any satisfying external controlling organization?&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;All the data objects available to you in the templates via Liquid are outlined in the &lt;strong&gt;API Section&lt;/strong&gt; of Jekyll-Bootstrap. You can also read the original documentation here: &lt;a href='https://github.com/mojombo/jekyll/wiki/Template-Data'&gt;https://github.com/mojombo/jekyll/wiki/Template-Data&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id='etrust'&gt;eTrust&lt;/h2&gt;
 
-&lt;h2 id='conclusion'&gt;Conclusion&lt;/h2&gt;
+&lt;h3 id='why_do_we_need_trust_or_why_does_a_society_offline_or_online_need_trust'&gt;Why do we need trust or why does a society (offline or online) need trust?&lt;/h3&gt;
 
-&lt;p&gt;I hope this paints a clearer picture of what Jekyll is doing and why it works the way it does. As noted, our main programming constraint is the fact that our API is limited to what is accessible via Liquid and Liquid only.&lt;/p&gt;
+&lt;p&gt;In his analysis of trust, Luhmann&lt;sup&gt;8&lt;/sup&gt; brings certainly the most appropriate and concise answer to such issues by stating that “trust is an effective form of complexity reduction”. Put otherwise, the need of trust rests on the fact that trust is a starting point for the derivation of rules for ‘good’ conduct, or for ways of acting ‘successfully’ by decreasing complexity, risk and uncertainty in a given (social) system. Now, it remains to understand what is (e)Trust.&lt;/p&gt;
 
-&lt;p&gt;Jekyll-bootstrap is intended to provide helper methods and strategies aimed at making it more intuitive and easier to work with Jekyll =)&lt;/p&gt;
+&lt;h3 id='what_is_etrust_or_equivalently_online_trust'&gt;What is eTrust, or equivalently online trust?&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Thank you&lt;/strong&gt; for reading this far.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s simply the driving force of any digital interaction. Put differently, Trust is often understood as a relation between an agent (e.g. a Facebook user) and another agent or object (e.g. Facebook). The relation is supposed to be grounded on the truster’s beliefs about the trustee’s capabilities (e.g. its reliability) and about the context in which the relation occurs. This is a generalisation of the definition of trust provided by Gambetta&lt;sup&gt;9&lt;/sup&gt;.&lt;/p&gt;
 
-&lt;h2 id='next_steps'&gt;Next Steps&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Trust implies then a truster conscious of interacting with the trustee.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Please take a look at &lt;a href='' /&gt; or jump right into &lt;a href=''&gt;Usage&lt;/a&gt; if you&amp;#8217;d like.&lt;/p&gt;</content>
+&lt;h2 id='the_interaction_awareness_issue'&gt;The Interaction Awareness Issue&lt;/h2&gt;
+
+&lt;p&gt;The new Open Graph&lt;sup&gt;5&lt;/sup&gt; presented @F8 has been developed in the aim of increasing the amount of data exchanged and stored by Facebook. However, Open Graph&amp;#8217;s new features have in my opinion a very perverse side-effect by making people unconscious of interacting online. Why?&lt;/p&gt;
+
+&lt;p&gt;To be concise, the Open Graph protocol allows 3rd party web sites to use the Facebook platform to engage with their users on Facebook and possibly increase their audience / set of interactions.&lt;/p&gt;
+
+&lt;p&gt;The new features of this protocol rest on a “user → action → object” model. This means that whenever a Facebook user installs a 3rd party application, every interaction he or she will have with this 3rd party platform will be automatically stored by Facebook and attached to his or her profile/identity. For example, let&amp;#8217;s say that I have the Spotify application installed, then everything I will listen to in Spotify will be potentially available to my Facebook friends and then Facebook. Same reasoning applies to what I read / eat&amp;#8230; You see the problem?&lt;/p&gt;
+
+&lt;p&gt;This 2steps mechanisms blurs and even erases the awareness of interacting in a specific context by playing on the large amount of digital interactions we make everyday. Then, how is it possible to develop a trustworthy Web when people are not even aware of interacting&amp;#8230;&lt;/p&gt;
+
+&lt;h2 id='the_data_collection_issue'&gt;The Data Collection Issue&lt;/h2&gt;
+
+&lt;p&gt;As an application developer for Facebook, I had the opportunity to put my hands on the new &amp;#8220;timeline profile&amp;#8221; on the 22nd of September. If you are curious, you can do the same by following a step-by-step tutorial written by Greg Kumparak (TechCrunch)&lt;sup&gt;7&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once my “timeline profile” set, my very first impression was this one: “OMG! The UI (User Interface) design is great. WTF! How can they think that I&amp;#8217;ll be willing to post a photo of me as a baby, the name of my dog, something on a lost loved one or when I overcame an illness&amp;#8230;”&lt;/p&gt;
+
+&lt;p&gt;The fact is that by having developed an intuitive UI, by leaving the possibility to their users to even publish more information on their lives and by playing on our narcissism and their immense community, the guys at Facebook have found a great way to gather relatively easily (even) more information about their users.&lt;/p&gt;
+
+&lt;p&gt;Add to this the naughty consequences of the new Open Graph mentioned previously and you have an almost perfect data-collection-weapon. The result is simple and not new: an extremely large amount of information about us: from basic ID details to very private ones with precise and detailed information about our preferences, interests and habits.&lt;/p&gt;
+
+&lt;p&gt;What is new though, it&amp;#8217;s the ability of recomposing very precisely our (digital) DNA, i.e. what we are, or at least the convergence towards a desire of recomposing automatically our DNA.&lt;/p&gt;
+
+&lt;p&gt;Now, our approach to the privacy must change in the digital age and already changed thanks to Facebook and Google, among others. I think this change was necessary to pursue the development of the Internet and then my point here is not to say like some that we should &amp;#8220;boycott online platforms that gather data about ourselves&amp;#8221;, clearly not. What I think important is again to be conscious or aware of the amount of data we make available on the Web and to whom we make it available.&lt;/p&gt;
+
+&lt;p&gt;With this respect, the new Facebook represents a potential danger by automatizing the process of interacting online / sharing data and by making individuals no longer accountable for their actions, it&amp;#8217;s what I call the Homo-Facebookiens.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#8217;s a bit paradoxical to observe our current democratic societies reacting strongly (sometimes with reason) whenever a government puts in place a way to gather more data about its citizens when the same citizens share (overall) even more data with companies such as Facebook or Google, &lt;i&gt;id est&lt;/i&gt; by definition entities that do not follow a democratic structure and cannot be controlled by their users.&lt;/p&gt;
+
+&lt;p&gt;This leads to a simple and straightforward question:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How to ensure a trustworthy and sane development of the Internet in particular and of our Society in general when our &amp;#8216;DNA&amp;#8217; will be in the hands of a very few powerful companies?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Such a question will need to be addressed in a near future in order to ensure that those great companies/ideas that are Google and Facebook (&amp;#8230; and alike) will continue to expand our common knowledge and make the Homo Sapiens a better human being, and not the reverse!&lt;/p&gt;
+
+&lt;p&gt;As always, your reactions are welcome and encouraged below.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href='https://plus.google.com/'&gt;https://plus.google.com/&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.google.com/wallet/'&gt;http://www.google.com/wallet/&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://www.google.com/offers/'&gt;https://www.google.com/offers/&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://developers.facebook.com/docs/beta/'&gt;https://www.facebook.com/about/timeline&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.google.com/wallet/'&gt;https://developers.facebook.com/docs/beta/&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.facebook.com/press/info.php?statistics'&gt;http://www.facebook.com/press/info.php?statistics&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://techcrunch.com/2011/09/22/how-to-enable-facebook-timeline/'&gt;http://techcrunch.com/2011/09/22/how-to-enable-facebook-timeline/&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;Luhmann, N. (1979), Trust and Power. Chichester: John Wiley.&lt;/li&gt;
+
+&lt;li&gt;Gambetta, D. (1998), Can We Trust Trust?. In D. Gambetta (Ed.), Trust: Making and Breaking Cooperative Relations (213-238). Oxford: Basil Blackwell.&lt;/li&gt;
+&lt;/ol&gt;</content>
  </entry>
  
  
