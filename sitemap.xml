@@ -1,0 +1,19 @@
+---
+# Remember to set production_url in your _config.yml file!
+title : Sitemap Blog
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+{% include JB/setup %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+{% for post in site.posts %}
+   <url>
+      <loc>{{site.production_url}}{{ post.url }}</loc>
+      <lastmod>{{ post.date }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+{% endfor %}
+
+</urlset> 

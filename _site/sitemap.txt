@@ -5,6 +5,7 @@ http://blog.florianbersier.com/index.html
 http://blog.florianbersier.com/archive.html
 http://blog.florianbersier.com/tags.html
 http://blog.florianbersier.com/sitemap.txt
+http://blog.florianbersier.com/sitemap.xml
 http://blog.florianbersier.com/categories.html
 
 http://blog.florianbersier.com/implementation-social-sharing-jekyll

@@ -4,7 +4,7 @@
  <title>Florian Bersier | Blog</title>
  <link href="http://blog.florianbersier.com/atom.xml" rel="self"/>
  <link href="http://blog.florianbersier.com"/>
- <updated>2012-09-04T14:02:18+01:00</updated>
+ <updated>2012-09-04T18:05:22+01:00</updated>
  <id>http://blog.florianbersier.com</id>
  <author>
    <name>Florian Bersier</name>
@@ -17,7 +17,169 @@
    <link href="http://blog.florianbersier.com/implementation-social-sharing-jekyll"/>
    <updated>2012-09-04T00:00:00+01:00</updated>
    <id>http://blog.florianbersier.com/implementation-social-sharing-jekyll</id>
-   <content type="html"></content>
+   <content type="html">&lt;p&gt;Two common features of any standard blog are (i) a commenting system and (ii) some social sharing buttons. While Jekyll provides natively a way to add a commenting provider (e.g. Disqus, LiveFyre, Facebook), it does not propose a simple way to add social sharing functionalities yet&lt;sup&gt;1&lt;/sup&gt;. This post aims at presenting a way of filling the latter gap based on the Jekyll Bootstrap&lt;sup&gt;2&lt;/sup&gt;. I hope this will be useful to a few Jekyll users out there.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Read I did not manage to find any satisfying way of achieving it ;)&lt;/li&gt;
+
+&lt;li&gt;All the code presented below can be found in my &lt;a href='https://github.com/xpressyoo/jekyll-bootstrap'&gt;forked version&lt;/a&gt; of the Jekyll Bootstrap on Github.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id='jekyll_configuration'&gt;Jekyll configuration&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;#8217;s start with the beginning, the Jekyll configuration file. We are going to declare the sharing providers we want our blog to support (e.g. Twitter, Facebook, Google+) and the options (if any) necessary for the creation of the respective buttons. Here is how the new sharing section of the configuration file looks like:&lt;/p&gt;
+&lt;code&gt;The _config.yml file&lt;/code&gt;&lt;pre&gt;
+&lt;code&gt;
+[...]
+
+    # Settings for sharing 
+    # Sharing is for things like tweet, plusone, hn upvotes, like, linkedin
+    # Add a tweet button 		=&gt; provider : tweet
+    # Add a like button 		=&gt; provider : like (you also need a facebook appid)
+    # Add a plus one button 	=&gt; provider : plusone
+    # Add a HN button 		=&gt; provider : hn
+    # Add them all (i.e. hn + tweet + plusone + like) =&gt; provider : all
+    # Set 'provider' to the sharing provider you want to use.
+    # Set 'provider' to false to turn sharing off globally.
+    #
+     sharing :
+       provider : all
+       twitter :
+         size :
+         via :
+         count :
+     facebook :
+         appid : 123
+         layout : button_count
+         font :
+         faces : false
+         width : 90
+     googleplus :
+         size : medium
+         width :
+         annotation : bubble
+     linkedin :
+         counter : right      
+
+[...]
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;This should be pretty straightforward. We just need to declare our provider of choice and enter some options if we want to override the default ones. Note that all the options follow the original syntax of the provider. For example, &lt;a href='https://developers.google.com/+/plugins/+1button/'&gt;Google +1 button options&lt;/a&gt; for &amp;#8220;size&amp;#8221; is [ small, medium, tall ] and for &amp;#8220;annotation&amp;#8221; is [ inline, bubble, none ].&lt;/p&gt;
+
+&lt;h3 id='jekyll_bootstrap_includes'&gt;Jekyll Bootstrap Includes&lt;/h3&gt;
+
+&lt;p&gt;The second step is to modify the file named &lt;code&gt;sharing&lt;/code&gt; into the &lt;code&gt;_includes/JB/&lt;/code&gt; folder of our Jekyll Bootstrap installation. The latter file just redirects the provider&amp;#8217;s taxonomy used in the configuration file to the HTML file that generates the provider&amp;#8217;s sharing button(s).&lt;/p&gt;
+
+&lt;p&gt;For example, if &lt;code&gt;provider : like&lt;/code&gt; in &lt;code&gt;_config.yml&lt;/code&gt; then the &lt;code&gt;sharing&lt;/code&gt; file will include the &lt;code&gt;facebook&lt;/code&gt; HTML file present in &lt;code&gt;_includes/JB/sharing-providers/&lt;/code&gt;.&lt;/p&gt;
+&lt;code&gt;The sharing file&lt;/code&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;{% if site.JB.sharing.provider and page.sharing != false %}
+
+  {% case site.JB.sharing.provider %}
+	{% when &amp;#39;like&amp;#39; %}
+  		{% include JB/sharing-providers/facebook %}
+	{% when &amp;#39;tweet&amp;#39; %}
+  		{% include JB/sharing-providers/twitter %}
+	{% when &amp;#39;plusone&amp;#39; %}
+  		{% include JB/sharing-providers/googleplus %}
+	{% when &amp;#39;linkedin&amp;#39; %}
+  		{% include JB/sharing-providers/linkedin %}
+	{% when &amp;#39;hn&amp;#39; %}
+  		{% include JB/sharing-providers/hn %}
+	{% when &amp;#39;all&amp;#39; %}
+  		{% include JB/sharing-providers/global %}
+  {% endcase %}
+
+{% endif %}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;As you note, this implies the creation of a new folder named &lt;code&gt;sharing-providers&lt;/code&gt; in &lt;code&gt;_includes/JB/&lt;/code&gt;. This folder contains the diverse HTML files necessary to the generation of the sharing buttons.&lt;/p&gt;
+
+&lt;p&gt;For instance, this blog uses &lt;code&gt;provider : all&lt;/code&gt; which calls a file named &lt;code&gt;global&lt;/code&gt; looking as follows:&lt;/p&gt;
+&lt;code&gt;The global file&lt;/code&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;id=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;fb-root&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class='nt'&gt;&amp;lt;ul&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;post-share ulno mob&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class='c'&gt;&amp;lt;!-- Hacker News --&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;li&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;hn&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class='na'&gt;id=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;hnews&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+
+&lt;span class='c'&gt;&amp;lt;!-- Twitter --&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;li&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;tw&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class='na'&gt;href=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;https://twitter.com/share&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;twitter-share-button&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-text=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;{{ page.title }}&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-via=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;{{ site.JB.sharing.twitter.via }}&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-related=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;{{ site.author.twitter }}&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-count=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;{{ site.JB.sharing.twitter.count }}&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-size=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;{{ site.JB.sharing.twitter.size }}&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;Tweet&lt;span class='nt'&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+
+&lt;span class='c'&gt;&amp;lt;!-- Google+ --&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;li&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;gp&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;g-plusone&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-size=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;{{ site.JB.sharing.googleplus.size }}&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-annotation=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;{{ site.JB.sharing.googleplus.annotation }}&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-width=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;{{ site.JB.sharing.googleplus.width }}&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class='c'&gt;&amp;lt;!-- Facebook --&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;li&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;fb&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;fb-like&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-send=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;false&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-layout=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;{{ site.JB.sharing.facebook.layout }}&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-width=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;{{ site.JB.sharing.facebook.width }}&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-show-faces=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;{{ site.JB.sharing.facebook.faces }}&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;data-font=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;{{ site.JB.sharing.facebook.font }}&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class='c'&gt;&amp;lt;!-- Reddit --&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;li&amp;gt;&amp;lt;script &lt;/span&gt;&lt;span class='na'&gt;type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;src=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;http://www.reddit.com/buttonlite.js?i=4&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+
+&lt;span class='nt'&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+  
+&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='kd'&gt;function&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nx'&gt;doc&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='nx'&gt;script&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+ 	
+    &lt;span class='c1'&gt;// Async Social Buttons&lt;/span&gt;
+    &lt;span class='kd'&gt;var&lt;/span&gt; &lt;span class='nx'&gt;js&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; 
+        &lt;span class='nx'&gt;fjs&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nx'&gt;doc&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;getElementsByTagName&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nx'&gt;script&lt;/span&gt;&lt;span class='p'&gt;)[&lt;/span&gt;&lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;],&lt;/span&gt;
+        &lt;span class='nx'&gt;add&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='kd'&gt;function&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nx'&gt;url&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='nx'&gt;id&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+            &lt;span class='k'&gt;if&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nx'&gt;doc&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;getElementById&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nx'&gt;id&lt;/span&gt;&lt;span class='p'&gt;))&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='k'&gt;return&lt;/span&gt;&lt;span class='p'&gt;;}&lt;/span&gt;
+            &lt;span class='nx'&gt;js&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nx'&gt;doc&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;createElement&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nx'&gt;script&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+            &lt;span class='nx'&gt;js&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;src&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nx'&gt;url&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+            &lt;span class='nx'&gt;id&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nx'&gt;js&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;id&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nx'&gt;id&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+            &lt;span class='nx'&gt;fjs&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;parentNode&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;insertBefore&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nx'&gt;js&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='nx'&gt;fjs&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+        &lt;span class='p'&gt;};&lt;/span&gt;
+
+    &lt;span class='c1'&gt;// Twitter SDK&lt;/span&gt;
+    &lt;span class='nx'&gt;add&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s1'&gt;&amp;#39;//platform.twitter.com/widgets.js&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s1'&gt;&amp;#39;twitter-wjs&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+    
+    &lt;span class='c1'&gt;// Google+ button&lt;/span&gt;
+    &lt;span class='nx'&gt;add&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s1'&gt;&amp;#39;https://apis.google.com/js/plusone.js&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+    
+    &lt;span class='c1'&gt;// Facebook SDK&lt;/span&gt;
+    &lt;span class='nx'&gt;add&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s1'&gt;&amp;#39;//connect.facebook.net/en_GB/all.js#xfbml=1&amp;amp;appId={{ site.JB.sharing.facebook.appid }}&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s1'&gt;&amp;#39;facebook-jssdk&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+    
+    &lt;span class='c1'&gt;// Hacker News Button 	&lt;/span&gt;
+      &lt;span class='kd'&gt;var&lt;/span&gt; &lt;span class='nx'&gt;hn_like&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nb'&gt;document&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;createElement&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s1'&gt;&amp;#39;iframe&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+      &lt;span class='nx'&gt;hn_like&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;frameborder&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;no&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+      &lt;span class='nx'&gt;hn_like&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;scrolling&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;no&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+      &lt;span class='nx'&gt;hn_like&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;height&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;28px&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+      &lt;span class='nx'&gt;hn_like&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;width&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;110px&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+      &lt;span class='nx'&gt;hn_like&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;src&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;http://hnlike.com/upvote.php?link=&amp;quot;&lt;/span&gt;
+                    &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='nb'&gt;encodeURIComponent&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='nb'&gt;document&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;location&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+                    &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&amp;amp;title=&amp;quot;&lt;/span&gt;
+                    &lt;span class='o'&gt;+&lt;/span&gt; &lt;span class='nb'&gt;encodeURIComponent&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;{{ page.title }}&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+      &lt;span class='nx'&gt;hn_like&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;innerHTML&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;iframes not supported by your browser&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+      
+      &lt;span class='kd'&gt;var&lt;/span&gt; &lt;span class='nx'&gt;where&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nb'&gt;document&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;getElementById&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;hnews&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+      &lt;span class='nx'&gt;where&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;parentNode&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='nx'&gt;insertBefore&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;
+        &lt;span class='nx'&gt;hn_like&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;
+        &lt;span class='nx'&gt;where&lt;/span&gt;
+      &lt;span class='p'&gt;);&lt;/span&gt;
+&lt;span class='p'&gt;}(&lt;/span&gt;&lt;span class='nb'&gt;document&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s1'&gt;&amp;#39;script&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;));&lt;/span&gt;
+
+&lt;span class='nt'&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Remark that the JavaScript is loaded asynchronously and that we retrieve the option values of the configuration file thanks to the Liquid markdown. The Hacker News button is powered by &lt;a href='http://hnlike.com/'&gt;hnlike.com&lt;/a&gt; and uses the Jekyll snippet proposed by &lt;a href='http://www.idryman.org/blog/2012/04/05/jekyll-octopress-hacker-news-plugin/'&gt;dryman&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;More examples can be found on my &lt;a href='https://github.com/xpressyoo/jekyll-bootstrap/tree/master/_includes/JB/sharing-providers'&gt;forked version&lt;/a&gt; of the Jekyll Bootstrap.&lt;/p&gt;
+
+&lt;h3 id='the_jekyll_theme'&gt;The Jekyll Theme&lt;/h3&gt;
+
+&lt;p&gt;We&amp;#8217;re almost done! The last step is to add the sharing buttons to our Jekyll theme. This is achieved by modifying the &lt;code&gt;post.html&lt;/code&gt; file present in &lt;code&gt;_includes/themes/name_of_your_theme&lt;/code&gt;.&lt;/p&gt;
+&lt;code&gt;post.html&lt;/code&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;[...]
+
+    &lt;span class='c'&gt;&amp;lt;!-- Paste the 3 next lines where you want the sharing button(s) to appear --&amp;gt;&lt;/span&gt;
+    &lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;post-sharing&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+     {% include JB/sharing %}
+    &lt;span class='nt'&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+[...]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;That&amp;#8217;s it, we&amp;#8217;re set!&lt;/p&gt;
+
+&lt;p&gt;Feel free to leave your comments and suggestions below.&lt;/p&gt;</content>
  </entry>
  
  <entry>
