@@ -71,6 +71,7 @@ For instance, this blog uses <code>provider : all</code> which calls a file name
 
 <code>The global file</code>
 {% highlight html %}
+{% raw %}
 <div id="fb-root"></div>
 
 <ul class="post-share ulno mob">
@@ -135,6 +136,7 @@ For instance, this blog uses <code>provider : all</code> which calls a file name
 }(document, 'script'));
 
 </script>
+{% endraw %}
 {% endhighlight %}
 
 Remark that the JavaScript is loaded asynchronously and that we retrieve the option values of the configuration file thanks to the Liquid markdown. The Hacker News button is powered by [hnlike.com](http://hnlike.com/) and uses the Jekyll snippet proposed by [dryman](http://www.idryman.org/blog/2012/04/05/jekyll-octopress-hacker-news-plugin/).
