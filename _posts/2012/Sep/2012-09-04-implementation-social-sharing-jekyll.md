@@ -33,18 +33,7 @@ More examples can be found on my [forked version](https://github.com/xpressyoo/j
 We're almost done! The last step is to add the sharing buttons to our Jekyll theme. This is achieved by modifying the <code>post.html</code> file present in <code>_includes/themes/name_of_your_theme</code>.
 
 <code>post.html</code>
-{% highlight html %}
-{% raw %}
-...
 
-<!-- Paste the 3 next lines where you want the sharing button(s) to appear -->
-<div class="post-sharing">
-  {% include JB/sharing %}
-</div>
-
-...
-{% endraw %}
-{% endhighlight %}
 
 That's it, we're set!
 
