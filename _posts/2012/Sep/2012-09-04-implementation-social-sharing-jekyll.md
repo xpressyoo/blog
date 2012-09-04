@@ -17,6 +17,11 @@ Two common features of any standard blog are (i) a commenting system and (ii) so
 Let's start with the beginning, the Jekyll configuration file. We are going to declare the sharing providers we want our blog to support (e.g. Twitter, Facebook, Google+) and the options (if any) necessary for the creation of the respective buttons. Here is how the new sharing section of the configuration file looks like:
 
 <code>The _config.yml file</code>
+<pre>
+<code>
+   test
+</code>
+</pre>
 
 This should be pretty straightforward. We just need to declare our provider of choice and enter some options if we want to override the default ones. Note that all the options follow the original syntax of the provider. For example, [Google +1 button options](https://developers.google.com/+/plugins/+1button/) for "size" is \[ small, medium, tall \] and for "annotation" is \[ inline, bubble, none \].
 
