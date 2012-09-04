@@ -4,13 +4,177 @@
  <title>Florian Bersier | Blog</title>
  <link href="http://blog.florianbersier.com/atom.xml" rel="self"/>
  <link href="http://blog.florianbersier.com"/>
- <updated>2012-09-04T14:00:26+01:00</updated>
+ <updated>2012-09-04T14:02:18+01:00</updated>
  <id>http://blog.florianbersier.com</id>
  <author>
    <name>Florian Bersier</name>
    <email>blah@email.test</email>
  </author>
 
+ 
+ <entry>
+   <title>Implementation of Social Sharing into Jekyll</title>
+   <link href="http://blog.florianbersier.com/implementation-social-sharing-jekyll"/>
+   <updated>2012-09-04T00:00:00+01:00</updated>
+   <id>http://blog.florianbersier.com/implementation-social-sharing-jekyll</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Lettre Ouverte aux Candidats de l'Élection Présidentielle 2012</title>
+   <link href="http://blog.florianbersier.com/elysee-2012-hadopi"/>
+   <updated>2012-01-12T00:00:00+00:00</updated>
+   <id>http://blog.florianbersier.com/elysee-2012-hadopi</id>
+   <content type="html">&lt;p&gt;Alors que le 6 mai approche à grands pas et que les campagnes respectives des candidats à la présidence de la République Française vont s&amp;#8217;intensifier dans les jours et semaines à venir, il semble opportun de proposer sous la forme d&amp;#8217;une lettre ouverte un ensemble de mesures traîtant de la place et de l&amp;#8217;utilisation du numérique dans une France et une Europe en crise, dans un monde en changement et dans une société humaine toujours plus connectée et digitale.&lt;/p&gt;
+
+&lt;p&gt;Parce que la loi Hadopi est l&amp;#8217;un des premiers projets tangibles (après la &lt;a href='http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000266350&amp;amp;dateTexte='&gt;loi DADVSI&lt;/a&gt; de 2006) du gouvernement français visant uniquement et spécifiquement Internet mais aussi parce que la création d&amp;#8217;une &amp;#8220;Haute autorité pour la diffusion des œuvres et la protection des droits sur Internet&amp;#8221; capture de manière évidente les problèmes engendrés par une volonté trop régulatrice d&amp;#8217;un Etat associée à une vision inadaptée et trop peu prospective de ce qu&amp;#8217;est le Net, il apparaît logique et naturel de débuter cette lettre par un argumentaire en faveur de l&amp;#8217;abrogation de Hadopi.&lt;/p&gt;
+
+&lt;h3 id='hadopi__quid'&gt;HADOPI - Quid?&lt;/h3&gt;
+
+&lt;p&gt;La loi Hadopi ou loi &amp;#8220;Création Internet&amp;#8221; est une loi promulguée le 12 juin 2009 dont le but originel est de mettre un terme aux partages de fichiers en pair à pair (P2P) lorsque ces partages se font en infraction avec les droits d&amp;#8217;auteur. Elle se base sur une &amp;#8220;réponse graduée&amp;#8221; composée de trois étapes, deux étapes préventives puis éventuellement une étape finale répressive : d&amp;#8217;abord un courrier d&amp;#8217;avertissement par courriel, puis un courrier d&amp;#8217;avertissement par lettre recommandée, et enfin la suspension de l&amp;#8217;abonnement à l&amp;#8217;Internet pour une durée déterminée. Cette même loi crée une &amp;#8220;Haute Autorité pour la diffusion des œuvres et la protection des droits sur Internet&amp;#8221; dont elle tire son nom (Hadopi: &lt;a href='http://www.hadopi.fr/'&gt;www.hadopi.fr&lt;/a&gt;), autorité publique indépendante chargée de la surveillance des droits d&amp;#8217;auteur sur Internet. Voilà pour la brève description de ce qu&amp;#8217;est Hadopi, les paragraphes suivants ont pour intention de complèter ces quelques lignes en s&amp;#8217;attachant aux spécificités de la loi. (Source : &lt;a href='http://fr.wikipedia.org/wiki/Loi_Cr%C3%A9ation_et_Internet'&gt;Wikipedia&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3 id='une_vision_trop_peu_prospective'&gt;Une Vision Trop Peu Prospective&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Un Modèle Économique Dépassé -&lt;/strong&gt; Le fondement d&amp;#8217;Hadopi, c&amp;#8217;est une vision remontant à l&amp;#8217;époque où les biens musicaux et vidéographiques étaient tous indivisibles, s&amp;#8217;échangeant uniquement sous forme physique (e.g. CD, DVD), et essentiellement exclusifs (payants). La loi tente d&amp;#8217;appliquer ce même modèle de distribution/consommation linéaire à des biens devenus digitaux et donc, par définition, devenus divisibles et non-exclusifs. Or, il est clair que cette vision hadopienne de la distribution musicale et vidéographique n&amp;#8217;est plus d&amp;#8217;actualité dans notre société digitale.&lt;/p&gt;
+
+&lt;p&gt;Pour citer Paul Krugman, prix Nobel d&amp;#8217;Economie 2008, &amp;#8220;Octet après octet, tout ce qui peut-être numérisé sera numérisé, rendant la propriété intellectuelle toujours plus facile à copier et toujours plus difficile à vendre plus cher qu&amp;#8217;un prix nominal. Et nous devrons trouver les modèles économiques et les modèles d&amp;#8217;affaires qui prennent cette réalité en compte&amp;#8221; (Source: &lt;a href='http://www.numerama.com/magazine/10833-le-nobel-d-economie-p-krugman-favorable-au-telechargement-gratuit.html'&gt;Numerama&lt;/a&gt;). L&amp;#8217;Internet tend en effet à créer une économie d&amp;#8217;abondance où les biens consommés ne doivent plus être comptés en unités mais en trafic estimé. C&amp;#8217;est pour cette raison qu&amp;#8217;il semble intéressant d&amp;#8217;encourager de nouveaux modèles économiques basés sur des systèmes de licence, de forfait, voire de publicité ciblée.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Un Modèle de Consommation Numérique Dépassé -&lt;/strong&gt; Comme déjà mentionné, le but originel d&amp;#8217;Hadopi est de protéger les droits d&amp;#8217;auteur en surveillant les échanges de fichiers (musique, vidéo) ayant lieu sur les réseaux P2P (peer-to-peer), c&amp;#8217;est-à-dire des réseaux informatiques où des ordinateurs interconnectés grâce à Internet jouent à la fois le rôle de client et de serveur. Cependant, il apparaît clairement en 2012 que le modèle P2P de consommation musicale et vidéographique n&amp;#8217;est plus à l&amp;#8217;ordre du jour. A l&amp;#8217;ère du &amp;#8221;&lt;a href='http://fr.wikipedia.org/wiki/Cloud_computing'&gt;cloud computing&lt;/a&gt;&amp;#8221;, de la fibre optique, du 4G et d&amp;#8217;un Internet toujours plus mobile et multi-support, de nouveaux modèles ont émergé et supplanté le P2P. Ces nouveaux modèles de consommation digitale ne se reposent ainsi plus sur la copie ou le téléchargement de fichiers entre deux ordinateurs mais sur la lecture en transit, sans téléchargment, de ces mêmes fichiers, id est le streaming. Pensez, par exemple, aux plateformes musicales telles que &lt;a href='http://www.spotify.com'&gt;Spotify&lt;/a&gt;, &lt;a href='http://www.deezer.com'&gt;Deezer&lt;/a&gt; et &lt;a href='http://www.rara.com'&gt;Rara&lt;/a&gt; ou vidéographiques telles que &lt;a href='http://www.netflix.com'&gt;Netflix&lt;/a&gt;. Ces sites web basés sur un modèle économique dit de &lt;a href='http://fr.wikipedia.org/wiki/Freemium'&gt;freemium&lt;/a&gt; proposent &lt;a href='http://www.spotify.com/fr/work-with-us/labels-and-artists/'&gt;légalement&lt;/a&gt; de la musique et des films en streaming et les rendent disponibles sur une grande variété de supports grâce à des applications mobiles (e.g iPod, iPhone, Android, etc.) et/ou des appareils spécifiques (e.g. Apple TV, Google TV, Boxee Box, etc.).&lt;/p&gt;
+
+&lt;p&gt;L&amp;#8217;Hadopi ayant vu le vent tourner, l&amp;#8217;autorité a publié le 25 novembre dernier un &lt;a href='http://www.hadopi.fr/sites/default/files/page/pdf/CP_Hadopi_251111.pdf'&gt;communiqué&lt;/a&gt; où elle indiquait vouloir réfléchir à de nouveaux moyens pour protéger les droits d&amp;#8217;auteur sur les fichiers streamés. Bien que peu surprenant, ce communiqué ne fait que souligner et confirmer un peu plus les problèmes fondamentaux d&amp;#8217;Hadopi. Premièrement, il démontre encore et toujours un manque de vision à moyen/long terme. La consommation numérique de musique et vidéo converge rapidement vers des plateformes de streaming légales, qui protègent les droits d&amp;#8217;auteur en se basant sur de nouveaux modèles économiques, principalement freemium. S&amp;#8217;attaquer aux plateformes de streaming &amp;#8220;illégales&amp;#8221; est inutile dans le sens où de telles plateformes n&amp;#8217;arriveront de toute manière pas à survivre face à une concurrence faite de plateformes &amp;#8220;légales&amp;#8221; qui auront les moyens de proposer une offre toujours plus importante et de meilleure qualité. Pour résumer le premier problème, le manque de vision d&amp;#8217;Hadopi lui empêche de remarquer que dans un environnment de consommation numérique dynamique, légiférer est inefficace voire même contre-productif (cf. plus bas) et que l&amp;#8217;auto-régulation du marché est à terme la seule solution au problème de la protection des droits d&amp;#8217;auteur.&lt;/p&gt;
+
+&lt;h3 id='une_absurdit_technologique'&gt;Une Absurdité Technologique&lt;/h3&gt;
+
+&lt;p&gt;Deuxièmement, ce communiqué renforce l&amp;#8217;une des principales critiques émises à l&amp;#8217;encontre de la loi, i.e. son manque de &amp;#8220;réalisme&amp;#8221; technologique qui rend son application délicate, voire difficile. En effet, que ce soit par l&amp;#8217;identification d&amp;#8217;utilisateurs P2P via leurs adresses IP, par le filtrage et blocage de serveurs de streaming sur le territoire français ou par la demande de coupure à l&amp;#8217;Internet, Hadopi pose le principe que la technologie a un caractère absolu, incontournable et indétournable. Or, une telle hypothèse est bien évidemment fausse. L&amp;#8217;identification d&amp;#8217;un contrevenant via une adresse IP est peu fiable pour la simple raison que ces adresses sont facilement falsifiables (e.g. &lt;a href='https://www.torproject.org/'&gt;TOR&lt;/a&gt;, &lt;a href='http://www.hidemyass.com/'&gt;Proxy&lt;/a&gt;, VPN, &lt;a href='http://www.aircrack-ng.org/'&gt;WEP cracking&lt;/a&gt;) et ne garantissent donc pas le lien direct entre un individu et son adresse IP. De même, le blocage de serveurs de streaming (étrangers) allant à l&amp;#8217;encontre de la loi sera toujours une mesure inutile puisque contournable en adoptant une adresse IP non française (e.g. &lt;a href='http://www.hidemyass.com/'&gt;Proxy&lt;/a&gt;, VPN) ou en créant des sites miroirs (cf. affaire Wikileaks). Même inefficacité pour un blocage via &amp;#8220;take-down&amp;#8221; prévu par la Loi pour la Confiance dans l’Economie Numérique (&lt;a href='http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000801164&amp;amp;dateTexte='&gt;LCEN&lt;/a&gt;) de 2004 puisqu&amp;#8217;il suffira à un serveur de streaming d&amp;#8217;être hébergé dans un pays sans équivalent d&amp;#8217;Hadopi pour y échapper. Finalement, la sanction finale prévue par Hadopi qui n&amp;#8217;est autre que la coupure pure et simple de l&amp;#8217;accès à Internet du contrevenant est inconcevable dans un pays ou la connexion à l&amp;#8217;Internet fait presque toujours partie de packages &amp;#8220;téléphone-télévision-Internet&amp;#8221;. Demander la coupure de l&amp;#8217;accès au réseau à un FAI reviendrait dans beaucoup de cas à couper également l&amp;#8217;accès au téléphone et à la télévision.&lt;/p&gt;
+
+&lt;h3 id='le_risque_du_toujours_plus'&gt;Le Risque du &amp;#8220;Toujours Plus&amp;#8221;&lt;/h3&gt;
+
+&lt;p&gt;Troisièmement, le communiqué du 25 novembre 2011 cristallise l&amp;#8217;un des principaux dangers de légiférer en faveur d&amp;#8217;une surveillance et/ou régulation de l&amp;#8217;Internet: le besoin d&amp;#8217;aller toujours plus loin. En effet, dans un environnement changeant tel que le net, le législateur doit constamment s&amp;#8217;adapter, au risque de devenir trop oppressant et -volontairement ou involontairement- d&amp;#8217;étouffer de son poids le flux d&amp;#8217;échanges numériques. L&amp;#8217;Hadopi, en passant du P2P au streaming, en est l&amp;#8217;exemple parfait. Faisant face à de nouveaux mécanismes d&amp;#8217;échanges, la haute autorité doit choisir d&amp;#8217;autres variables d&amp;#8217;action dont le nombre est extrêmement limité et converge vers une seule direction: le filtrage et le blocage de l&amp;#8217;Internet. Hors, une telle dérive signerait, à moyen terme, l&amp;#8217;arrêt de mort de l&amp;#8217;Internet français. Pourquoi cela?&lt;/p&gt;
+
+&lt;p&gt;Le fait d&amp;#8217;instaurer un filtrage du réseau implique, tout d&amp;#8217;abord, que toutes les données doivent passer par quelques points de passage définis et obligatoires, diminuant ainsi le débit et le flux de ces mêmes données à travers le réseau - ce qui pourrait aller jusqu&amp;#8217;à une saturation du réseau français en cas d&amp;#8217;extrême centralisation du routage du trafic. Le fait de proposer une infrastructure de moins bonne qualité conjugué à un filtrage de certains types de contenus decourageront dans un second temps l&amp;#8217;innovation et affaibliront la croissance économique du pays. Enfin, un réseau filtré sera plus sujet aux pannes et attaques à cause d&amp;#8217;une architecture proposant un nombre amoindri de points d&amp;#8217;entrée et de sortie du trafic.&lt;/p&gt;
+
+&lt;p&gt;Il est important de rappeler que la force d&amp;#8217;un réseau tel qu&amp;#8217;Internet réside dans le fait qu&amp;#8217;il est, par définition, un réseau ouvert et neutre. Son ouverture associée à sa neutralité sont les deux valeurs essentielles qui ont garanti, garantissent et garantiront le succès du net et sa valeur pour la société humaine. Le fait qu&amp;#8217;un gouvernement fasse pression sur des fournisseurs d&amp;#8217;accès à Internet (FAI) pour surveiller et contrôler les échanges qui se passent au sein du réseau vont directement à l&amp;#8217;encontre de ces 2 principes de base reconnus et défendus par l&amp;#8217;&lt;a href='http://www.europarl.europa.eu/news/fr/pressroom/content/20111117IPR31726/html/Internet-doit-rester-ouvert-et-neutre'&gt;Union Européenne&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id='une_loi_indigne_du_pays_des_droits_de_lhomme'&gt;Une Loi indigne du Pays des Droits de l&amp;#8217;Homme&lt;/h3&gt;
+
+&lt;p&gt;Quatrièmement, l&amp;#8217;Hadopi est par quelques-uns des ses aspects en contradiction avec les valeurs républicaines.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Coupure de l&amp;#8217;Accès à Internet -&lt;/strong&gt; L&amp;#8217;une des sanctions finales décidées par l&amp;#8217;autorité judiciaire qui doit punir l&amp;#8217;internaute ayant ignoré les avertissements préalables pour du téléchargement illégal ou un défaut de sécurisation de son accès Internet est la coupure pure et son simple de son accès au réseau. Or, dans une société ou l&amp;#8217;Internet est de plus en plus présent dans la vie des citoyens et de plus en plus nécessaire à l&amp;#8217;execution des échanges sociaux et économiques du quotidien, et où il tend à devenir le principal portail de la connaissance (e.g. bibliothèques et médiathèques numériques), interdire son accès va à l&amp;#8217;encontre à la fois des valeurs de la République et du &amp;#8220;droit à l&amp;#8217;accès à la connaissance pour tous&amp;#8221; consacré par l&amp;#8217;ONU, le Conseil de l&amp;#8217;Europe et la France (entre autres). Sans aller jusqu&amp;#8217;à l&amp;#8217;inscription de l&amp;#8217;accès à l&amp;#8217;Internet comme un droit de l&amp;#8217;Homme, la technologie étant un catalyseur de droits, pas un droit en elle-même pour paraphraser Vinton Cerf, père fondateur de l&amp;#8217;Internet (&amp;#8220;technology is an enabler of rights, not a right itself&amp;#8221; &lt;a href='http://www.nytimes.com/2012/01/05/opinion/internet-access-is-not-a-human-right.html'&gt;New York Times&lt;/a&gt; - Janvier 2012), l&amp;#8217;Hadopi va clairement à l&amp;#8217;encontre des droits primaires de chaque Homme.&lt;/p&gt;
+
+&lt;p&gt;Il est également intéressant de noter que dans son &lt;a href='http://www.article19.org/data/files/pdfs/reports/report-of-the-special-rapporteur-on-the-promotion-and-protection-of-the-righ.pdf'&gt;rapport de mai 2011&lt;/a&gt; sur la promotion et la protection du droit de la liberté d&amp;#8217;opinion et d&amp;#8217;expression, l&amp;#8217;ONU &amp;#8221;s&amp;#8217;alarme des propositions qui visent à déconnecter l&amp;#8217;utilisateur d&amp;#8217;Internet lorsqu&amp;#8217;il violent les droits de propriété intellectuelle. Cela inclut les législations basées sur le concept de riposte graduée qui imposent une série de sanctions et qui peuvent mener à la suspension de la fourniture de la connexion Internet comme la riposte graduée en France ou le Digital Economy Act 2010 en Grande-Bretagne&amp;#8221; Chapitre D.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Présomption de culpabilité -&lt;/strong&gt;Hadopi repose sur la &lt;a href='http://fr.wikipedia.org/wiki/Loi_Cr%C3%A9ation_et_Internet#Pr.C3.A9somption_de_culpabilit.C3.A9'&gt;présomption de culpabilité&lt;/a&gt;, c&amp;#8217;est-à-dire que la charge de la preuve est portée sur le demandeur. Or, dans un pays où la présemption d&amp;#8217;innocence est reconnue depuis la Déclaration des droits de l&amp;#8217;homme et du citoyen du 26 août 1789 et où &amp;#8220;tout homme est présumé innocent jusqu&amp;#8217;à ce qu&amp;#8217;il ait été déclaré coupable&amp;#8230;&amp;#8221;, il est clair que la démarche juridique d&amp;#8217;Hadopi va à l&amp;#8217;encontre des fondements de la République.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Protection de la Vie Privée -&lt;/strong&gt; Que ce soit par l&amp;#8217;introduction de mouchards dans les ordinateurs de contrevenants ou par la volonté affichée de surveiller le trafic s&amp;#8217;écoulant à travers Internet, Hadopi représente un danger certain pour la protection des données personnelles et de la sphère privée.&lt;/p&gt;
+
+&lt;h3 id='conclusion'&gt;CONCLUSION&lt;/h3&gt;
+
+&lt;p&gt;Parce que les lois Hadopi sont basées sur des modèles économiques et numériques dépassés, reposent sur des moyens de surveillance, de contrôle et de punition contournables et inapplicables, mettent en péril l&amp;#8217;ouverture et la neutralité de l&amp;#8217;Internet, limitent et découragent l&amp;#8217;innovation et la croissance économique et vont à l&amp;#8217;encontre des valeurs républicaines, il apparaît important et nécessaire de proposer une abrogation de ces dernières.&lt;/p&gt;
+
+&lt;p&gt;Finalement, dans un monde fait de gouvernments qui tendent à mettre de plus en plus en danger la Neutralité et l&amp;#8217;ouverture de l&amp;#8217;Internet, et en ce faisant, à limiter de plus en plus les libertés de leur citoyens (e.g. Projet &lt;a href='http://fr.wikipedia.org/wiki/Stop_Online_Piracy_Act'&gt;SOPA&lt;/a&gt; aux USA), le fait d&amp;#8217;abroger Hadopi semble être une décision courageuse et économiquement intéressante. En effet, cela enverrait premièrement un message clair à la communauté internationale, montrant que la France se pose en porte-drapeau de la défense de la Neutralité du Net, redorant ainsi l&amp;#8217;image du pays des Droits de l&amp;#8217;Homme dans le monde. Deuxièmement, le fait de garantir et défendre un Internet neutre et ouvert redonnerait un avantage comparatif à la France, attirerait les talents du monde tech et favoriserait l&amp;#8217;innovation et la croissance.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>eTrust, How Homo-Facebookiens will kill Homo-Sapiens?</title>
+   <link href="http://blog.florianbersier.com/etrust-homo-facebookiens"/>
+   <updated>2011-09-23T00:00:00+01:00</updated>
+   <id>http://blog.florianbersier.com/etrust-homo-facebookiens</id>
+   <content type="html">&lt;p&gt;I will start this post with a simple question: How much of your daily time spent on the Web is spent on Google products or Facebook? A very large proportion I presume and this should not be very surprising since the Internet favourites a winner-takes-the-most scheme, i.e. a market in which only an extremely small number of players can survive economic competition, the winning player taking all the market-share.&lt;/p&gt;
+
+&lt;p&gt;Nowadays, two big &amp;#8216;survivors&amp;#8217; that are Facebook and Google are engaged in a bloody battle in which the weapons are ways to gather more information/data about their users. More than never, the Summer and early Fall have made obvious this information war and the &amp;#8216;weapons&amp;#8217; used. Think of Google+&lt;sup&gt;1&lt;/sup&gt;, Google Wallet&lt;sup&gt;2&lt;/sup&gt;, Google Offers&lt;sup&gt;3&lt;/sup&gt;, Facebook Timeline&lt;sup&gt;4&lt;/sup&gt;, Facebook Open Graph&lt;sup&gt;5&lt;/sup&gt;&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;Because the main casualties of this war will be, at the end, us, their users and the Internet in general, I feel the need to share my viewpoint about the direction or vision those two companies want to impose to the Internet and the dangers they represent for our (e)Society.&lt;/p&gt;
+
+&lt;p&gt;In what follows, I will focus on Facebook, more precisely on the Facebook post-F8. Why this choice? 1) Articles about F8 are trendy :) 2) F8 parametrizes well the dangers of the info-war.&lt;/p&gt;
+
+&lt;p&gt;In case you just came back to Earth and missed &lt;strike&gt;yesterday's&lt;/strike&gt; Facebook conference called F8 on the 22nd of September, here is a summary of the main changes the social platform has already put in place or is going to implement in the next few days/weeks:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;A new Profile, the “Facebook Timeline”: &lt;a href='https://www.facebook.com/about/timeline'&gt;https://www.facebook.com/about/timeline&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;A better and “smarter” Open Graph: &lt;a href='https://developers.facebook.com/docs/beta/'&gt;https://developers.facebook.com/docs/beta/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To be concise, the latter two changes have the potential to transform deeply how nearly 1 billion individuals&lt;sup&gt;6&lt;/sup&gt; will interact online, by making the amount of information about people more open/visible, more precise and more important, and by making our interactions more integrated and inclusive to our (digital) lives.&lt;/p&gt;
+
+&lt;p&gt;On paper, this sounds exciting and those new features are surely impressive and well-thought both on the front-end side and back-end. Nevertheless, they ask, in my opinion, several important questions. Since I want to keep this post short, I will only highlight two of them:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Do we build eTrust by making interactions unconscious?&lt;/li&gt;
+
+&lt;li&gt;How do we ensure eTrust by leaving an increasing amount of data in the hands of a unique private company, without any satisfying external controlling organization?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id='etrust'&gt;eTrust&lt;/h2&gt;
+
+&lt;h3 id='why_do_we_need_trust_or_why_does_a_society_offline_or_online_need_trust'&gt;Why do we need trust or why does a society (offline or online) need trust?&lt;/h3&gt;
+
+&lt;p&gt;In his analysis of trust, Luhmann&lt;sup&gt;8&lt;/sup&gt; brings certainly the most appropriate and concise answer to such issues by stating that “trust is an effective form of complexity reduction”. Put otherwise, the need of trust rests on the fact that trust is a starting point for the derivation of rules for ‘good’ conduct, or for ways of acting ‘successfully’ by decreasing complexity, risk and uncertainty in a given (social) system. Now, it remains to understand what is (e)Trust.&lt;/p&gt;
+
+&lt;h3 id='what_is_etrust_or_equivalently_online_trust'&gt;What is eTrust, or equivalently online trust?&lt;/h3&gt;
+
+&lt;p&gt;It&amp;#8217;s simply the driving force of any digital interaction. Put differently, Trust is often understood as a relation between an agent (e.g. a Facebook user) and another agent or object (e.g. Facebook). The relation is supposed to be grounded on the truster’s beliefs about the trustee’s capabilities (e.g. its reliability) and about the context in which the relation occurs. This is a generalisation of the definition of trust provided by Gambetta&lt;sup&gt;9&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Trust implies then a truster conscious of interacting with the trustee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id='the_interaction_awareness_issue'&gt;The Interaction Awareness Issue&lt;/h2&gt;
+
+&lt;p&gt;The new Open Graph&lt;sup&gt;5&lt;/sup&gt; presented @F8 has been developed in the aim of increasing the amount of data exchanged and stored by Facebook. However, Open Graph&amp;#8217;s new features have in my opinion a very perverse side-effect by making people unconscious of interacting online. Why?&lt;/p&gt;
+
+&lt;p&gt;To be concise, the Open Graph protocol allows 3rd party web sites to use the Facebook platform to engage with their users on Facebook and possibly increase their audience / set of interactions.&lt;/p&gt;
+
+&lt;p&gt;The new features of this protocol rest on a “user → action → object” model. This means that whenever a Facebook user installs a 3rd party application, every interaction he or she will have with this 3rd party platform will be automatically stored by Facebook and attached to his or her profile/identity. For example, let&amp;#8217;s say that I have the Spotify application installed, then everything I will listen to in Spotify will be potentially available to my Facebook friends and then Facebook. Same reasoning applies to what I read / eat&amp;#8230; You see the problem?&lt;/p&gt;
+
+&lt;p&gt;This 2steps mechanisms blurs and even erases the awareness of interacting in a specific context by playing on the large amount of digital interactions we make everyday. Then, how is it possible to develop a trustworthy Web when people are not even aware of interacting&amp;#8230;&lt;/p&gt;
+
+&lt;h2 id='the_data_collection_issue'&gt;The Data Collection Issue&lt;/h2&gt;
+
+&lt;p&gt;As an application developer for Facebook, I had the opportunity to put my hands on the new &amp;#8220;timeline profile&amp;#8221; on the 22nd of September. If you are curious, you can do the same by following a step-by-step tutorial written by Greg Kumparak (TechCrunch)&lt;sup&gt;7&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once my “timeline profile” set, my very first impression was this one: “OMG! The UI (User Interface) design is great. WTF! How can they think that I&amp;#8217;ll be willing to post a photo of me as a baby, the name of my dog, something on a lost loved one or when I overcame an illness&amp;#8230;”&lt;/p&gt;
+
+&lt;p&gt;The fact is that by having developed an intuitive UI, by leaving the possibility to their users to even publish more information on their lives and by playing on our narcissism and their immense community, the guys at Facebook have found a great way to gather relatively easily (even) more information about their users.&lt;/p&gt;
+
+&lt;p&gt;Add to this the naughty consequences of the new Open Graph mentioned previously and you have an almost perfect data-collection-weapon. The result is simple and not new: an extremely large amount of information about us: from basic ID details to very private ones with precise and detailed information about our preferences, interests and habits.&lt;/p&gt;
+
+&lt;p&gt;What is new though, it&amp;#8217;s the ability of recomposing very precisely our (digital) DNA, i.e. what we are, or at least the convergence towards a desire of recomposing automatically our DNA.&lt;/p&gt;
+
+&lt;p&gt;Now, our approach to the privacy must change in the digital age and already changed thanks to Facebook and Google, among others. I think this change was necessary to pursue the development of the Internet and then my point here is not to say like some that we should &amp;#8220;boycott online platforms that gather data about ourselves&amp;#8221;, clearly not. What I think important is again to be conscious or aware of the amount of data we make available on the Web and to whom we make it available.&lt;/p&gt;
+
+&lt;p&gt;With this respect, the new Facebook represents a potential danger by automatizing the process of interacting online / sharing data and by making individuals no longer accountable for their actions, it&amp;#8217;s what I call the Homo-Facebookiens.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#8217;s a bit paradoxical to observe our current democratic societies reacting strongly (sometimes with reason) whenever a government puts in place a way to gather more data about its citizens when the same citizens share (overall) even more data with companies such as Facebook or Google, &lt;i&gt;id est&lt;/i&gt; by definition entities that do not follow a democratic structure and cannot be controlled by their users.&lt;/p&gt;
+
+&lt;p&gt;This leads to a simple and straightforward question:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How to ensure a trustworthy and sane development of the Internet in particular and of our Society in general when our &amp;#8216;DNA&amp;#8217; will be in the hands of a very few powerful companies?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Such a question will need to be addressed in a near future in order to ensure that those great companies/ideas that are Google and Facebook (&amp;#8230; and alike) will continue to expand our common knowledge and make the Homo Sapiens a better human being, and not the reverse!&lt;/p&gt;
+
+&lt;p&gt;As always, your reactions are welcome and encouraged below.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;References:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href='https://plus.google.com/'&gt;https://plus.google.com/&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.google.com/wallet/'&gt;http://www.google.com/wallet/&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://www.google.com/offers/'&gt;https://www.google.com/offers/&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://developers.facebook.com/docs/beta/'&gt;https://www.facebook.com/about/timeline&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.google.com/wallet/'&gt;https://developers.facebook.com/docs/beta/&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.facebook.com/press/info.php?statistics'&gt;http://www.facebook.com/press/info.php?statistics&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://techcrunch.com/2011/09/22/how-to-enable-facebook-timeline/'&gt;http://techcrunch.com/2011/09/22/how-to-enable-facebook-timeline/&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;Luhmann, N. (1979), Trust and Power. Chichester: John Wiley.&lt;/li&gt;
+
+&lt;li&gt;Gambetta, D. (1998), Can We Trust Trust?. In D. Gambetta (Ed.), Trust: Making and Breaking Cooperative Relations (213-238). Oxford: Basil Blackwell.&lt;/li&gt;
+&lt;/ol&gt;</content>
+ </entry>
  
  
 </feed>
