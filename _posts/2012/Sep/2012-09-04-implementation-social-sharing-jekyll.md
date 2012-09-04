@@ -7,7 +7,7 @@ tags : [hacking, jekyll]
 ---
 {% include JB/setup %}
 
-Two common features of any blog are (i) a commenting system and (ii) some social sharing buttons. While the Jekyll Bootstrap provides natively a way to add a commenting provider (e.g. Disqus, LiveFyre, Facebook), it does not propose a simple way to add social sharing functionalities yet<sup>1</sup>. This post aims at presenting a way of filling the latter gap based on the Jekyll Bootstrap<sup>2</sup>. I hope this will be useful to a few Jekyllers out there.
+Two common features of any blog are (i) a commenting system and (ii) some social sharing buttons. While the Jekyll Bootstrap provides natively a way to add a commenting provider (e.g. Disqus, LiveFyre, Facebook), it does not propose a simple way to add social sharing functionalities yet<sup>1</sup>. This post aims at presenting a way of filling the latter gap<sup>2</sup>.
 
 1. Read I did not manage to find any simple way of achieving it ;)
 2. All the code presented below can be found in my [forked version](https://github.com/xpressyoo/jekyll-bootstrap) of the Jekyll Bootstrap on Github.
