@@ -89,7 +89,7 @@ We're almost done! The last step is to add the sharing buttons to our Jekyll the
 
     <!-- Paste the 3 next lines where you want the sharing button(s) to appear -->
     <div class="post-sharing">
-     {{ "{% if article.previous? " }}%}
+     {{ "{% include JB/sharing " }}%}
     </div>
 
 [...]
