@@ -65,9 +65,7 @@ For example, if <code>provider : like</code> in <code>_config.yml</code> then th
 
 <code>The sharing file</code>
 
-```liquid
-test
-```
+
 
 As you note, this implies the creation of a new folder named <code>sharing-providers</code> in <code>_includes/JB/</code>. This folder contains the diverse HTML files necessary to the generation of the sharing buttons.
 
@@ -91,7 +89,7 @@ We're almost done! The last step is to add the sharing buttons to our Jekyll the
 
     <!-- Paste the 3 next lines where you want the sharing button(s) to appear -->
     <div class="post-sharing">
-     
+     {{ "{% include JB/sharing " }}%}
     </div>
 
 [...]
