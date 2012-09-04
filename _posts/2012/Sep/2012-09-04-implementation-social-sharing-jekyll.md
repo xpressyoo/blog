@@ -68,17 +68,17 @@ For example, if <code>provider : like</code> in <code>_config.yml</code> then th
 {{ "{% if site.JB.sharing.provider and page.sharing != false " }}%}
 
   {{ "{% case site.JB.sharing.provider " }}%}
-	{{ "{% when "like" " }}%}
+	{{ "{% when 'like' " }}%}
   		{{ "{% include JB/sharing-providers/facebook " }}%}
-	{{ "{% when "tweet" " }}%}
+	{{ "{% when 'tweet' " }}%}
   		{{ "{% include JB/sharing-providers/twitter " }}%}
-	{{ "{% when "plusone" " }}%}
+	{{ "{% when 'plusone' " }}%}
   		{{ "{% include JB/sharing-providers/googleplus " }}%}
-	{{ "{% when "linkedin" " }}%}
+	{{ "{% when 'linkedin' " }}%}
   		{{ "{% include JB/sharing-providers/linkedin " }}%}
-	{{ "{% when "hn" " }}%}
+	{{ "{% when 'hn' " }}%}
   		{{ "{% include JB/sharing-providers/hn " }}%}
-	{{ "{% when "all" " }}%}
+	{{ "{% when 'all' " }}%}
   		{{ "{% include JB/sharing-providers/global " }}%}
   {{ "{% endcase " }}%}
 
