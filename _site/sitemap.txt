@@ -7,6 +7,5 @@ http://blog.florianbersier.com/tags.html
 http://blog.florianbersier.com/sitemap.txt
 http://blog.florianbersier.com/categories.html
 
-http://blog.florianbersier.com/implementation-social-sharing-jekyll
 http://blog.florianbersier.com/elysee-2012-hadopi
 http://blog.florianbersier.com/etrust-homo-facebookiens
