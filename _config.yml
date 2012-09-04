@@ -117,10 +117,10 @@ JB :
   #
   sharing :
     provider : all
-    twitter	:
+    twitter :
       size :
       via :
-      count : 
+      count :
     facebook :
       appid : 205602882797935
       layout : button_count
@@ -132,8 +132,7 @@ JB :
       width :
       annotation : bubble
     linkedin :
-      counter : right      
-    	
+      counter : right
     
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:

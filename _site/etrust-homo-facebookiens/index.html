@@ -35,6 +35,7 @@
 </head>
 
 <body>
+<div class="global">
 <!--FEATURED-->
 <div id="featured"><div id="closef" class="transition"><i class="icon-remove space"></i> close</div>
 <!--data--><div id="vide0" data-id="Xqw4wo8vdY8"></div>
@@ -106,17 +107,24 @@
 
 
 
+  
+  		<div id="fb-root"></div>
 
-  <div id="fb-root"></div>
 <ul class="post-share ulno mob">
+
 <!-- Hacker News -->
 <li class="hn"><span id="hnews"></span>
+
 <!-- Twitter -->
 <li class="tw"><a href="https://twitter.com/share" class="twitter-share-button" data-text="eTrust, How Homo-Facebookiens will kill Homo-Sapiens?" data-via="" data-related="xpressyoo" data-count="" data-size="">Tweet</a>
+
 <!-- Google+ -->
 <li class="gp"><div class="g-plusone" data-size="medium" data-annotation="bubble" data-width=""></div>
+
 <!-- Facebook -->
 <li class="fb"><div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-font=""></div>
+
+<!-- Reddit -->
 <li><script type="text/javascript" src="http://www.reddit.com/buttonlite.js?i=4"></script>
 </ul>
 
@@ -134,13 +142,16 @@
             id && (js.id = id);
             fjs.parentNode.insertBefore(js, fjs);
         };
+    
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
 
     // Google+ button
     add('https://apis.google.com/js/plusone.js');
+    
     // Facebook SDK
     add('//connect.facebook.net/en_GB/all.js#xfbml=1&appId=205602882797935', 'facebook-jssdk');
-    // Twitter SDK
-    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+    
     //Hacker News Button 	
  	var hn_like = document.createElement('iframe');
       hn_like.frameborder="no";
@@ -162,7 +173,7 @@
 
 </script>
 
-
+  
 
 
 
@@ -326,6 +337,13 @@ This is the weblog of <a href="http://florianbersier.com/about/" title="About Fl
     
       <h4>2012</h4>
     
+    <li>Sep <a href="/implementation-social-sharing-jekyll">Implementation of Social Sharing into Jekyll</a></li>
+  
+    
+      
+      
+      
+    
     <li>Jan <a href="/elysee-2012-hadopi">Lettre Ouverte aux Candidats de l'Élection Présidentielle 2012</a></li>
   
     
@@ -363,25 +381,17 @@ This is the weblog of <a href="http://florianbersier.com/about/" title="About Fl
 </div>
 <!--#FOOTER-->
 </div><!--#WRAP-->
-
+</div><!--#GLOBAL-->
 
 <!--CONTACT-->
 <div id="contact-box" class="hidden">
 <a id="close" title="close window"><i class="icon-remove icon-large"></i></a>
 <div class="txt">
 <h2>Let's keep in touch</h2>
-<h3>Email me</h3>
-<p>For job enquiries, press information, research questions and stuff related to Gmelius or XpressYoo, please send a good ol' email to:</p>
-<div class="cinb">
-<ul class="cinbox">
-<li><span id="myemb"><i class="icon-envelope"></i> </span>
-<li><i class="icon-globe"></i> UTC time (<span id="time"></span>)
-<li><i class="icon-dashboard"></i> My inbox status is <i id="mstatusi" class=""></i>
-</ul>
-</div>
-<p class="legend shadow">NB: Current status of my inbox is <span id="mstatus"></span>, implying a minimum delay of <span id="mdelay"></span> hours before any reply.</p>
+<h3><i id="mstatusi" class="space"></i> Email me</h3>
+<p>For job enquiries, press information, research questions and stuff related to Gmelius or XpressYoo, please send a good ol' email to <span id="myemb"></span>. FYI, my local time is close to the UTC one (<span id="time"></span>) and the current status of my inbox is <span id="mstatus"></span>, implying a minimum delay of <span id="mdelay"></span> hours before any reply.</p>
 
-<h3>Follow me</h3>
+<h3 class="two"><i class="icon-retweet space"></i>Follow me</h3>
 <p>It would be nice to keep in touch, so don't hesitate to add me to your network. The social platforms where I'm the most active are the following ones:</p>
 <div class="socials">
 <ul>
