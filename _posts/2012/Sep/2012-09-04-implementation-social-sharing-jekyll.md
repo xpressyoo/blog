@@ -64,6 +64,26 @@ The second step is to modify the file named <code>sharing</code> into the <code>
 For example, if <code>provider : like</code> in <code>_config.yml</code> then the <code>sharing</code> file will include the <code>facebook</code> HTML file present in <code>_includes/JB/sharing-providers/</code>.
 
 <code>The sharing file</code>
+```liquid
+{% if site.JB.sharing.provider and page.sharing != false %}
+
+  {% case site.JB.sharing.provider %}
+	{% when "like" %}
+  		{% include JB/sharing-providers/facebook %}
+	{% when "tweet" %}
+  		{% include JB/sharing-providers/twitter %}
+	{% when "plusone" %}
+  		{% include JB/sharing-providers/googleplus %}
+	{% when "linkedin" %}
+  		{% include JB/sharing-providers/linkedin %}
+	{% when "hn" %}
+  		{% include JB/sharing-providers/hn %}
+	{% when "all" %}
+  		{% include JB/sharing-providers/global %}
+  {% endcase %}
+
+{% endif %}
+```
 
 As you note, this implies the creation of a new folder named <code>sharing-providers</code> in <code>_includes/JB/</code>. This folder contains the diverse HTML files necessary to the generation of the sharing buttons.
 
@@ -87,7 +107,7 @@ We're almost done! The last step is to add the sharing buttons to our Jekyll the
 
     <!-- Paste the 3 next lines where you want the sharing button(s) to appear -->
     <div class="post-sharing">
-      {{{% include JB/sharing %}}}
+     
     </div>
 
 [...]
