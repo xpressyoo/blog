@@ -16,39 +16,23 @@ Two common features of any standard blog are (i) a commenting system and (ii) so
 
 Let's start with the beginning, the Jekyll configuration file. We are going to declare the sharing providers we want our blog to support (e.g. Twitter, Facebook, Google+) and the options (if any) necessary for the creation of the respective buttons. Here is how the new sharing section of the configuration file looks like:
 
-<code>The _config.yml file</code>
-{% highlight html %}
-{% raw %}
-...
 
-# Settings for sharing 
-  # Sharing is for things like tweet, plusone, hn upvotes, like, linkedin
-  # Add a tweet button 		=> provider : tweet
-  # Add a like button 		=> provider : like (you also need a facebook appid)
-  # Add a plus one button 	=> provider : plusone
-  # Add a HN button 		=> provider : hn
-  # Add them all (i.e. hn + tweet + plusone + like) => provider : all
-  # Set 'provider' to the sharing provider you want to use.
-  # Set 'provider' to false to turn sharing off globally.
-  #
-  sharing :
-    provider : all
-    twitter :
-      size :
-      via :
-      count :
-    facebook :
-      appid : 123
-      layout : button_count
-      font :
-      faces : false
-      width : 90
-    googleplus :
-      size : medium
-      width :
-      annotation : bubble
-    linkedin :
-      counter : right      
-...
-{% endraw %}
-{% endhighlight %}
+
+As you note, this implies the creation of a new folder named <code>sharing-providers</code> in <code>_includes/JB/</code>. This folder contains the diverse HTML files necessary to the generation of the sharing buttons.
+
+For instance, this blog uses <code>provider : all</code> which calls a file named <code>global</code> looking as follows:
+
+
+
+Remark that the JavaScript is loaded asynchronously and that we retrieve the option values of the configuration file thanks to the Liquid markdown. The Hacker News button is powered by [hnlike.com](http://hnlike.com/) and uses the Jekyll snippet proposed by [dryman](http://www.idryman.org/blog/2012/04/05/jekyll-octopress-hacker-news-plugin/).
+
+More examples can be found on my [forked version](https://github.com/xpressyoo/jekyll-bootstrap/tree/master/_includes/JB/sharing-providers) of the Jekyll Bootstrap.
+
+### The Jekyll Theme
+
+We're almost done! The last step is to add the sharing buttons to our Jekyll theme. This is achieved by modifying the <code>post.html</code> file present in <code>_includes/themes/name_of_your_theme</code>.
+
+
+That's it, we're set!
+
+Feel free to leave your comments and suggestions below.
