@@ -4,7 +4,7 @@
  <title>Florian Bersier | Blog</title>
  <link href="http://blog.florianbersier.com/atom.xml" rel="self"/>
  <link href="http://blog.florianbersier.com"/>
- <updated>2012-09-04T13:45:24+01:00</updated>
+ <updated>2012-09-04T13:54:11+01:00</updated>
  <id>http://blog.florianbersier.com</id>
  <author>
    <name>Florian Bersier</name>
@@ -28,7 +28,8 @@
 &lt;h3 id='jekyll_configuration'&gt;Jekyll configuration&lt;/h3&gt;
 
 &lt;p&gt;Let&amp;#8217;s start with the beginning, the Jekyll configuration file. We are going to declare the sharing providers we want our blog to support (e.g. Twitter, Facebook, Google+) and the options (if any) necessary for the creation of the respective buttons. Here is how the new sharing section of the configuration file looks like:&lt;/p&gt;
-&lt;code&gt;The _config.yml file&lt;/code&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;[...]
+&lt;code&gt;The _config.yml file&lt;/code&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;...
+
 # Settings for sharing 
   # Sharing is for things like tweet, plusone, hn upvotes, like, linkedin
   # Add a tweet button 		=&amp;gt; provider : tweet
@@ -57,7 +58,7 @@
       annotation : bubble
     linkedin :
       counter : right      
-[...]
+...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;This should be pretty straightforward. We just need to declare our provider of choice and enter some options if we want to override the default ones. Note that all the options follow the original syntax of the provider. For example, &lt;a href='https://developers.google.com/+/plugins/+1button/'&gt;Google +1 button options&lt;/a&gt; for &amp;#8220;size&amp;#8221; is [ small, medium, tall ] and for &amp;#8220;annotation&amp;#8221; is [ inline, bubble, none ].&lt;/p&gt;
@@ -163,14 +164,14 @@
 &lt;h3 id='the_jekyll_theme'&gt;The Jekyll Theme&lt;/h3&gt;
 
 &lt;p&gt;We&amp;#8217;re almost done! The last step is to add the sharing buttons to our Jekyll theme. This is achieved by modifying the &lt;code&gt;post.html&lt;/code&gt; file present in &lt;code&gt;_includes/themes/name_of_your_theme&lt;/code&gt;.&lt;/p&gt;
-&lt;code&gt;post.html&lt;/code&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;[...]
+&lt;code&gt;post.html&lt;/code&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;...
 
 &lt;span class='c'&gt;&amp;lt;!-- Paste the 3 next lines where you want the sharing button(s) to appear --&amp;gt;&lt;/span&gt;
 &lt;span class='nt'&gt;&amp;lt;div&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;post-sharing&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
   {% include JB/sharing %}
 &lt;span class='nt'&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 
-[...]
+...
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;That&amp;#8217;s it, we&amp;#8217;re set!&lt;/p&gt;
