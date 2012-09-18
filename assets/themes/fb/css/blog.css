@@ -38,7 +38,6 @@
 	height:100px;
 	border-radius:50px;
 	margin:0 10px 10px 0;
-	border:1px solid #eee;
 	}
 	
 .wrapper-blog .about {text-align:left}
@@ -105,17 +104,17 @@ h2.index a{display:inline-block;margin-left:6%;color:#333}
 .post-tags li:after{content:" · "}
 .post-tags li:last-child:after{content:""}
 
-.post-read{text-align:right;float:right;margin:2% 0 0}
+.post-read{text-align:right;float:right;margin:2% 2% 0 0}
 
 .post-read a{border:1px dotted #d5d5d5;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;padding:8px;color:#888}
 
-.post-read a:hover{border:1px dashed #ccc;border-right:0;color:#555}.post-read a:hover i{color:orange}
+.post-read a:hover{border:1px dashed #ccc;color:#555}.post-read a:hover i{color:orange}
 
 a.blog-back{display:block;margin-top:30px;width:150px;padding:6px 0;text-align:center;font-size:0.95em;color:#888;border-radius:2px}
 
 .blog-back:hover{margin-left:-10px;border-radius:15px 0 0 15px;color:#333;}
 
-.post-share{margin:4px auto 2.2%;text-align:center;width:100%;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQALv3r37zwjjgzhCQkKMYAEYB8RmROaABAAS4A/OBaAi1gAAAABJRU5ErkJggg==) repeat;padding:9px 0 5px;border-top:1px dotted #d5d5d5;border-radius:0 0 3px 3px}
+.post-share{margin:4px auto 2.2%;text-align:center;width:100%;padding:9px 0 5px;border-top:1px dotted #d5d5d5;border-bottom:1px dotted #d5d5d5;border-radius:0 0 3px 3px}
 .post-share .hn iframe{vertical-align:top;margin:-8px 0 0;padding:0}
 .post-share li{vertical-align:top;}
 .post-share .fb{margin-right:4%}
