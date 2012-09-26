@@ -91,6 +91,8 @@ h2.index a{display:inline-block;margin-left:6%;color:#333}
 
 .wrapper-blog .tags{margin:2% 1% 2% 0;display:inline-block;float:right;color:#999}
 
+.wrapper-blog .left .row img{text-align:center;margin:5% auto;display:block}
+
 .post-tags{font-size:0.8em}
 
 .tags li span,.post-tags span{color:#999;font-size:0.9em}

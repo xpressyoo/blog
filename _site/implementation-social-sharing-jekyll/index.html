@@ -178,17 +178,17 @@
 
 <div class="row">
   <div class="span8">
-    <p>Two common features of any standard blog are (i) a commenting system and (ii) some social sharing buttons. While Jekyll provides natively a way to add a commenting provider (e.g. Disqus, LiveFyre, Facebook), it does not propose a simple way to add social sharing functionalities yet<sup>1</sup>. This post aims at presenting a way of filling the latter gap based on the Jekyll Bootstrap<sup>2</sup>. I hope this will be useful to a few Jekyll users out there.</p>
+    <p>Two common features of any blog are (i) a commenting system and (ii) some social sharing buttons. While the Jekyll Bootstrap provides natively a way to add a commenting provider (e.g. Disqus, LiveFyre, Facebook), it does not propose a simple way to add social sharing functionalities yet<sup>1</sup>. This post aims at presenting a way of filling the latter gap<sup>2</sup>.</p>
 
 <ol>
-<li>Read I did not manage to find any satisfying way of achieving it ;)</li>
+<li>Read I did not manage to find any simple way of achieving it ;)</li>
 
 <li>All the code presented below can be found in my <a href='https://github.com/xpressyoo/jekyll-bootstrap'>forked version</a> of the Jekyll Bootstrap on Github.</li>
 </ol>
 
 <h3 id='jekyll_configuration'>Jekyll configuration</h3>
 
-<p>Let&#8217;s start with the beginning, the Jekyll configuration file. We are going to declare the sharing providers we want our blog to support (e.g. Twitter, Facebook, Google+) and the options (if any) necessary for the creation of the respective buttons. Here is how the new sharing section of the configuration file looks like:</p>
+<p>Let&#8217;s start with the beginning, the Jekyll configuration file. I developed a new sharing section in the configuration file that allows to declare the sharing providers you want your blog to support (e.g. Twitter, Facebook, Google+) and the options (if any) necessary for the creation of the respective buttons. Here is how the <strong>new</strong> sharing section of the configuration file looks like:</p>
 <code>The _config.yml file</code><pre>
 <code>
 [...]
@@ -225,11 +225,11 @@
 [...]
 </code>
 </pre>
-<p>This should be pretty straightforward. We just need to declare our provider of choice and enter some options if we want to override the default ones. Note that all the options follow the original syntax of the provider. For example, <a href='https://developers.google.com/+/plugins/+1button/'>Google +1 button options</a> for &#8220;size&#8221; is [ small, medium, tall ] and for &#8220;annotation&#8221; is [ inline, bubble, none ].</p>
+<p>This should be pretty straightforward. You just need to declare your provider of choice and enter some options if you want to override the default ones. Note that all the options follow the original syntax of the provider. For example, <a href='https://developers.google.com/+/plugins/+1button/'>Google +1 button options</a> for &#8220;size&#8221; is [ small, medium, tall ] and for &#8220;annotation&#8221; is [ inline, bubble, none ].</p>
 
 <h3 id='jekyll_bootstrap_includes'>Jekyll Bootstrap Includes</h3>
 
-<p>The second step is to modify the file named <code>sharing</code> into the <code>_includes/JB/</code> folder of our Jekyll Bootstrap installation. The latter file just redirects the provider&#8217;s taxonomy used in the configuration file to the HTML file that generates the provider&#8217;s sharing button(s).</p>
+<p>The second step I took was to modify the file named <code>sharing</code> into the <code>_includes/JB/</code> folder of the Jekyll Bootstrap installation. The latter file now redirects the provider&#8217;s taxonomy used in the configuration file to the HTML file that generates the provider&#8217;s sharing button(s).</p>
 
 <p>For example, if <code>provider : like</code> in <code>_config.yml</code> then the <code>sharing</code> file will include the <code>facebook</code> HTML file present in <code>_includes/JB/sharing-providers/</code>.</p>
 <code>The sharing file</code><div class='highlight'><pre><code class='html'>{% if site.JB.sharing.provider and page.sharing != false %}
@@ -321,13 +321,13 @@
 <span class='nt'>&lt;/script&gt;</span>
 </code></pre>
 </div>
-<p>Remark that the JavaScript is loaded asynchronously and that we retrieve the option values of the configuration file thanks to the Liquid markdown. The Hacker News button is powered by <a href='http://hnlike.com/'>hnlike.com</a> and uses the Jekyll snippet proposed by <a href='http://www.idryman.org/blog/2012/04/05/jekyll-octopress-hacker-news-plugin/'>dryman</a>.</p>
+<p>Remark that the JavaScript is loaded asynchronously and that the option values of the configuration file are retrieved thanks to the Liquid markdown. The Hacker News button is powered by <a href='http://hnlike.com/'>hnlike.com</a> and I was inspired by the Jekyll snippet proposed by <a href='http://www.idryman.org/blog/2012/04/05/jekyll-octopress-hacker-news-plugin/'>dryman</a>.</p>
 
-<p>More examples can be found on my <a href='https://github.com/xpressyoo/jekyll-bootstrap/tree/master/_includes/JB/sharing-providers'>forked version</a> of the Jekyll Bootstrap.</p>
+<p>More examples of files can be found on my <a href='https://github.com/xpressyoo/jekyll-bootstrap/tree/master/_includes/JB/sharing-providers'>forked version</a> of the Jekyll Bootstrap.</p>
 
 <h3 id='the_jekyll_theme'>The Jekyll Theme</h3>
 
-<p>We&#8217;re almost done! The last step is to add the sharing buttons to our Jekyll theme. This is achieved by modifying the <code>post.html</code> file present in <code>_includes/themes/name_of_your_theme</code>.</p>
+<p>We&#8217;re almost done! The last step is to add the sharing buttons to your Jekyll theme. This is achieved by modifying the <code>post.html</code> file present in <code>_includes/themes/name_of_your_theme</code>.</p>
 <code>post.html</code><div class='highlight'><pre><code class='html'>[...]
 
     <span class='c'>&lt;!-- Paste the 3 next lines where you want the sharing button(s) to appear --&gt;</span>
@@ -338,7 +338,7 @@
 [...]
 </code></pre>
 </div>
-<p>That&#8217;s it, we&#8217;re set!</p>
+<p>That&#8217;s it, you&#8217;re set!</p>
 
 <p>Feel free to leave your comments and suggestions below.</p>
     <div class="sep top"></div>
@@ -349,7 +349,7 @@
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next disabled"><a>Next <i class="icon-chevron-right"></i></a>
+        <li class="next"><a href="/facebook-bug" title="The Facebook Fail">Next <i class="icon-chevron-right"></i></a></li>
       
       </ul>
     </div>
@@ -402,6 +402,13 @@ This is the weblog of <a href="http://florianbersier.com/about/" title="About Fl
   
     
       <h4>2012</h4>
+    
+    <li>Sep <a href="/facebook-bug">The Facebook Fail</a></li>
+  
+    
+      
+      
+      
     
     <li>Sep <a href="/implementation-social-sharing-jekyll">Implementation of Social Sharing into Jekyll</a></li>
   

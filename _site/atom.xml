@@ -4,7 +4,7 @@
  <title>Florian Bersier | Blog</title>
  <link href="http://blog.florianbersier.com/atom.xml" rel="self"/>
  <link href="http://blog.florianbersier.com"/>
- <updated>2012-09-04T18:07:56+01:00</updated>
+ <updated>2012-09-26T03:18:56+01:00</updated>
  <id>http://blog.florianbersier.com</id>
  <author>
    <name>Florian Bersier</name>
@@ -13,21 +13,99 @@
 
  
  <entry>
+   <title>The Facebook Fail</title>
+   <link href="http://blog.florianbersier.com/facebook-bug"/>
+   <updated>2012-09-25T00:00:00+01:00</updated>
+   <id>http://blog.florianbersier.com/facebook-bug</id>
+   <content type="html">&lt;p&gt;Facebook faced yesterday (September 24, 2012) one of the biggest critical situations of its history, a trust-based crisis due to old posts featuring potentially some intimate information made easily visible on Facebook profiles, or Timelines. The origin of this situation is not technical but comes mainly from the Facebook&amp;#8217;s &amp;#8220;usual&amp;#8221; lack of prospectiveness concerning the concept of privacy. Now, such an eye-opening experience was necessary both for the company and its users, and some lessons should be clearly learned here. But will they?&lt;/p&gt;
+
+&lt;h2 id='the_facts'&gt;The Facts&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href='http://www.metrofrance.com/high-tech/facebook-d-anciens-messages-prives-publies-sur-la-timeline/mlix!MDk3LU0hjxIQ/'&gt;French newspaper Metro&lt;/a&gt; was the first to report on Monday 24th September around 4pm (Paris time) a privacy problem regarding some posts published before 2010 displayed on the Facebook timeline of a few users. The latter posts were then thought to be old private messages that Facebook had involuntary made publicly available on the profiles of its users. The news was quickly relayed by other French and international newspapers and soon Facebook had to deal with an important critical situation about what was considered by users of the social platform as a bug endangering their privacy and intimacy. Now and very interestingly, all this was not due to a technical bug but to a profund deficiency of Facebook and its users.&lt;/p&gt;
+
+&lt;p&gt;At this stage of the development, it seems important to remind ourselves that the Timeline was introduced exactly one year ago at the F8 conference (September 22, 2011) and was since rolled out, first on a voluntary basis and then became the default Facebook profile. Note that one of the latest country where the Timeline was globally put in place is France. The principle of the Facebook Timeline is straightforward: to propose a kind of journal for every user of the social networking website, recomposing his/her life (eDNA) from birth to death. The Timeline is a pretty successfully completed information gathering tool which plays on our narcissism and rests on the Open Graph to collect a large amount of data about ourselves. The main issue I already emphasized in a &lt;a href='http://blog.florianbersier.com/etrust-homo-facebookiens/'&gt;previous blog post&lt;/a&gt; is that it tends to develop a model where the process of interacting online and sharing data is automatized in such a way that individuals are no longer accountable for their actions and are not aware of interacting anymore; this is what I call the Homo-Facebookiens.&lt;/p&gt;
+
+&lt;p&gt;Yesterday&amp;#8217;s events highlighted very clearly the limits of the current &lt;a href='http://blog.florianbersier.com/etrust-homo-facebookiens/'&gt;Homo-Facebookiens&lt;/a&gt; model: you cannot build trust on interactions unawareness. Put otherwise, the trustor (i.e. a Facebook user) always needs to know when and how she/he interacts with the trustee (i.e. Facebook).&lt;/p&gt;
+
+&lt;h2 id='this_is_not_a_bug'&gt;This is not a Bug&lt;/h2&gt;
+
+&lt;p&gt;No, this is not a technical bug! Actually, it is quite surprising to remark that the &amp;#8220;issue&amp;#8221; identified by Metro France was discovered one year after the official introduction of the Facebook Timeline. Indeed and as stated by Facebook on the 24th of September:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;A small number of users raised concerns after what they mistakenly believed to be private messages appeared on their Timeline. Our engineers investigated these reports and found that the messages were older wall posts that had always been visible on the users’ profile pages. [&amp;#8230;]&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The private nature of some posts observed yesterday by Facebook users comes simply from the first model of communication Facebook was using before 2010, the so-called &amp;#8220;wall-to-wall&amp;#8221; conversations.&lt;/p&gt;
+
+&lt;h3 id='the_walltowall_conversations'&gt;The Wall-to-Wall conversations&lt;/h3&gt;
+
+&lt;p&gt;OK, let&amp;#8217;s go back to the young years of Facebook! In those days, wall posts didn’t have comments, nor &amp;#8220;like&amp;#8221; buttons (see screenshot below).&lt;/p&gt;
+&lt;img alt='Facebook Wall-to-Wall Conversation' height='205' src='../img/facebook-wall.jpg' width='612' /&gt;
+&lt;p&gt;Conversations on the social platform were mainly powered by wall-to-wall conversations, e.g. I was writing something on your wall and you were replying on mine. Such communications were possibly more intimate than today because of the following two dimensions:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Our friends&amp;#8217; network was smaller and less heterogenous back then.&lt;/li&gt;
+
+&lt;li&gt;By its very nature, the fact to disseminate the flow of a conversation between the respective profiles of users X and Y was decreasing the probability for a user Z to get a whole picture of the conversation, if Z was only friend with X or Y.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id='the_database_architecture'&gt;The Database Architecture&lt;/h3&gt;
+
+&lt;p&gt;Moreover, messages and wall posts are stored in two different databases, making extremely difficult any voluntary or involuntary manipulation that would lead to a mix of those two types of data.&lt;/p&gt;
+
+&lt;p&gt;Indeed and as explained by a &lt;a href='http://news.ycombinator.org/item?id=4567009'&gt;Facebook employee&lt;/a&gt;, the messages backend is hbase-backed, designed for real-time communication more than history and the timeline backend is MySQL / C++ backed. Migrating data from hbase to MySQL would then have to take months of effort.&lt;/p&gt;
+
+&lt;h2 id='_this_is_a_fail'&gt;&amp;#8230; This is a Fail&lt;/h2&gt;
+
+&lt;p&gt;No, this is definitely not a technical bug, but a conceptual bug/fail&amp;#8230; and a serious one which takes its roots in the way &lt;a href='https://www.facebook.com/zuck'&gt;Mark Zuckerberg&lt;/a&gt; envisages social interactions, and especially &amp;#8220;privacy&amp;#8221;. Mark wants to build a platform able to become the repository of our lives online and offline, and to achieve this, he feels that our approach towards privacy must change. To make his message clearer, he even built a kind of provocative persona who is thought to not believe &lt;a href='http://www.wired.com/business/2010/04/report-facebook-ceo-mark-zuckerberg-doesnt-believe-in-privacy/'&gt;in privacy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, I agree with Zuck that our definition of what is &amp;#8220;privacy&amp;#8221; must change [and has already changed thanks to Facebook, among others] if we wish to take full advantage of the Internet. However, the current way of enforcing such changes is not sustainable in the mid/long-term given its lack of respect, prospectiveness and transparency&amp;#8230; and what happened yesterday is a perfect illustration of the potential future problems of a Homo-Facebookiens model à la Zuck.&lt;/p&gt;
+
+&lt;h3 id='transparency'&gt;Transparency&lt;/h3&gt;
+
+&lt;p&gt;The current vision at Facebook is that people will change their way of considering what is privacy by enforcing straightforward changes within the platform, e.g. the Timeline. This causation model is incomplete and lacks a crucial variable, i.e. transparency. Transparency means and implies that users are aware of the consequences of their actions within the platform, e.g. some Facebook users were not aware that old and possibly intimate posts were visible on their Facebook Timelines. Awareness of interacting is then necessary to trust, and trust will create a sustainable and natural basis for behavioral changes&lt;sup&gt;1&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;By omitting transparency, Facebook cannot guarantee trustworthy interactions within its own eco-system in the long-term, and so cannot develop a sound new paradigm for privacy. This leads me to the lack of prospectiveness of the Facebook method.&lt;/p&gt;
+
+&lt;h3 id='prospectiveness'&gt;Prospectiveness&lt;/h3&gt;
+
+&lt;p&gt;Prospectiveness or the fact to envisage the future effects of past and current decisions. Here, Facebook clearly did not take sufficiently into account the effects of its &amp;#8220;wall-to-wall&amp;#8221; conversations model on its current interaction model. This is not new&amp;#8230;&lt;/p&gt;
+
+&lt;h3 id='respect'&gt;Respect&lt;/h3&gt;
+
+&lt;p&gt;The Facebook business model is such that advertisers are the customers and Facebook users are the &amp;#8220;commodity&amp;#8221;. Given this economic configuration, it sometimes seems difficult for Facebook to remember that even if its users are not its prime customers, they are still crucial to its survival and should be handled carefully. Now, when facing this kind of crisis, it appears then good to invest a bit more time and energy concerning your PR. The official statement Facebook made about yesterday&amp;#8217;s events is as follows:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;A small number of users raised concerns after what they &lt;em&gt;mistakenly&lt;/em&gt; believed to be private messages appeared on their Timeline. Our engineers investigated these reports and found that the messages were older wall posts that had always been visible on the users&amp;#8217; profile pages. Facebook is &lt;em&gt;satisfied&lt;/em&gt; that there has been no breach of user privacy.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Phrased differently, our users are stupid and we cannot do anything about that! Even if this were true, there is certainly a better way to communicate about an issue that exists in the first place because of a conceptual fail, nothing else.&lt;/p&gt;
+
+&lt;h2 id='resources'&gt;Resources&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Trust is understood as a relation grounded on the trustor&amp;#8217;s beliefs about the trustee&amp;#8217;s capabilities (e.g. its reliability) and about the context in which the relation occurs. Trust implies then a trustor conscious of interacting with the trustee. This is a generalisation of the definition of trust provided by Gambetta; Gambetta, D. (1998), Can We Trust Trust?. In D. Gambetta (Ed.), Trust: Making and Breaking Cooperative Relations (213-238). Oxford: Basil Blackwell.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://thenextweb.com/facebook/2012/09/24/how-hide-old-wall-posts-public-private-facebook-timeline/'&gt;How to remove all your old Facebook wall posts, public or private, from your Timeline&lt;/a&gt; by TheNextWeb.com&lt;/li&gt;
+&lt;/ol&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>Implementation of Social Sharing into Jekyll</title>
    <link href="http://blog.florianbersier.com/implementation-social-sharing-jekyll"/>
    <updated>2012-09-04T00:00:00+01:00</updated>
    <id>http://blog.florianbersier.com/implementation-social-sharing-jekyll</id>
-   <content type="html">&lt;p&gt;Two common features of any standard blog are (i) a commenting system and (ii) some social sharing buttons. While Jekyll provides natively a way to add a commenting provider (e.g. Disqus, LiveFyre, Facebook), it does not propose a simple way to add social sharing functionalities yet&lt;sup&gt;1&lt;/sup&gt;. This post aims at presenting a way of filling the latter gap based on the Jekyll Bootstrap&lt;sup&gt;2&lt;/sup&gt;. I hope this will be useful to a few Jekyll users out there.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Two common features of any blog are (i) a commenting system and (ii) some social sharing buttons. While the Jekyll Bootstrap provides natively a way to add a commenting provider (e.g. Disqus, LiveFyre, Facebook), it does not propose a simple way to add social sharing functionalities yet&lt;sup&gt;1&lt;/sup&gt;. This post aims at presenting a way of filling the latter gap&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Read I did not manage to find any satisfying way of achieving it ;)&lt;/li&gt;
+&lt;li&gt;Read I did not manage to find any simple way of achieving it ;)&lt;/li&gt;
 
 &lt;li&gt;All the code presented below can be found in my &lt;a href='https://github.com/xpressyoo/jekyll-bootstrap'&gt;forked version&lt;/a&gt; of the Jekyll Bootstrap on Github.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id='jekyll_configuration'&gt;Jekyll configuration&lt;/h3&gt;
 
-&lt;p&gt;Let&amp;#8217;s start with the beginning, the Jekyll configuration file. We are going to declare the sharing providers we want our blog to support (e.g. Twitter, Facebook, Google+) and the options (if any) necessary for the creation of the respective buttons. Here is how the new sharing section of the configuration file looks like:&lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s start with the beginning, the Jekyll configuration file. I developed a new sharing section in the configuration file that allows to declare the sharing providers you want your blog to support (e.g. Twitter, Facebook, Google+) and the options (if any) necessary for the creation of the respective buttons. Here is how the &lt;strong&gt;new&lt;/strong&gt; sharing section of the configuration file looks like:&lt;/p&gt;
 &lt;code&gt;The _config.yml file&lt;/code&gt;&lt;pre&gt;
 &lt;code&gt;
 [...]
@@ -64,11 +142,11 @@
 [...]
 &lt;/code&gt;
 &lt;/pre&gt;
-&lt;p&gt;This should be pretty straightforward. We just need to declare our provider of choice and enter some options if we want to override the default ones. Note that all the options follow the original syntax of the provider. For example, &lt;a href='https://developers.google.com/+/plugins/+1button/'&gt;Google +1 button options&lt;/a&gt; for &amp;#8220;size&amp;#8221; is [ small, medium, tall ] and for &amp;#8220;annotation&amp;#8221; is [ inline, bubble, none ].&lt;/p&gt;
+&lt;p&gt;This should be pretty straightforward. You just need to declare your provider of choice and enter some options if you want to override the default ones. Note that all the options follow the original syntax of the provider. For example, &lt;a href='https://developers.google.com/+/plugins/+1button/'&gt;Google +1 button options&lt;/a&gt; for &amp;#8220;size&amp;#8221; is [ small, medium, tall ] and for &amp;#8220;annotation&amp;#8221; is [ inline, bubble, none ].&lt;/p&gt;
 
 &lt;h3 id='jekyll_bootstrap_includes'&gt;Jekyll Bootstrap Includes&lt;/h3&gt;
 
-&lt;p&gt;The second step is to modify the file named &lt;code&gt;sharing&lt;/code&gt; into the &lt;code&gt;_includes/JB/&lt;/code&gt; folder of our Jekyll Bootstrap installation. The latter file just redirects the provider&amp;#8217;s taxonomy used in the configuration file to the HTML file that generates the provider&amp;#8217;s sharing button(s).&lt;/p&gt;
+&lt;p&gt;The second step I took was to modify the file named &lt;code&gt;sharing&lt;/code&gt; into the &lt;code&gt;_includes/JB/&lt;/code&gt; folder of the Jekyll Bootstrap installation. The latter file now redirects the provider&amp;#8217;s taxonomy used in the configuration file to the HTML file that generates the provider&amp;#8217;s sharing button(s).&lt;/p&gt;
 
 &lt;p&gt;For example, if &lt;code&gt;provider : like&lt;/code&gt; in &lt;code&gt;_config.yml&lt;/code&gt; then the &lt;code&gt;sharing&lt;/code&gt; file will include the &lt;code&gt;facebook&lt;/code&gt; HTML file present in &lt;code&gt;_includes/JB/sharing-providers/&lt;/code&gt;.&lt;/p&gt;
 &lt;code&gt;The sharing file&lt;/code&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;{% if site.JB.sharing.provider and page.sharing != false %}
@@ -160,13 +238,13 @@
 &lt;span class='nt'&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;p&gt;Remark that the JavaScript is loaded asynchronously and that we retrieve the option values of the configuration file thanks to the Liquid markdown. The Hacker News button is powered by &lt;a href='http://hnlike.com/'&gt;hnlike.com&lt;/a&gt; and uses the Jekyll snippet proposed by &lt;a href='http://www.idryman.org/blog/2012/04/05/jekyll-octopress-hacker-news-plugin/'&gt;dryman&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Remark that the JavaScript is loaded asynchronously and that the option values of the configuration file are retrieved thanks to the Liquid markdown. The Hacker News button is powered by &lt;a href='http://hnlike.com/'&gt;hnlike.com&lt;/a&gt; and I was inspired by the Jekyll snippet proposed by &lt;a href='http://www.idryman.org/blog/2012/04/05/jekyll-octopress-hacker-news-plugin/'&gt;dryman&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;More examples can be found on my &lt;a href='https://github.com/xpressyoo/jekyll-bootstrap/tree/master/_includes/JB/sharing-providers'&gt;forked version&lt;/a&gt; of the Jekyll Bootstrap.&lt;/p&gt;
+&lt;p&gt;More examples of files can be found on my &lt;a href='https://github.com/xpressyoo/jekyll-bootstrap/tree/master/_includes/JB/sharing-providers'&gt;forked version&lt;/a&gt; of the Jekyll Bootstrap.&lt;/p&gt;
 
 &lt;h3 id='the_jekyll_theme'&gt;The Jekyll Theme&lt;/h3&gt;
 
-&lt;p&gt;We&amp;#8217;re almost done! The last step is to add the sharing buttons to our Jekyll theme. This is achieved by modifying the &lt;code&gt;post.html&lt;/code&gt; file present in &lt;code&gt;_includes/themes/name_of_your_theme&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We&amp;#8217;re almost done! The last step is to add the sharing buttons to your Jekyll theme. This is achieved by modifying the &lt;code&gt;post.html&lt;/code&gt; file present in &lt;code&gt;_includes/themes/name_of_your_theme&lt;/code&gt;.&lt;/p&gt;
 &lt;code&gt;post.html&lt;/code&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;[...]
 
     &lt;span class='c'&gt;&amp;lt;!-- Paste the 3 next lines where you want the sharing button(s) to appear --&amp;gt;&lt;/span&gt;
@@ -177,7 +255,7 @@
 [...]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;p&gt;That&amp;#8217;s it, we&amp;#8217;re set!&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;s it, you&amp;#8217;re set!&lt;/p&gt;
 
 &lt;p&gt;Feel free to leave your comments and suggestions below.&lt;/p&gt;</content>
  </entry>
