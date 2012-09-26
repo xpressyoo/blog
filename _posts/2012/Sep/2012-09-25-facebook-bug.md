@@ -20,7 +20,7 @@ Yesterday's events highlighted very clearly the limits of the current [Homo-Face
 
 ## This is not a Bug
 
-No, this is not a technical bug! Actually, it is quite surprising to remark that the "issue" identified by Metro France was discovered one year after the official introduction of the Facebook Timeline. Indeed and as stated by Facebook on the 24th of September:
+No, this is not a technical bug! Actually, the same "issue" had already been highlighted by a [Finnish news site](http://translate.google.com/translate?sl=auto&tl=en&js=n&prev=_t&hl=en&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fwww.mikropc.net%2Fkaikki_uutiset%2Farticle742440.ece) in December 2011. So the "discovery" of Metro France was nothing new. As stated by Facebook on the 24th of September:
 
 >"A small number of users raised concerns after what they mistakenly believed to be private messages appeared on their Timeline. Our engineers investigated these reports and found that the messages were older wall posts that had always been visible on the users’ profile pages. \[...\]"
 

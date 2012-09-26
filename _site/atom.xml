@@ -4,7 +4,7 @@
  <title>Florian Bersier | Blog</title>
  <link href="http://blog.florianbersier.com/atom.xml" rel="self"/>
  <link href="http://blog.florianbersier.com"/>
- <updated>2012-09-26T03:18:56+01:00</updated>
+ <updated>2012-09-26T12:56:42+01:00</updated>
  <id>http://blog.florianbersier.com</id>
  <author>
    <name>Florian Bersier</name>
@@ -29,7 +29,7 @@
 
 &lt;h2 id='this_is_not_a_bug'&gt;This is not a Bug&lt;/h2&gt;
 
-&lt;p&gt;No, this is not a technical bug! Actually, it is quite surprising to remark that the &amp;#8220;issue&amp;#8221; identified by Metro France was discovered one year after the official introduction of the Facebook Timeline. Indeed and as stated by Facebook on the 24th of September:&lt;/p&gt;
+&lt;p&gt;No, this is not a technical bug! Actually, the same &amp;#8220;issue&amp;#8221; had already been highlighted by a &lt;a href='http://translate.google.com/translate?sl=auto&amp;amp;tl=en&amp;amp;js=n&amp;amp;prev=_t&amp;amp;hl=en&amp;amp;ie=UTF-8&amp;amp;layout=2&amp;amp;eotf=1&amp;amp;u=http%3A%2F%2Fwww.mikropc.net%2Fkaikki_uutiset%2Farticle742440.ece'&gt;Finnish news site&lt;/a&gt; in December 2011. So the &amp;#8220;discovery&amp;#8221; of Metro France was nothing new. As stated by Facebook on the 24th of September:&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;&amp;#8220;A small number of users raised concerns after what they mistakenly believed to be private messages appeared on their Timeline. Our engineers investigated these reports and found that the messages were older wall posts that had always been visible on the users’ profile pages. [&amp;#8230;]&amp;#8221;&lt;/p&gt;
