@@ -68,7 +68,9 @@ The Facebook business model is such that advertisers are the customers and Faceb
 
 Phrased differently, our users are stupid and we cannot do anything about that! Even if this were true, there is certainly a better way to communicate about an issue that exists in the first place because of a conceptual fail, nothing else.
 
+## The Commission nationale de l’informatique et des libertés (CNIL)
 
+This bug is currently investigated by the CNIL, an independent French administrative authority whose mission is to ensure that data privacy law is applied to the collection, storage, and use of personal data ([Wikipedia](http://en.wikipedia.org/wiki/CNIL)). The final report should be published in the coming days and available on the [CNIL official website](http://www.cnil.fr/).
 
 ## Resources
 

@@ -4,7 +4,7 @@
  <title>Florian Bersier | Blog</title>
  <link href="http://blog.florianbersier.com/atom.xml" rel="self"/>
  <link href="http://blog.florianbersier.com"/>
- <updated>2012-09-26T13:22:37+01:00</updated>
+ <updated>2012-10-02T19:13:57+01:00</updated>
  <id>http://blog.florianbersier.com</id>
  <author>
    <name>Florian Bersier</name>
@@ -80,6 +80,10 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;Phrased differently, our users are stupid and we cannot do anything about that! Even if this were true, there is certainly a better way to communicate about an issue that exists in the first place because of a conceptual fail, nothing else.&lt;/p&gt;
+
+&lt;h2 id='the_commission_nationale_de_linformatique_et_des_liberts_cnil'&gt;The Commission nationale de l’informatique et des libertés (CNIL)&lt;/h2&gt;
+
+&lt;p&gt;This bug is currently investigated by the CNIL, an independent French administrative authority whose mission is to ensure that data privacy law is applied to the collection, storage, and use of personal data (&lt;a href='http://en.wikipedia.org/wiki/CNIL'&gt;Wikipedia&lt;/a&gt;). The final report should be published in the coming days and available on the &lt;a href='http://www.cnil.fr/'&gt;CNIL official website&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id='resources'&gt;Resources&lt;/h2&gt;
 
