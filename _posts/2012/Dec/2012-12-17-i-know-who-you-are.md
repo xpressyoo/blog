@@ -256,7 +256,7 @@ It's perhaps a good time to summarize and make a few remarks about what we've ju
 
 By sniffing your browser, I can easily gather information about your location (IP), language (browser language and IP), get a very precise idea of the software - and even hardware - you're using (browser interrogation), attach an ID to your machine and track you (browser interrogation), and get a good picture of your browsing habits (e.g., login detection).
 
-The effects of such raw data is not terribly severe... if taken separately. However, if wired together and computed by algorithms resting on global empirical data, it then becomes possible to infer more sensible information about yourself. For instance, knowing your browsing activity and machine's configuration, I can get an idea of your age and determine whether there is a higher probability for you to be a male or a female (see figures below).
+The fact to access this kind of raw data is not terribly severe... if taken separately. However, if wired together and computed by algorithms resting on global empirical data, it then becomes possible to infer more sensible information about yourself. For instance, knowing your browsing activity and machine's configuration, I can get an idea of your age and determine whether there is a higher probability for you to be a male or a female (see figures below).
 
 <img src="http://royal.pingdom.com/wp-content/uploads/2012/08/social-network-gender-distr-580px.jpg" width="580" height="580" alt="Facebook Wall-to-Wall Conversation"/>
 
