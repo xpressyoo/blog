@@ -250,7 +250,7 @@ Remark that the same methodology can be applied for CSS or JS files, iframes...
 
 ## OK, let's make a break
 
-Before to go further, let's check what type of information can be retrieved from your browser. Here is a simple demo I put in place to illustrate this post: [START DEMO »](http://play.florianbersier.com/who-are-you/)
+Before to go further, let's check what type of information can be retrieved from your browser. Here is a simple demo I've put in place to illustrate this post: [START DEMO »](http://play.florianbersier.com/who-are-you/)
 
 It's perhaps a good time to summarize and make a few remarks about what we've just seen.
 
