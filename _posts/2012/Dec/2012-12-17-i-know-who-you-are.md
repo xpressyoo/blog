@@ -7,7 +7,7 @@ tags : [hacking, tips]
 ---
 {% include JB/setup %}
 
-Nowadays, your daily browsing activity is stored, aggregrated, analysed and sold for advertising purposes by Internet companies, e.g. Gmail [scans your emails](https://mail.google.com/mail/help/intl/en_GB/more.html#scanning) to deliver "targeted" ads, Facebook [serves ads](http://www.nytimes.com/2012/02/05/opinion/sunday/facebook-is-using-you.html?pagewanted=all&_r=0) depending on your relationship status or interests, etc. No big news here! What is less known is how your browser can reveal a sensible amount of information about yourself. This post aims at highlighting and describing the diverse types of data websites can quite easily gather just by "sniffing" your browser, and how these information once all wired together can help recompose a significant part of who you are.
+Nowadays, your daily browsing activity is stored, aggregated, analysed and sold for advertising purposes by Internet companies, e.g. Gmail [scans your emails](https://mail.google.com/mail/help/intl/en_GB/more.html#scanning) to deliver "targeted" ads, Facebook [serves ads](http://www.nytimes.com/2012/02/05/opinion/sunday/facebook-is-using-you.html?pagewanted=all&_r=0) depending on your relationship status or interests, etc. No big news here! What is less known is how your browser can reveal a sensible amount of information about yourself. This post aims at highlighting and describing the diverse types of data websites can quite easily gather just by "sniffing" your browser, and how these information once all wired together can help recompose a significant part of who you are.
 
 ## I know where you live
 
