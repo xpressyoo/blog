@@ -37,7 +37,7 @@ var play = 0;
 
 $("#track").append(title);
 
-$("#vide0").append('<iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/' + id + '?showinfo=0&theme=dark&autoplay=' + play + '" frameborder="0" allowfullscreen></iframe><h4>Track of the Week : <a href="http://youtu.be/' + id + '" target="_blank" title="Watch it on Youtube">' + title + '</a></h4>');
+$("#vide0").append('<iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/' + id + '?showinfo=0&theme=dark&autoplay=' + play + '" frameborder="0" allowfullscreen></iframe><h4>Track of the Month : <a href="http://youtu.be/' + id + '" target="_blank" title="Watch it on Youtube">' + title + '</a></h4>');
 
 
 }});//#Youtube
