@@ -1,7 +1,7 @@
 ---
-title: I Know Who You're!
+title: I Know Who You are!
 tagline: What your Browser Can Reveal About Yourself...
-description: I know who you're; what your browser can reveal about yourself.
+description: I know who you are. What your browser can reveal about yourself.
 layout: post
 tags : [hacking, tips]
 ---
