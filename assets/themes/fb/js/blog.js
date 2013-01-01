@@ -32,7 +32,7 @@ dataType: 'jsonp',
 success: function(yt)
 {
 
-var title0 = yt.data.title.substr(0, 30);
+var title0 = yt.data.title.substr(0, 22);
 var title = yt.data.title;
 var play = 0;
 
