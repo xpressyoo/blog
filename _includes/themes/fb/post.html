@@ -1,8 +1,7 @@
 <div class="page-header"><h1>{{ page.title }}</h1><h2 class="post-tagline">{{ page.tagline }}</h2></div>
 
-<div class="sep top"></div>
 
-<div class="date"><i class="icon-time space"></i><span class="mob">Published on </span><span>{{ page.date | date: '%B' }} {{ page.date | date: '%e' }}, {{ page.date | date: '%Y' }}</span></div>
+<div class="date"><span class="mob">Published on </span><span>{{ page.date | date: '%B' }} {{ page.date | date: '%e' }}, {{ page.date | date: '%Y' }}</span></div>
 
 <div class="tags">{% unless page.tags == empty %}
     <i class="icon-tags space"></i><span class="mob">Tags : </span><ul class="tag_box ulno">

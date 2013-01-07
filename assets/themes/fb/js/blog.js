@@ -10,7 +10,7 @@ $('#featured').fadeIn('slow').addClass('go');
 
 $('#closef').live('click', function(){
 
-$('#featured').fadeOut('slow');
+$('#featured').fadeOut('slow').empty();
 
 });
 
@@ -32,7 +32,7 @@ dataType: 'jsonp',
 success: function(yt)
 {
 
-var title0 = yt.data.title.split(' ').splice(0,3).join(' ') + ' ...';
+var title0 = yt.data.title.split(' ').splice(0,3).join(' ');
 var title = yt.data.title;
 var play = 0;
 
