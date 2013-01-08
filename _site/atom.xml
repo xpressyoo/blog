@@ -4,7 +4,7 @@
  <title>Florian Bersier | Blog</title>
  <link href="http://blog.florianbersier.com/atom.xml" rel="self"/>
  <link href="http://blog.florianbersier.com"/>
- <updated>2013-01-07T02:47:26+01:00</updated>
+ <updated>2013-01-08T14:08:03+01:00</updated>
  <id>http://blog.florianbersier.com</id>
  <author>
    <name>Florian Bersier</name>
@@ -513,7 +513,7 @@
  </entry>
  
  <entry>
-   <title>Lettre Ouverte aux Candidats de l'Élection Présidentielle 2012</title>
+   <title>Lettre Ouverte aux Candidats de l'Élection Présidentielle 2012 (FR)</title>
    <link href="http://blog.florianbersier.com/elysee-2012-hadopi"/>
    <updated>2012-01-12T00:00:00+01:00</updated>
    <id>http://blog.florianbersier.com/elysee-2012-hadopi</id>
@@ -564,6 +564,146 @@
 &lt;p&gt;Parce que les lois Hadopi sont basées sur des modèles économiques et numériques dépassés, reposent sur des moyens de surveillance, de contrôle et de punition contournables et inapplicables, mettent en péril l&amp;#8217;ouverture et la neutralité de l&amp;#8217;Internet, limitent et découragent l&amp;#8217;innovation et la croissance économique et vont à l&amp;#8217;encontre des valeurs républicaines, il apparaît important et nécessaire de proposer une abrogation de ces dernières.&lt;/p&gt;
 
 &lt;p&gt;Finalement, dans un monde fait de gouvernments qui tendent à mettre de plus en plus en danger la Neutralité et l&amp;#8217;ouverture de l&amp;#8217;Internet, et en ce faisant, à limiter de plus en plus les libertés de leur citoyens (e.g. Projet &lt;a href='http://fr.wikipedia.org/wiki/Stop_Online_Piracy_Act'&gt;SOPA&lt;/a&gt; aux USA), le fait d&amp;#8217;abroger Hadopi semble être une décision courageuse et économiquement intéressante. En effet, cela enverrait premièrement un message clair à la communauté internationale, montrant que la France se pose en porte-drapeau de la défense de la Neutralité du Net, redorant ainsi l&amp;#8217;image du pays des Droits de l&amp;#8217;Homme dans le monde. Deuxièmement, le fait de garantir et défendre un Internet neutre et ouvert redonnerait un avantage comparatif à la France, attirerait les talents du monde tech et favoriserait l&amp;#8217;innovation et la croissance.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Primaires Socialistes en France (FR)</title>
+   <link href="http://blog.florianbersier.com/primaires-socialistes"/>
+   <updated>2011-10-04T00:00:00+02:00</updated>
+   <id>http://blog.florianbersier.com/primaires-socialistes</id>
+   <content type="html">&lt;p&gt;A quatre jours des primaires du parti socialiste, j&amp;#8217;ai décidé de prendre un peu de temps pour analyser la présence web des six candidats que sont Mme Aubry, Mme Royal, M. Baylet, M. Hollande, M. Montebourg et M. Valls.&lt;/p&gt;
+
+&lt;h2 id='ps__open_source_'&gt;PS = Open Source ?&lt;/h2&gt;
+
+&lt;p&gt;En parcourant leurs différents sites web, j&amp;#8217;ai été tout d&amp;#8217;abord agréablement surpris d&amp;#8217;observer que tous utilisaient des CMS (Content Management Systems) Open Source. Les sites de Royal, Valls et Baylet sont ainsi sous &lt;a href='http://wordpress.org'&gt;WordPress&lt;/a&gt; alors que ceux de Aubry, Hollande et Montebourg sont sous &lt;a href='http://drupal.org'&gt;Drupal&lt;/a&gt;, 3 versus 3 =&amp;gt; parfaite égalité.&lt;/p&gt;
+
+&lt;h2 id='montremoi_ton_site_et_je_te_dirai_qui_tu_es'&gt;Montre-moi ton site et je te dirai qui tu es&amp;#8230;&lt;/h2&gt;
+
+&lt;h3 id='jeanmichel_baylet__a_la_trane_'&gt;Jean-Michel Baylet : A la Traîne ?&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='http://www.jeanmichelbaylet.fr'&gt;Jean-Michel Baylet&lt;/a&gt; propose un site très décevant avec peu d&amp;#8217;identité expliqué par un thème WordPress extrêmement basique, un graphisme &amp;#8216;amateur&amp;#8217;, une intégration sociale pauvre (juste Facebook) et beaucoup trop de plugins de mauvaise qualité. Le site ne comprend pas de Favicon.&lt;/p&gt;
+
+&lt;h3 id='manuel_valls__agressif_'&gt;Manuel Valls : Agressif ?&lt;/h3&gt;
+
+&lt;p&gt;Le constat n&amp;#8217;est guère plus brillant pour &lt;a href='http://valls2012.org'&gt;Manuel Valls&lt;/a&gt;, malgré un thème WordPress plus travaillé et une intégration sociale plus complète. On se sentira agressé par la vidéo en auto-play à la &amp;#8216;Eurovision&amp;#8217;.&lt;/p&gt;
+
+&lt;h3 id='franois_hollande__stress'&gt;François Hollande : Stressé?&lt;/h3&gt;
+
+&lt;p&gt;Très déçu également par le site de &lt;a href='http://francoishollande.fr'&gt;François Hollande&lt;/a&gt; qui propose un design très peu aéré où le visiteur se sentira perdu (voire oppressé) parmi la quantité d&amp;#8217;informations. On notera également que le site n&amp;#8217;a été développé que pour des écrans de plus 1280px de largeur. A l&amp;#8217;ère des tablettes et des netbooks, on aurait pu faire mieux. Bon point cependant pour la sidebar qui est très réussie malgré le widget standard Twitter.&lt;/p&gt;
+
+&lt;h3 id='arnaud_montebourg__superficiel_'&gt;Arnaud Montebourg : Superficiel ?&lt;/h3&gt;
+
+&lt;p&gt;Le site d&amp;#8217;&lt;a href='http://www.arnaudmontebourg2012.fr'&gt;Arnaud Montebourg&lt;/a&gt; est sobre et organisé. Cependant, au fur et à mesure que le visiteur s&amp;#8217;approche du footer, s&amp;#8217;installe une impression de vide et/ou de manque de contenu - à l&amp;#8217;inverse de M. Hollande. Clairement, quelques widgets présents dans la sidebar auraient dû être placés dans la colonne centrale et le footer aurait dû être plus travaillé afin d&amp;#8217;éviter cette impression. On notera le logo de campagne très réussi. Arnaud Montebourg est également le seul candidat à proposer un site optimisé où les fichiers et le nombre de requêtes sont minimisés.&lt;/p&gt;
+
+&lt;h3 id='sgolne_royal__gentillette_'&gt;Ségolène Royal : Gentillette ?&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='http://www.segoleneroyal2012.fr'&gt;Ségolène Royal&lt;/a&gt; propose un site au design aéré et très arrondi, voire même gentillet. La typographie serif se marie mal avec le design général et une attention plus importante aurait dû être apportée aux textes qui sont souvent coupés. Finalement, le site est agréable à l&amp;#8217;oeil mais ne donne pas envie de consulter son contenu. A noter le soin apporté aux réseaux sociaux.&lt;/p&gt;
+
+&lt;h3 id='martine_aubry__equilibre_'&gt;Martine Aubry : Equilibrée ?&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='http://www.martineaubry.fr'&gt;Martine Aubry&lt;/a&gt; propose à mon avis le site le plus équilibré et réussi de tous les candidats. En effet, malgré un contenu important, le design reste aéré et donc les informations faciles à lire. On notera également l&amp;#8217;utilisation intelligente des réseaux sociaux ainsi qu&amp;#8217;un footer extrêmement sympathique à l&amp;#8217;oeil. Le logo de campagne aurait mérité plus de travail.&lt;/p&gt;
+
+&lt;h2 id='montremoi_ta_epopularit_et_je_te_dirai_si_tu_gagneras'&gt;Montre-moi ta e-Popularité et je te dirai si tu gagneras&lt;/h2&gt;
+
+&lt;h3 id='sur_facebook'&gt;Sur Facebook&lt;/h3&gt;
+
+&lt;p&gt;Nombre de supporters ou fans Facebook des candidats:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Ségolène Royal (création: 9 août 2009) &amp;#8230; &amp;#8230; . . 30&amp;#8217;010&lt;/li&gt;
+
+&lt;li&gt;Martine Aubry (création: 7 janvier 2010) &amp;#8230; &amp;#8230; . . 16&amp;#8217;194&lt;/li&gt;
+
+&lt;li&gt;Arnaud Montebourg (création: 11 juillet 2008) &amp;#8230; . 14&amp;#8217;028&lt;/li&gt;
+
+&lt;li&gt;François Hollande (création: 15 février 2011) &amp;#8230; . . 13&amp;#8217;670&lt;/li&gt;
+
+&lt;li&gt;Manuel Valls (création: inconnue) &amp;#8230; &amp;#8230; &amp;#8230; &amp;#8230; . 6&amp;#8217;692&lt;/li&gt;
+
+&lt;li&gt;Jean-Michel Baylet (création: 11 décembre 2008) &amp;#8230; 798&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Nota Bene: Le terme &amp;#8220;création&amp;#8221; indique la date de création supposée de la page Facebook en se basant sur la date d&amp;#8217;upload de la première photo de profil sur la page du candidat. Données recueillies dans la nuit du 4 au 5 octobre.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;M. Montebourg est le premier candidat à avoir créé la page Facebook utilisée actuellement pour sa campgane. Cette remarque pourrait expliquer son score assez élevé qui le met en 3ème place. Le même raisonnement ainsi que sa popularité post 2007 pourrait également expliquer le nombre relativement élevé de fans de Mme Royal sur Facebook. A noter l&amp;#8217;excellent score du dernier candidat venu sur Facebook, i.e. M. Hollande, qui talonne M. Montebourg et n&amp;#8217;est pas loin de Mme Aubry.&lt;/p&gt;
+
+&lt;h3 id='sur_twitter'&gt;Sur Twitter&lt;/h3&gt;
+
+&lt;p&gt;Nombre de followers Twitter des candidats:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;François Hollande (création: 9 janvier 2009) &amp;#8230; . 28&amp;#8217;235&lt;/li&gt;
+
+&lt;li&gt;Martine Aubry (création: 23 mars 2009) &amp;#8230; &amp;#8230; . 21&amp;#8217;143&lt;/li&gt;
+
+&lt;li&gt;Arnaud Montebourg (création: 27 août 2009)&amp;#8230; . 20&amp;#8217;917&lt;/li&gt;
+
+&lt;li&gt;Ségolène Royal (création: 26 août 2009) &amp;#8230; &amp;#8230; 20&amp;#8217;726&lt;/li&gt;
+
+&lt;li&gt;Manuel Valls (création: 31 août 2009) &amp;#8230; &amp;#8230; &amp;#8230; 6&amp;#8217;066&lt;/li&gt;
+
+&lt;li&gt;Jean-Michel Baylet (création: 21 juin 2011) &amp;#8230; . . 1&amp;#8217;310&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Nota Bene: Le terme &amp;#8220;création&amp;#8221; indique la date de création du compte Twitter en se basant sur les résultats du site &lt;a href='www.whendidyoujointwitter.com'&gt;WhenDidYouJoinTwitter.com&lt;/a&gt;. Données recueillies dans la nuit du 4 au 5 octobre.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A noter que 2009 semble avoir été l&amp;#8217;année découverte de Twitter par les éléphants du PS, le pionner étant François Hollande. M. Hollande apparaît clairement d&amp;#8217;ailleurs comme le favori en terme de followers sur Twitter.&lt;/p&gt;
+
+&lt;h3 id='sur_google'&gt;Sur Google+&lt;/h3&gt;
+
+&lt;p&gt;Concernant le dernier venu sur les réseaux sociaux. Les différents candidats sont dans les cercles de:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Ségolène Royal (création: 20 juillet 2011) &amp;#8230; . . 9&amp;#8217;287&lt;/li&gt;
+
+&lt;li&gt;François Hollande (création: 12 août 2011)&amp;#8230; . 8&amp;#8217;491&lt;/li&gt;
+
+&lt;li&gt;Martine Aubry (création: 17 août 2011) &amp;#8230; &amp;#8230; 8&amp;#8217;119&lt;/li&gt;
+
+&lt;li&gt;Arnaud Montebourg &amp;#8230; &amp;#8230; &amp;#8230; &amp;#8230; &amp;#8230; &amp;#8230; . . N/A&lt;/li&gt;
+
+&lt;li&gt;Manuel Valls &amp;#8230; &amp;#8230; .&amp;#8230; &amp;#8230; .&amp;#8230;&amp;#8230; &amp;#8230; &amp;#8230; . N/A&lt;/li&gt;
+
+&lt;li&gt;Jean-Michel Baylet &amp;#8230; &amp;#8230; &amp;#8230; &amp;#8230; &amp;#8230; &amp;#8230; &amp;#8230; N/A&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Nota Bene: Le terme &amp;#8220;création&amp;#8221; indique la date de publication du premier post sur Google+. Données recueillies dans la nuit du 4 au 5 octobre.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A noter que seulement la moitié des candidats a trouvé bon d&amp;#8217;ouvrir un compte sur Google+. Mme Royal a créé son compte un mois avant ses &amp;#8220;rivaux&amp;#8221; du moment et profite ainsi d&amp;#8217;une légère avance, certainement pas significative.&lt;/p&gt;
+
+&lt;h3 id='google_search'&gt;Google Search&lt;/h3&gt;
+
+&lt;p&gt;Un indice de popularité intéressant est également le nombre de requêtes sur les moteurs de recherche pour les noms des différents candidats.&lt;/p&gt;
+
+&lt;p&gt;En utilisant les résultats de &lt;a href='http://www.google.com/insights/search'&gt;Google Insight For Search&lt;/a&gt; pour Google France sur les 30 derniers jours, i.e. le mois de septembre, on obtient le classement suivant :&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;François Hollande&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;..44&lt;/li&gt;
+
+&lt;li&gt;Martine Aubry&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;33&lt;/li&gt;
+
+&lt;li&gt;Ségolène Royal&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;..25&lt;/li&gt;
+
+&lt;li&gt;Arnaud Montebourg&amp;#8230;&amp;#8230;&amp;#8230;..19&lt;/li&gt;
+
+&lt;li&gt;Manuel Valls&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;.17&lt;/li&gt;
+
+&lt;li&gt;Jean-Michel Baylet&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;..3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;François Hollande apparaît comme le candidat le plus recherché sur Google France lors du dernier mois, viennent ensuite Martine Aubry et Ségolène Royal. Il est intéressant de remarquer que l&amp;#8217;écart entre les candidats Aubry et Hollande semble s’agrandir ces derniers jours (voir graphique ci-dessous), et cela en faveur de François Hollande.&lt;/p&gt;
+&lt;img alt='Primaires PS 2011, Google Insight Graph' height='428' src='http://api.ning.com/files/lpNlXgY2BuRVGUmCUeHoQXhfJJ-LCfVgHEfwAfIs3qbyR9cScTShpGOfsYJV2D0MvH1R-GDBuMO6bjdiGFYRdDvGIJ0SDCeV/chartprimaires.png?width=750' width='750' /&gt;
+&lt;h4 id='par_rgions_martine_aubry_versus_franois_hollande'&gt;Par Régions, Martine Aubry versus François Hollande&lt;/h4&gt;
+
+&lt;p&gt;Lorsque l&amp;#8217;on ne considère que les deux favoris des primaires et qu&amp;#8217;on découpe les résultats par région, on observe que M. Hollande devance Mme Aubry partout sauf en Auvergne et Midi-Pyrénées. L&amp;#8217;écart est particulièrement important en Île de France et Poitou-Charentes.&lt;/p&gt;
+&lt;img alt='Primaires PS 2011, par Régions' height='308' src='http://api.ning.com/files/lpNlXgY2BuR2pE6Ln5S2ty*AnKFwcos5v8bUmBT64aVG7d7oHhjRY9wmrOTLN-riGZObfBmOGUdDMfvmByBq9CxT6mDCVJ5Q/regions.png' width='600' /&gt;
+&lt;p&gt;&lt;em&gt;Nota Bene: Données recueillies pour toutes les configurations possibles des noms complets des différents candidats, ex. &amp;#8220;francois hollande&amp;#8221;, &amp;#8220;françois hollande&amp;#8221;, &amp;#8220;hollande françois&amp;#8221;, etc. Les nombres ci-dessus indiquent la quantité de recherches ayant été effectuées pour un nom de candidat donné, par rapport au nombre total de recherches effectuées sur Google au cours de la même période. Ils ne représentent pas le volume de recherche en valeur absolue, car les données sont normalisées et présentées sur une échelle allant de 0 à 100.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id='conclusions'&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;Après analyse de leurs présences et stratégies web, Montebourg, Royal, Aubry et Hollande apparaissent clairement comme les candidats aux primaires les plus actifs et impliqués sur la toile française.&lt;/p&gt;
+
+&lt;p&gt;Maintenant, si on observe leur popularité sur les différents grands réseaux sociaux ainsi que les statistiques de recherche, il semble que le web français tende à désigner un vainqueur, François Hollande, suivi de Martine Aubry et Ségolène Royal. A confirmer le 9 octobre prochain&amp;#8230;&lt;/p&gt;</content>
  </entry>
  
  <entry>
