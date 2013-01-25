@@ -1,10 +1,23 @@
 <div id="fb-root"></div>
 
 <ul class="post-share ulno mob">
-<li class="sta"><i class=" icon-share-alt"></i> Share this article</li>
 
 <!-- Hacker News -->
-<li class="hn o"><span id="hnews"></span>
+<li><i class="icon-hn">Y</i>
+
+<!-- -->
+<li><i class="icon-twitter"></i>
+
+<!-- Google+ -->
+<li><i class="icon-google-plus"></i>
+
+<!-- Facebook -->
+<li><i class="icon-facebook"></i>
+
+<ul class="post-share-active ulno mob transition">
+
+<!-- Hacker News -->
+<li class="hn o"><span id="hnews"></span> 
 
 <!-- Twitter -->
 <li class="tw o"><a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-via="{{ site.JB.sharing.twitter.via }}" data-related="{{ site.author.twitter }}" data-count="{{ site.JB.sharing.twitter.count }}" data-size="{{ site.JB.sharing.twitter.size }}">Tweet</a>
@@ -18,6 +31,11 @@
 <!-- Reddit
 <li class="o"><script type="text/javascript" src="http://www.reddit.com/buttonlite.js?i=4"></script> -->
 </ul>
+
+</ul>
+
+
+
 
 <script>
   

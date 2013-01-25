@@ -44,10 +44,8 @@
 
 <!--NAV-->
 <div id="nav" class="fixed">
-
 <a id="logo" class="" href="http://florianbersier.com" title="FB | Back home"></a>
-
-<ul>
+<ul role="navigation">
 <li><a class="" href="http://florianbersier.com/about/">Bio</a>
 <li><a class="" href="http://florianbersier.com/hacking/">Hacking</a>
 <li><a class="" href="http://florianbersier.com/research/">Research</a>
@@ -67,50 +65,62 @@
 </ul>
 </div>
 
-<div class="wrapper-blog">
+<!--Picture-->
+<div class="picture p1 transition coverblog" style="background:url('{{ ASSET_PATH }}/img/posts{{ page.url }}.jpg') no-repeat;"></div>
+
+<div class="wrapper blog">
+
+<!-- SNS -->
+<div class="bkgclear sns">
+<ul class="subscribe">
+<li class="stay">Stay in the Know...
+<li><a class="twi transition" href="https://twitter.com/xpressyoo" target="_blank" title="Subscribe on Twitter"><i class="icon-twitter"></i></a>
+<li><a class="fac transition" href="https://facebook.com/florian.bersier" target="_blank" title="Subscribe on Facebook"><i class="icon-facebook"></i></a>
+<li><a class="goo transition" href="https://plus.google.com/111297306144520956414" target="_blank" title="Subscribe on Google+"><i class="icon-google-plus"></i></a>
+<li class="stay">... And Say Hi !
+</ul>
+</div>
 
 <!--CONTENT-->
 <div class="content">
 <div class="left">
-
-
+<section>
 <!-- Excerpts -->
 {{ content }}
+</section>
 </div><!--#left-->
 
 <div class="right">
-<h3><i class="icon-info-sign bggray"></i> About</h3>
-<p class="about">
+<section>
+<div class="author serif">
 <img src="{{ ASSET_PATH }}/img/i.png" width="100" height="100" alt="" />
-This is the weblog of <a href="http://florianbersier.com/about/" title="About Florian">Florian Bersier</a>; a PhD student and behavioral economic engineer who researches the formation of reputation and trust in online economies at the university of Oxford, a hacker, a geek, a libertarian and an open source advocate. The idea of this space is to share and discuss excerpts from my code, work, research and play. 
-</p>
-<div class="sep"></div>
-<h3><i class="icon-bullhorn bggray"></i> Stay in the Know</h3>
-<p>New posts are announced on the following SNS.</p>
-<ul class="subscribe">
-<li><a class="twi transition" href="https://twitter.com/xpressyoo" target="_blank" title="Subscribe on Twitter"><i class="icon-twitter"></i><span>Twitter</span></a>
-<li><a class="fac transition" href="https://facebook.com/florian.bersier" target="_blank" title="Subscribe on Facebook"><i class="icon-facebook"></i><span>Facebook</span></a>
-<li><a class="goo transition" href="https://plus.google.com/111297306144520956414" target="_blank" title="Subscribe on Google+"><i class="icon-google-plus"></i><span>Google+</span></a>
-</ul>
-<div class="sep"></div>
-<h3><i class="icon-calendar bggray"></i> Latest Entries</h3>
+<p>This is the weblog of Florian Bersier; a PhD candidate at the Oxford Internet Institute, Oxford University, an open-source advocate and an aspiring hacker. <a class="rtl" href="http://florianbersier.com/about/" title="About Florian">&middot;&middot;&middot;&nbsp; learn more &nbsp;&middot;&middot;&middot;</a></p>
+</div>
+
 <ul class="feeds">
   {% for post in site.posts %}
     {% unless post.next %}
-      <h4>{{ post.date | date: '%Y' }}</h4>
+
     {% else %}
       {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
       {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
-        <h4>{{ post.date | date: '%Y' }}</h4>
+
       {% endif %}
     {% endunless %}
-    <li>{{ post.date | date:"%b" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li class="p0">
+    <a href="{{ post.url }}">
+    <img alt="{{ post.title }}" width="100" height="100" src="{{ ASSET_PATH }}/img/posts/thumbs/{{ post.url }}.jpg" />
+    <p><span class="ti">{{ post.title }}</span>
+    <span class="ta">{{ post.tagline }}</span>
+    <span class="da">{{ post.date | date: "%d %B %Y" }}</span></p>
+    </a></li>
   {% endfor %}
 </ul>
 
-<a id="xcf" class="blog-back gradient transition" href="http://blog.florianbersier.com"><i class="icon-circle-arrow-left space"></i> Back to the index</a>
+<a class="serif back rtl" href="http://blog.florianbersier.com">&middot;&middot;&middot;&nbsp; back to the index &nbsp;&middot;&middot;&middot;</a>
 <br /><br />
+</section>
 </div><!--#right-->
 
 </div>
@@ -119,7 +129,7 @@ This is the weblog of <a href="http://florianbersier.com/about/" title="About Fl
 <!--FOOTER-->
 <div class="clear" id="footer">
 <ul>
-<li>&copy; <span id="yr"></span> Florian Bersier
+<li>&copy;<span id="yr"></span> Florian Bersier
 <li class="mob"><a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">Legal stuff</a>
 <li><span class="myem"></span>
 <li class="mob"><a href="http://blog.florianbersier.com/sitemap.xml" target="_blank">Sitemap</a>
@@ -128,7 +138,7 @@ This is the weblog of <a href="http://florianbersier.com/about/" title="About Fl
 <li class="no"><a href="https://facebook.com/florian.bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook"></i></a>
 <li class="no"><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus"></i></a>
 <li class="no"><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin"></i></a>
-<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github"></i></a>
+<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github-alt"></i></a>
 </ul>
 </div>
 <!--#FOOTER-->
@@ -158,7 +168,7 @@ This is the weblog of <a href="http://florianbersier.com/about/" title="About Fl
 </div><!--#contactbox-->
 
 <!--JS-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="http://florianbersier.com/js/global.js"></script>
 <script src="{{ ASSET_PATH }}/js/blog.js"></script>
 </body>

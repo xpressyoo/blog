@@ -1,5 +1,5 @@
 <div class="page-header"><h1>{{ page.title }}</h1><h2 class="post-tagline">{{ page.tagline }}</h2></div>
-
+{% include JB/sharing %}
 
 <div class="date"><span class="mob">Published on </span><span>{{ page.date | date: '%B' }} {{ page.date | date: '%e' }}, {{ page.date | date: '%Y' }}</span></div>
 
@@ -13,11 +13,10 @@
 
 <div class="clear"></div>
 
-{% include JB/sharing %}
-
 <div class="row">
   <div class="span8">
     {{ content }}
+    <!--
     <div class="sep top"></div>
     <div class="pagination">
       <ul>
@@ -35,6 +34,8 @@
       </ul>
     </div>
    <div class="sep bottom"></div>
+   -->
+   <p class="comm">Like it? Please share. Also feel free to leave your comments below.</p>
     {% include JB/comments %}
   </div>
 

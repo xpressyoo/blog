@@ -180,5 +180,3 @@ We're almost done! The last step is to add the sharing buttons to your Jekyll th
 {% endhighlight %}
 
 That's it, you're set!
-
-Feel free to leave your comments and suggestions below.

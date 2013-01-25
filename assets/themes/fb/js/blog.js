@@ -2,18 +2,17 @@ $(function(){
 
 if ( $('#blog-index').length ){ $('#xcf').css('display','none'); }
 
-$('#openf').live('click', function(){
+$('#openf').on('click', function(){
 
 $('#featured').fadeIn('slow').addClass('go');
 
 });
 
-$('#closef').live('click', function(){
+$('#closef').on('click', function(){
 
 $('#featured').fadeOut('slow').empty();
 
 });
-
 
 //////////Youtube
 

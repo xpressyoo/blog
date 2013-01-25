@@ -263,5 +263,3 @@ The fact to access this kind of raw data is not terribly severe... if taken sepa
 Similarly, given your location, machine's configuration and browsing habits, I can get insights about your income level or education. For instance, according to a [study realized by Orbitz in 2012](http://online.wsj.com/article/SB10001424052702304458604577488822667325882.html), Mac users spend as much as 30% more a night on hotels than PC users. Not bad, eh?!
 
 Conclusion: No need to be Google or Facebook to have a good idea of who you are. Surely, the granularity of information gathered from your browser is not comparable to the one proposed by big current Internet players. However, you should be aware that smart or even malicious websites have the means to access more sensible data about yourself than you would ever imagine. To be short, web browsers do NOT protect your privacy.
-
-Feel free to leave your comments and questions below.

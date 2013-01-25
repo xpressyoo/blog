@@ -1,5 +1,5 @@
 ---
-title: eTrust, How Homo-Facebookiens will kill Homo-Sapiens?
+title: How Homo-Facebookiens will kill Homo-Sapiens?
 tagline: Or How Facebook Envisions the Future of Our Digital Lives And Why It's Not a Good Idea
 description: How Facebook envisions the future of our digital lives and why it's not a good idea.
 layout: post
