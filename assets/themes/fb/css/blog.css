@@ -376,7 +376,7 @@ pre code{padding:0;color:inherit;background-color:transparent;border:0;}
 
 @media only screen and (max-width: 1220px) {
 #openf{position:absolute;z-index:99;top:50px;left:0;text-align:center;margin:0 auto;width:100%;}
-section {max-width:inherit;float:none}
+section {max-width:inherit !important;float:none !important}
 #openf ul{background-color:#1f1f1f;background-color:rgba(0,0,0, 0.8);border-radius:0 0 15px 15px;padding:5px 10px 7px}
 .opa{color:#777;}
 }
