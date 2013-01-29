@@ -381,8 +381,7 @@ pre code{padding:0;color:inherit;background-color:transparent;border:0;}
 }
 
 @media only screen and (max-width:900px) {
-.content .right section {max-width:100% !important}
-.feeds li{max-width:42%;min-width:320px;margin:0 2% 18px}
+
 }
 
 @media only screen and (max-width: 48.5em) {
