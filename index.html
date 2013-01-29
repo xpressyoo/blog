@@ -8,11 +8,12 @@ description: A place where I share and discuss excerpts from my code, work, rese
 <div>
 <h2 class="post-title index"><a href="{{ post.url }}" rel="bookmark" title="Permanent link to {{ post.title }}">{{ post.title }}</a></h2>
 <h3>{{ post.tagline }}</h3>
-<p>{{ post.content | strip_html | truncatewords: 200 }}</p>
+<p>{{ post.content | strip_html | truncatewords: 150 }}
+<a class="bmore" href="{{ post.url }}" title="Read {{ post.title }}">Read on <i class="icon-angle-right"></i></a>
+</p>
 <ul class="post-details ulno">
 <li class="post-date"><i class="icon-time"></i> {{ post.date | date: '%B' }} {{ post.date | date: '%e' }}, {{ post.date | date: '%Y' }}
 <li class="post-tags"><i class="icon-tags"></i> <ul>{% unless page.tags == empty %}  {% assign tags_list = post.tags %}    {% include JB/tags_list %}  {% endunless %}  </ul>
-<li class="post-read"><a class="transition" href="{{ post.url }}" title="Read {{ post.title }}"><i class="icon-plus-sign space blue"></i>Read on </a>
 </ul>
 </div>
 {% endfor %}

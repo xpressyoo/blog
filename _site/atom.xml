@@ -4,7 +4,7 @@
  <title>Florian Bersier | Blog</title>
  <link href="http://blog.florianbersier.com/atom.xml" rel="self"/>
  <link href="http://blog.florianbersier.com"/>
- <updated>2013-01-26T19:28:04+01:00</updated>
+ <updated>2013-01-29T22:30:39+01:00</updated>
  <id>http://blog.florianbersier.com</id>
  <author>
    <name>Florian Bersier</name>
@@ -252,7 +252,7 @@
 &lt;p&gt;By sniffing your browser, I can easily gather information about your location (IP), language (browser language and IP), get a very precise idea of the software - and even hardware - you&amp;#8217;re using (browser interrogation), attach an ID to your machine and track you (browser interrogation), and get a good picture of your browsing habits (e.g., login detection).&lt;/p&gt;
 
 &lt;p&gt;The fact to access this kind of raw data is not terribly severe&amp;#8230; if taken separately. However, if wired together and computed by algorithms resting on global empirical data, it then becomes possible to infer more sensible information about yourself. For instance, knowing your browsing activity and machine&amp;#8217;s configuration, I can get an idea of your age and determine whether there is a higher probability for you to be a male or a female (see figures below).&lt;/p&gt;
-&lt;img alt='Facebook Wall-to-Wall Conversation' height='580' src='http://royal.pingdom.com/wp-content/uploads/2012/08/social-network-gender-distr-580px.jpg' width='580' /&gt;&lt;img alt='Facebook Wall-to-Wall Conversation' height='580' src='http://royal.pingdom.com/wp-content/uploads/2012/08/social-network-age-distribution-580px.jpg' width='580' /&gt;
+&lt;img alt='Facebook Wall-to-Wall Conversation' src='http://royal.pingdom.com/wp-content/uploads/2012/08/social-network-gender-distr-580px.jpg' /&gt;&lt;img alt='Facebook Wall-to-Wall Conversation' src='http://royal.pingdom.com/wp-content/uploads/2012/08/social-network-age-distribution-580px.jpg' /&gt;
 &lt;p&gt;Similarly, given your location, machine&amp;#8217;s configuration and browsing habits, I can get insights about your income level or education. For instance, according to a &lt;a href='http://online.wsj.com/article/SB10001424052702304458604577488822667325882.html'&gt;study realized by Orbitz in 2012&lt;/a&gt;, Mac users spend as much as 30% more a night on hotels than PC users. Not bad, eh?!&lt;/p&gt;
 
 &lt;p&gt;Conclusion: No need to be Google or Facebook to have a good idea of who you are. Surely, the granularity of information gathered from your browser is not comparable to the one proposed by big current Internet players. However, you should be aware that smart or even malicious websites have the means to access more sensible data about yourself than you would ever imagine. To be short, web browsers do NOT protect your privacy.&lt;/p&gt;</content>
@@ -286,7 +286,7 @@
 &lt;h3 id='the_walltowall_conversations'&gt;The Wall-to-Wall conversations&lt;/h3&gt;
 
 &lt;p&gt;OK, let&amp;#8217;s go back to the young years of Facebook! In those days, wall posts didn’t have comments, nor &amp;#8220;like&amp;#8221; buttons (see screenshot below).&lt;/p&gt;
-&lt;img alt='Facebook Wall-to-Wall Conversation' height='205' src='../img/facebook-wall.jpg' width='612' /&gt;
+&lt;img alt='Facebook Wall-to-Wall Conversation' src='../img/facebook-wall.jpg' /&gt;
 &lt;p&gt;Conversations on the social platform were mainly powered by wall-to-wall conversations, e.g. I was writing something on your wall and you were replying on mine. Such communications were possibly more intimate than today because of the following two dimensions:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -688,11 +688,11 @@
 &lt;/ol&gt;
 
 &lt;p&gt;François Hollande apparaît comme le candidat le plus recherché sur Google France lors du dernier mois, viennent ensuite Martine Aubry et Ségolène Royal. Il est intéressant de remarquer que l&amp;#8217;écart entre les candidats Aubry et Hollande semble s’agrandir ces derniers jours (voir graphique ci-dessous), et cela en faveur de François Hollande.&lt;/p&gt;
-&lt;img alt='Primaires PS 2011, Google Insight Graph' height='428' src='http://api.ning.com/files/lpNlXgY2BuRVGUmCUeHoQXhfJJ-LCfVgHEfwAfIs3qbyR9cScTShpGOfsYJV2D0MvH1R-GDBuMO6bjdiGFYRdDvGIJ0SDCeV/chartprimaires.png?width=750' width='750' /&gt;
+&lt;img alt='Primaires PS 2011, Google Insight Graph' src='http://api.ning.com/files/lpNlXgY2BuRVGUmCUeHoQXhfJJ-LCfVgHEfwAfIs3qbyR9cScTShpGOfsYJV2D0MvH1R-GDBuMO6bjdiGFYRdDvGIJ0SDCeV/chartprimaires.png?width=750' /&gt;
 &lt;h4 id='par_rgions_martine_aubry_versus_franois_hollande'&gt;Par Régions, Martine Aubry versus François Hollande&lt;/h4&gt;
 
 &lt;p&gt;Lorsque l&amp;#8217;on ne considère que les deux favoris des primaires et qu&amp;#8217;on découpe les résultats par région, on observe que M. Hollande devance Mme Aubry partout sauf en Auvergne et Midi-Pyrénées. L&amp;#8217;écart est particulièrement important en Île de France et Poitou-Charentes.&lt;/p&gt;
-&lt;img alt='Primaires PS 2011, par Régions' height='308' src='http://api.ning.com/files/lpNlXgY2BuR2pE6Ln5S2ty*AnKFwcos5v8bUmBT64aVG7d7oHhjRY9wmrOTLN-riGZObfBmOGUdDMfvmByBq9CxT6mDCVJ5Q/regions.png' width='600' /&gt;
+&lt;img alt='Primaires PS 2011, par Régions' src='http://api.ning.com/files/lpNlXgY2BuR2pE6Ln5S2ty*AnKFwcos5v8bUmBT64aVG7d7oHhjRY9wmrOTLN-riGZObfBmOGUdDMfvmByBq9CxT6mDCVJ5Q/regions.png' /&gt;
 &lt;p&gt;&lt;em&gt;Nota Bene: Données recueillies pour toutes les configurations possibles des noms complets des différents candidats, ex. &amp;#8220;francois hollande&amp;#8221;, &amp;#8220;françois hollande&amp;#8221;, &amp;#8220;hollande françois&amp;#8221;, etc. Les nombres ci-dessus indiquent la quantité de recherches ayant été effectuées pour un nom de candidat donné, par rapport au nombre total de recherches effectuées sur Google au cours de la même période. Ils ne représentent pas le volume de recherche en valeur absolue, car les données sont normalisées et présentées sur une échelle allant de 0 à 100.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id='conclusions'&gt;Conclusions&lt;/h2&gt;
