@@ -30,7 +30,7 @@ The private nature of some posts observed yesterday by Facebook users comes simp
 
 OK, let's go back to the young years of Facebook! In those days, wall posts didn’t have comments, nor "like" buttons (see screenshot below).
 
-<img src="../img/facebook-wall.jpg" width="612" height="205" alt="Facebook Wall-to-Wall Conversation"/>
+<img src="../img/facebook-wall.jpg" alt="Facebook Wall-to-Wall Conversation"/>
 
 Conversations on the social platform were mainly powered by wall-to-wall conversations, e.g. I was writing something on your wall and you were replying on mine. Such communications were possibly more intimate than today because of the following two dimensions:
 

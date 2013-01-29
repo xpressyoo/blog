@@ -256,9 +256,9 @@ By sniffing your browser, I can easily gather information about your location (I
 
 The fact to access this kind of raw data is not terribly severe... if taken separately. However, if wired together and computed by algorithms resting on global empirical data, it then becomes possible to infer more sensible information about yourself. For instance, knowing your browsing activity and machine's configuration, I can get an idea of your age and determine whether there is a higher probability for you to be a male or a female (see figures below).
 
-<img src="http://royal.pingdom.com/wp-content/uploads/2012/08/social-network-gender-distr-580px.jpg" width="580" height="580" alt="Facebook Wall-to-Wall Conversation"/>
+<img src="http://royal.pingdom.com/wp-content/uploads/2012/08/social-network-gender-distr-580px.jpg" alt="Facebook Wall-to-Wall Conversation"/>
 
-<img src="http://royal.pingdom.com/wp-content/uploads/2012/08/social-network-age-distribution-580px.jpg" width="580" height="580" alt="Facebook Wall-to-Wall Conversation"/>
+<img src="http://royal.pingdom.com/wp-content/uploads/2012/08/social-network-age-distribution-580px.jpg" alt="Facebook Wall-to-Wall Conversation"/>
 
 Similarly, given your location, machine's configuration and browsing habits, I can get insights about your income level or education. For instance, according to a [study realized by Orbitz in 2012](http://online.wsj.com/article/SB10001424052702304458604577488822667325882.html), Mac users spend as much as 30% more a night on hotels than PC users. Not bad, eh?!
 

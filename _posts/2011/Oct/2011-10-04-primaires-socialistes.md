@@ -106,13 +106,13 @@ En utilisant les résultats de [Google Insight For Search](http://www.google.com
  
 François Hollande apparaît comme le candidat le plus recherché sur Google France lors du dernier mois, viennent ensuite Martine Aubry et Ségolène Royal. Il est intéressant de remarquer que l'écart entre les candidats Aubry et Hollande semble s’agrandir ces derniers jours (voir graphique ci-dessous), et cela en faveur de François Hollande.
 
-<img src="http://api.ning.com/files/lpNlXgY2BuRVGUmCUeHoQXhfJJ-LCfVgHEfwAfIs3qbyR9cScTShpGOfsYJV2D0MvH1R-GDBuMO6bjdiGFYRdDvGIJ0SDCeV/chartprimaires.png?width=750" width="750" height="428" alt="Primaires PS 2011, Google Insight Graph"/>
+<img src="http://api.ning.com/files/lpNlXgY2BuRVGUmCUeHoQXhfJJ-LCfVgHEfwAfIs3qbyR9cScTShpGOfsYJV2D0MvH1R-GDBuMO6bjdiGFYRdDvGIJ0SDCeV/chartprimaires.png?width=750" alt="Primaires PS 2011, Google Insight Graph"/>
 
 #### Par Régions, Martine Aubry versus François Hollande
 
 Lorsque l'on ne considère que les deux favoris des primaires et qu'on découpe les résultats par région, on observe que M. Hollande devance Mme Aubry partout sauf en Auvergne et Midi-Pyrénées. L'écart est particulièrement important en Île de France et Poitou-Charentes.
 
-<img src="http://api.ning.com/files/lpNlXgY2BuR2pE6Ln5S2ty*AnKFwcos5v8bUmBT64aVG7d7oHhjRY9wmrOTLN-riGZObfBmOGUdDMfvmByBq9CxT6mDCVJ5Q/regions.png" width="600" height="308" alt="Primaires PS 2011, par Régions"/>
+<img src="http://api.ning.com/files/lpNlXgY2BuR2pE6Ln5S2ty*AnKFwcos5v8bUmBT64aVG7d7oHhjRY9wmrOTLN-riGZObfBmOGUdDMfvmByBq9CxT6mDCVJ5Q/regions.png" alt="Primaires PS 2011, par Régions"/>
 
 _Nota Bene: Données recueillies pour toutes les configurations possibles des noms complets des différents candidats, ex. "francois hollande", "françois hollande", "hollande françois", etc. Les nombres ci-dessus indiquent la quantité de recherches ayant été effectuées pour un nom de candidat donné, par rapport au nombre total de recherches effectuées sur Google au cours de la même période. Ils ne représentent pas le volume de recherche en valeur absolue, car les données sont normalisées et présentées sur une échelle allant de 0 à 100._
 

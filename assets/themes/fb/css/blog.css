@@ -375,7 +375,6 @@ pre code{padding:0;color:inherit;background-color:transparent;border:0;}
 /********************************************** Mobile Screens ***************************************/
 
 @media only screen and (max-width: 1220px) {
-html,body{overflow-x: hidden;overflow-y: scroll;}
 #openf{position:absolute;z-index:99;top:50px;left:0;text-align:center;margin:0 auto;width:100%;}
 .left section,.right section {max-width:inherit;float:none}
 #openf ul{background-color:#1f1f1f;background-color:rgba(0,0,0, 0.8);border-radius:0 0 15px 15px;padding:5px 10px 7px}
