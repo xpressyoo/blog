@@ -128,22 +128,23 @@ font-style:italic !important;
     border-radius:1px;
     max-width:100%;
     vertical-align:top;
-    height:100px;
-    margin-bottom:22px;
+    height:150px;
+    margin-bottom:26px;
     cursor:pointer;
     overflow:hidden
     }
 
 .feeds img{
 float:left;
-width:100px;
-height:100px;
+width:150px;
+height:150px;
 }
 
 .feeds p{
     display:block;
     font-size:0.95em;
-    margin:5px 10px 0 120px;
+    margin:5px 10px 0 160px;
+    text-align:left;
     line-height:19px
     }
 
