@@ -31,7 +31,14 @@ h3.entries {font: 1.4em Georgia,Times,serif;font-style:italic !important;
 
 .blog .right ul{list-style:none}
 
-
+blockquote {
+   color:#bbb;
+   font: 1.2em Georgia,Times,serif;
+   font-style:italic;
+   line-height:0.9em;
+   border-left:3px double #dbe5ed;
+   padding-left:3%
+   }
 
 .sns {
    position:absolute;

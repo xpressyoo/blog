@@ -31,7 +31,7 @@ dataType: 'jsonp',
 success: function(yt)
 {
 
-var title0 = yt.data.title.split(' ').splice(0,3).join(' ');
+var title0 = yt.data.title.split(' ').splice(0,3).join(' ').replace(/[`~!@#$%^&*()_|+\-=?;:,.<>\{\}\[\]\\\/]/gi, '');
 var title = yt.data.title;
 var play = 0;
 
