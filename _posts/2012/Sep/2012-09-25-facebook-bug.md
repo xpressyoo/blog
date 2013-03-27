@@ -22,7 +22,7 @@ Yesterday's events highlighted very clearly the limits of the current [Homo-Face
 
 No, this is not a technical bug! Actually, the same "issue" had already been highlighted by a [Finnish news site](http://translate.google.com/translate?sl=auto&tl=en&js=n&prev=_t&hl=en&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fwww.mikropc.net%2Fkaikki_uutiset%2Farticle742440.ece) in December 2011. So the "discovery" of Metro France was nothing new. As stated by Facebook on the 24th of September:
 
->"A small number of users raised concerns after what they mistakenly believed to be private messages appeared on their Timeline. Our engineers investigated these reports and found that the messages were older wall posts that had always been visible on the users’ profile pages. \[...\]"
+>A small number of users raised concerns after what they mistakenly believed to be private messages appeared on their Timeline. Our engineers investigated these reports and found that the messages were older wall posts that had always been visible on the users’ profile pages. \[...\]
 
 The private nature of some posts observed yesterday by Facebook users comes simply from the first model of communication Facebook was using before 2010, the so-called "wall-to-wall" conversations.
 
@@ -64,7 +64,7 @@ Prospectiveness or the fact to envisage the future effects of past and current d
 
 The Facebook business model is such that advertisers are the customers and Facebook users are the "commodity". Given this economic configuration, it sometimes seems difficult for Facebook to remember that even if its users are not its prime customers, they are still crucial to its survival and should be handled carefully. Now, when facing this kind of crisis, it appears then good to invest a bit more time and energy concerning your PR. The official statement Facebook made about yesterday's events is as follows:
 
->"A small number of users raised concerns after what they *mistakenly* believed to be private messages appeared on their Timeline. Our engineers investigated these reports and found that the messages were older wall posts that had always been visible on the users' profile pages. Facebook is *satisfied* that there has been no breach of user privacy."
+>A small number of users raised concerns after what they *mistakenly* believed to be private messages appeared on their Timeline. Our engineers investigated these reports and found that the messages were older wall posts that had always been visible on the users' profile pages. Facebook is *satisfied* that there has been no breach of user privacy.
 
 Phrased differently, our users are stupid and we cannot do anything about that! Even if this were true, there is certainly a better way to communicate about an issue that exists in the first place because of a conceptual fail, nothing else.
 

@@ -40,9 +40,19 @@ blockquote {
    font: 1.2em Georgia,Times,serif;
    font-style:italic;
    line-height:0.9em;
-   border-left:3px double #dbe5ed;
-   padding-left:3%
    }
+
+blockquote:before{
+float:left;
+content: "\f10d";
+color:#ccc;
+margin:0 15px 0 -10px;
+font-family: FontAwesome;
+font-weight: normal;
+font-style: normal;
+display: inline-block;
+text-decoration: inherit;
+}
 
 .sns {
    position:absolute;
@@ -91,7 +101,7 @@ blockquote {
 .rtl:hover:after{content:" }"}
 .author p{text-align:right;}
 .author a{display:block;text-align:center;margin:15px auto 0;}
-.back{display:block;font-size:1.3em;text-align:center;margin:45px 0 0 30px;clear:both}
+.back{display:block;font-size:1.3em;text-align:center;margin:20px 0 0 30px;clear:both}
 .author a:hover{border:none}
 .author img{
 	float:right;
@@ -135,13 +145,12 @@ font-style:italic !important;
 
 .feeds li{
     display:inline-block;
-    border:1px solid #ddd;
-    border-radius:1px;
-    max-width:100%;
+    width:100%;
     vertical-align:top;
     height:150px;
-    margin-bottom:26px;
+    margin-bottom:30px;
     cursor:pointer;
+    background-color:#eee;
     overflow:hidden
     }
 
@@ -154,16 +163,22 @@ height:150px;
 .feeds p{
     display:block;
     font-size:0.95em;
-    margin:5px 10px 0 160px;
+    margin:8px 10px 0 160px;
     text-align:left;
-    line-height:19px
+    line-height:19px;
+    height:122px;
+    overflow:hidden;
     }
-
-.feeds .da {display:block;font-weight:bold;text-align:right;font-size:0.85em;color:#ccc}
+.feeds .ti {font-size:1.1em;}
+.feeds .ta {display:block;color:#999;font-style:italic;margin-top:8px}
+.feeds .da {display:block;font-weight:bold;text-align:right;font-size:0.85em;color:#ccc;margin-right:8px}
 
 .feeds li a{color:#777}
-.feeds li:hover{background-color:#f7f7f7;}
+.feeds .seld,.feeds li:hover{background-color:#f7f7f7;}
 
+.feeds li.p0 a:hover:after{content:"Read it ›";display:block;position:absolute;z-index:1;width:70px;height:30px;line-height:30px;background-color:#2584D4;color:#fff;font-size:0.9em;margin:-24px 0 0 150px;text-align:center;border-radius:0 15px 0 0;}
+
+.feeds .seld a:after{content:"Reading ●";display:block;position:absolute;z-index:9;width:70px;height:30px;line-height:30px;background-color:#D54432;color:#fff;font-size:0.9em;margin:-24px 0 0 150px;text-align:center;border-radius:0 15px 0 0;}
 
 h2.index{margin-left:-7.2%}
 h2.index a{display:inline-block;margin-left:6%;color:#333}

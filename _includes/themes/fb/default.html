@@ -96,12 +96,12 @@
 
 <div class="right">
 <section>
-<div class="author serif">
+<div class="author serif mob">
 <img src="{{ ASSET_PATH }}/img/i.png" width="100" height="100" alt="" />
 <p>Welcome to the weblog of Florian Bersier; a PhD candidate at the Oxford Internet Institute, Oxford University, an open-source advocate and an aspiring hacker. <a class="rtl" href="http://florianbersier.com/about/" title="About Florian">&middot;&middot;&middot;&nbsp; learn more &nbsp;&middot;&middot;&middot;</a></p>
 </div>
 
-<ul class="feeds">
+<ul class="feeds" id="life">
   {% for post in site.posts %}
     {% unless post.next %}
 
@@ -117,7 +117,8 @@
     <img alt="{{ post.title }}" width="150" height="150" src="{{ ASSET_PATH }}/img/posts/thumbs/{{ post.url }}.jpg" />
     <p><span class="ti">{{ post.title }}</span>
     <span class="ta">{{ post.tagline }}</span>
-    <span class="da">{{ post.date | date: "%d %B %Y" }}</span></p>
+    </p>
+    <span class="da">{{ post.date | date: "%d %B %Y" }}</span>
     </a></li>
   {% endfor %}
 </ul>

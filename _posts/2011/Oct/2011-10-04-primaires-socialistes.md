@@ -1,5 +1,5 @@
 ---
-title: Primaires Socialistes en France (FR)
+title: Primaires Socialistes en France
 tagline: Analyse de la présence Web des différents candidats
 description: Primaires Socialistes en France, Analyse de la présence Web des différents candidats.
 layout: post
