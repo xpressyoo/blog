@@ -183,7 +183,7 @@ height:150px;
 h2.index{margin-left:-7.2%}
 h2.index a{display:inline-block;margin-left:6%;color:#333}
 
-#blog-index div:nth-child(odd) h2{border-left:9px solid #04bd52}
+#blog-index div:nth-child(odd) h2{border-left:9px solid #D54432}
 #blog-index div:nth-child(even) h2{border-left:9px solid #2584d4}
 
 .post-details{
@@ -399,14 +399,17 @@ pre code{padding:0;color:inherit;background-color:transparent;border:0;}
 
 /********************************************** Mobile Screens ***************************************/
 
-@media only screen and (max-width: 1220px) {
-#openf{position:absolute;z-index:99;top:50px;left:0;text-align:center;margin:0 auto;width:100%;}
+@media only screen and (max-width: 1200px) {
+#openf{position:absolute;z-index:99;top:45%;text-align:right;margin:0 auto;width:85%;}
 .left section,.right section {max-width:inherit;float:none}
-#openf ul{background-color:#1f1f1f;background-color:rgba(0,0,0, 0.8);border-radius:0 0 15px 15px;padding:5px 10px 7px}
-.opa{color:#777;}
+#openf ul{background-color:#1f1f1f;background-color:rgba(0,0,0, 0.7);border-radius:5px;padding:5px 10px 7px 0;border:1px solid #222}
+.opa{color:#eee;}
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (min-width:48.6em) and (max-width:1080px) {
+.feeds li img {width:100px;height:100px;}
+.feeds p{margin-left:110px}
+.feeds .p0 a:hover:after,.feeds .seld a:after{margin:-24px 0 0 0 !important;text-align:center;border-radius:0 15px 0 0;width:100px !important;}
 
 }
 
