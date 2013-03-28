@@ -12,6 +12,7 @@
     border:none;
 	}
 
+.blog .left {margin-top:30px}
 .serif{font-family:Georgia,Times,serif;font-style:italic !important;}
 
 .coverblog{background-size:cover !important;}
@@ -39,7 +40,25 @@ blockquote {
    color:#bbb;
    font: 1.2em Georgia,Times,serif;
    font-style:italic;
-   line-height:0.9em;
+   line-height:26px;
+   }
+
+blockquote em {
+   display:block;
+   margin-top:8px;
+   text-align:right;
+   font-size:0.8em;
+   color:#aaa
+   }
+
+blockquote a {
+   color:inherit;
+   border-bottom:1px solid #bbb;
+   }
+
+blockquote a:hover {
+   color:#2584D4;
+   text-decoration:none;
    }
 
 blockquote:before{
@@ -160,6 +179,10 @@ width:150px;
 height:150px;
 }
 
+.feeds li a{
+height:150px;
+overflow:hidden
+}
 .feeds p{
     display:block;
     font-size:0.95em;
@@ -176,27 +199,46 @@ height:150px;
 .feeds li a{color:#777}
 .feeds .seld,.feeds li:hover{background-color:#f7f7f7;}
 
-.feeds li.p0 a:hover:after{content:"Read it ›";display:block;position:absolute;z-index:1;width:70px;height:30px;line-height:30px;background-color:#2584D4;color:#fff;font-size:0.9em;margin:-24px 0 0 150px;text-align:center;border-radius:0 15px 0 0;}
+.feeds li.p0 a:hover::after{content:"Read it ›";display:block;width:70px;height:30px;line-height:30px;background-color:#00BBF5;color:#fff;font-size:0.9em;margin:-23px 0 0 150px;text-align:center;border-radius:0 15px 0 0;}
 
-.feeds .seld a:after{content:"Reading ●";display:block;position:absolute;z-index:9;width:70px;height:30px;line-height:30px;background-color:#D54432;color:#fff;font-size:0.9em;margin:-24px 0 0 150px;text-align:center;border-radius:0 15px 0 0;}
+.feeds .seld a:after{content:"Reading ●";display:block;width:70px;padding:0;height:30px;line-height:30px;background-color:#c5c5c5;color:#fff;font-size:0.9em;margin:-23px 0 0 150px;text-align:center;border-radius:0 15px 0 0;}
 
-h2.index{margin-left:-7.2%}
-h2.index a{display:inline-block;margin-left:6%;color:#333}
+h2.index a{display:inline-block;color:#333}
 
-#blog-index div:nth-child(odd) h2{border-left:9px solid #D54432}
-#blog-index div:nth-child(even) h2{border-left:9px solid #2584d4}
+.page-header {
+	margin-left:-2%
+	}
+
+.page-header h1:first-letter{
+	font-weight: bold;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:40px !important;
+	display:block;
+	color: #FFF;
+	line-height:30px;
+	padding:15px;
+	text-align:center;
+	min-width:30px;
+	float:left;
+	margin-right:7px;
+	border-radius:20px 2px 20px 2px;
+	}
+
+
+.page-header h1:first-letter{background-color:#00BBF5}
 
 .post-details{
 	margin:0 0 4% 1%;width:100%
 	}
 
 .post-date{
-	color:#999;
+	color:#fff;
 	font-size:0.8em;
 	padding:4px 7px;
-	border-radius:2px;
+	background-color:#00BBF5;
+	margin-right:10px
 	}
-	
+
 .blog .date{margin:2% 0 2% 0;float:left;color:#999;font-size:90%}
 
 .blog .tags{margin:2% 1% 2% 0;display:inline-block;float:right;color:#999}
@@ -275,8 +317,8 @@ li.hn iframe{margin:-9px 0 0 -8px}
 
 .comm{font-weight:bold;font-size:0.9em;color:#999;margin-top:5%}
 
-h2.post-tagline{text-transform:none;font-style:italic;color:#777;font-family: Georgia,Times,serif;font-size:1.3em;margin-top:0;}
-#blog-index h3{font-style:italic;color:#666;font-family: Georgia,Times,serif;}
+h2.post-tagline{text-transform:none;font-style:italic;color:#777;font-family: Georgia,Times,serif;font-size:1.3em;margin-top:-3px;}
+#blog-index h3{font-style:italic;color:#666;font-family: Georgia,Times,serif;margin:-5px auto 0}
 .row ul{margin-left:4%;}
 .row li{margin-bottom:1%}
 
@@ -410,10 +452,11 @@ pre code{padding:0;color:inherit;background-color:transparent;border:0;}
 .feeds li img {width:100px;height:100px;}
 .feeds p{margin-left:110px}
 .feeds .p0 a:hover:after,.feeds .seld a:after{margin:-24px 0 0 0 !important;text-align:center;border-radius:0 15px 0 0;width:100px !important;}
-
 }
 
 @media only screen and (max-width: 48.5em) {
 h1{text-align:center}
+.page-header h1:first-letter,#blog-index h2 a:first-letter{display:inline;background-color:transparent!important;width:auto;height:auto;padding:0;margin:0;color:inherit;font-size:1em !important;float:none;font-weight:normal}
+#blog-index h3{margin:0 auto}
 .post-details{margin:0 0 4% 0;padding:0}
 }

@@ -12,7 +12,7 @@ description: A place where I share and discuss excerpts from my code, work, rese
 <a class="bmore" href="{{ post.url }}" title="Read {{ post.title }}">Read on <i class="icon-angle-right"></i></a>
 </p>
 <ul class="post-details ulno">
-<li class="post-date"><i class="icon-time"></i> {{ post.date | date: '%B' }} {{ post.date | date: '%e' }}, {{ post.date | date: '%Y' }}
+<li class="post-date">{{ post.date | date: '%B' }} {{ post.date | date: '%e' }}, {{ post.date | date: '%Y' }}
 <li class="post-tags"><i class="icon-tags"></i> <ul>{% unless page.tags == empty %}  {% assign tags_list = post.tags %}    {% include JB/tags_list %}  {% endunless %}  </ul>
 </ul>
 </div>
