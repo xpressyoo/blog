@@ -12,6 +12,8 @@
     border:none;
 	}
 
+a {outline:none}
+
 .blog .left {margin-top:30px}
 .serif{font-family:Georgia,Times,serif;font-style:italic !important;}
 
