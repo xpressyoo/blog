@@ -4,6 +4,13 @@
 
 
    <url>
+      <loc>http://blog.florianbersier.com/when-robots-meet-internet</loc>
+      <lastmod>2013-04-08 00:00:00 +0200</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
       <loc>http://blog.florianbersier.com/i-know-who-you-are</loc>
       <lastmod>2012-12-17 00:00:00 +0100</lastmod>
       <changefreq>monthly</changefreq>

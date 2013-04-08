@@ -21,9 +21,9 @@ a {outline:none}
 
 .blog .left h1{font-size:1.5em;text-transform:uppercase;margin-bottom:1%;padding-bottom:0;}
 
-.blog .row h2{margin-top:5%;text-transform:none}
-
-.blog .row h3{margin-top:4%}
+.blog .row h2{margin-top:7%;text-transform:none;font-size:140%}
+.blog .row h3{margin-top:4%;font-size:120%}
+.blog .row h4{font-size:110%}
 
 .blog .right h3 i{text-shadow:1px 1px 1px #bbb}
 
@@ -39,7 +39,7 @@ h3.entries {font: 1.4em Georgia,Times,serif;font-style:italic !important;
    }
 
 blockquote {
-   color:#bbb;
+   color:#aaa;
    font: 1.2em Georgia,Times,serif;
    font-style:italic;
    line-height:26px;
@@ -50,7 +50,7 @@ blockquote em {
    margin-top:8px;
    text-align:right;
    font-size:0.8em;
-   color:#aaa
+   color:#bbb
    }
 
 blockquote a {
@@ -95,10 +95,14 @@ text-decoration: inherit;
     float:left
 }
 
-.left section img{
+.left section img {
     width: auto !important;
     width: 100%;
     max-width: 100%;
+}
+
+.left section iframe {
+width:100% !important;
 }
 
 .left .top{
@@ -112,7 +116,7 @@ text-decoration: inherit;
 .blog .title-page{display:none}
 
 .author {
-    color:#999;
+    color:#aaa;
     font: 1.3em Georgia,Times,serif;
     line-height:1.6em;
     margin:30px auto 60px;
@@ -215,6 +219,7 @@ h2.index a{display:inline-block;color:#333}
 	font-weight: bold;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size:40px !important;
+	background-color:#00BBF5;
 	display:block;
 	color: #FFF;
 	line-height:30px;
@@ -225,9 +230,6 @@ h2.index a{display:inline-block;color:#333}
 	margin-right:7px;
 	border-radius:20px 2px 20px 2px;
 	}
-
-
-.page-header h1:first-letter{background-color:#00BBF5}
 
 .post-details{
 	margin:0 0 4% 1%;width:100%

@@ -4,13 +4,184 @@
  <title>Florian Bersier | Blog</title>
  <link href="http://blog.florianbersier.com/atom.xml" rel="self"/>
  <link href="http://blog.florianbersier.com"/>
- <updated>2013-03-28T16:25:24+01:00</updated>
+ <updated>2013-04-08T15:23:01+02:00</updated>
  <id>http://blog.florianbersier.com</id>
  <author>
    <name>Florian Bersier</name>
    <email>blah@email.test</email>
  </author>
 
+ 
+ <entry>
+   <title>When Robots Meet the Internet</title>
+   <link href="http://blog.florianbersier.com/when-robots-meet-internet"/>
+   <updated>2013-04-08T00:00:00+02:00</updated>
+   <id>http://blog.florianbersier.com/when-robots-meet-internet</id>
+   <content type="html">&lt;p&gt;Robots generally get a bad role in the movies, travelling back in time to hunt us down or turning against their creators and endangering the Human race. Outside of fiction, robots are still perceived in the collective imagination as a &lt;a href='https://encrypted.google.com/search?hl=en&amp;amp;q=robots%20employment%20threat'&gt;threat to employment&lt;/a&gt;. Such a poor reputation is largely explained by the fear of the unknown and the difficulty to apprehend the whys and wherefores of robotics. Hopefully, things are about to change and the Internet is probably going to be the driving force behind the evolution of mindsets and the demystification of robots. The Internet and more precisely the Internet of Things indeed propose tools and protocols that can tackle efficiently key challenges for the development and democratization of robotics, i.e. object recognition, information processing and control.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The Internet is continuously being supplied with eyes and ears, but it still misses arms and legs to take action! [&amp;#8230;] Robots seem the logical candidates that take on the role of gateways of information flows. &lt;em&gt;&amp;#8211; CFP for &lt;a href='http://www.theinternetofthings.eu/prepublication-robotics-meets-internet-things-soon-be-cfp'&gt;Cloud Robotics and the Internet of Things&lt;/a&gt; (2012)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This post starts with a brief definition and some illustrations of what is the Internet of Things. Then I move to the identification and description of three crucial axes for the development of robotics, namely object recognition, information processing and control. The raison-d&amp;#8217;être of this section is to share some insights concerning the way the Internet and IoT could provide interesting and natural answers to the latter dimensions. I conclude by highlighting some points that might endanger the sustainability of an environment made of Internet-powered/aware robots, that is a lack of standardization and integration, (cloud) data privacy concerns, the risk of technological &amp;#8220;solutionism&amp;#8221; and vague human-robots interaction laws.&lt;/p&gt;
+
+&lt;h2 id='internet_of_things_iot'&gt;Internet of Things (IoT)&lt;/h2&gt;
+
+&lt;p&gt;No need to define what is the Internet, or more precisely, what is the first version of the Internet, that is a global system of interconnected computer networks which makes available thanks to a specific protocol (&lt;a href='http://en.wikipedia.org/wiki/Internet_protocol_suite'&gt;TCP/IP&lt;/a&gt;) a growing amount of data created by human beings. The Internet of Things is sometimes described as the next version of the Internet and is all about data created by things. As its name indicates, the Internet of Things (IoT hereafter) refers to physical and uniquely identifiable objects (or things) that are connected to the Internet and are so able to identify themselves to other devices and to communicate with them. In other words, IoT moves the boundaries of the information system from the online world to the physical world.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Like something out of a sci-fi movie, the Internet of Things promises to transform our daily lives. &lt;em&gt;&amp;#8211; Daniel Saks, AppDirect &lt;a href='http://www.wired.com/insights/2013/03/faster-please-breaking-down-barriers-to-the-internet-of-things/'&gt;in Wired&lt;/a&gt; (2013)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To achieve this, IoT mainly rests on Radio-frequency identification (&lt;a href='http://en.wikipedia.org/wiki/RFID'&gt;RFID&lt;/a&gt;), i.e. the wireless non-contact use of radio-frequency electromagnetic fields to transfer data, in order to identify and track tags attached to objects. For instance, RFID tags can report sensor data such as motion, temperature or humidity, identification data (e.g. biometric passports) and so on and so forth. Note that IoT also commonly uses barcodes and other 2D-codes (e.g. QR codes) for identification purposes. Another crucial (coming) technological feature of IoT is the unique adressability of things, meaning that every object is identified by a singular IP address. Thanks to the &lt;a href='http://en.wikipedia.org/wiki/IPv6'&gt;IPv6 protocol&lt;/a&gt; and its extremely large address space (roughly 2&lt;sup&gt;128&lt;/sup&gt; IP addresses), this won&amp;#8217;t be too much of a problem!&lt;/p&gt;
+
+&lt;h3 id='a_few_examples'&gt;A Few Examples&lt;/h3&gt;
+
+&lt;p&gt;An over-used and quite limited (to not say dumb) illustration of IoT is the &amp;#8221;&lt;a href='http://fuckyeahinternetfridge.tumblr.com/'&gt;smart fridge&lt;/a&gt;&amp;#8221;, or the fact to have a fridge able to notify you when you run out of milk and even order some if needed. Instead of talking about fridges, I focus in the coming lines on three different IoT-related products and ideas I find convincing and promising. The first example highlights the ability for objects to communicate between each others, the second one shows how things can become smart and autonomous, and the third and last example provides a meaningful illustration of what sensors-powered objects can do.&lt;/p&gt;
+
+&lt;h4 id='i_automatic__your_car_and_smartphone_connected'&gt;i) &lt;a href='http://www.automatic.com/'&gt;Automatic&lt;/a&gt; &amp;#8211; Your Car and Smartphone, Connected&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Nota Bene: To play/pause a video, just click on it.&lt;/em&gt;&lt;/p&gt;
+&lt;iframe frameborder='0' height='315' src='http://www.youtube-nocookie.com/embed/_AyXNeRbpRk?wmode=transparent;rel=0;showinfo=0;controls=0' width='560'&gt; &lt;/iframe&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The device [Automatic] combines two burgeoning trends—the &amp;#8220;Internet of things&amp;#8221;, where traditionally offline gadgets are connected to the Internet to amplify their usefulness, and the mining of data that&amp;#8217;s collected by our devices for meaning. By putting these two together, the company thinks it can get users to conserve gas and spend less—and make a profit itself while doing so. &lt;em&gt;&amp;#8211; &lt;a href='http://www.technologyreview.com/news/512211/gadget-gets-under-the-hood-to-bring-analytics-to-driving/'&gt;MIT Technology Review&lt;/a&gt; (2013)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id='ii_nest__the_learning_thermostat'&gt;ii) &lt;a href='http://www.nest.com/'&gt;Nest&lt;/a&gt; &amp;#8211; The Learning Thermostat&lt;/h4&gt;
+&lt;iframe frameborder='0' height='315' src='http://www.youtube-nocookie.com/embed/L8TkhHgkBsg?wmode=transparent;rel=0;showinfo=0;controls=0' width='560'&gt; &lt;/iframe&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Nest is a game changer. [&amp;#8230; It] learns from user behavior and eventually adjusts the home&amp;#8217;s climate control based on previous activity. &lt;em&gt;&amp;#8211; &lt;a href='http://techcrunch.com/2011/12/22/nest-arm-zigbee/'&gt;TechCrunch&lt;/a&gt; (2011)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id='iii_myo__the_gesture_control_armband'&gt;iii) &lt;a href='https://getmyo.com/'&gt;MYO&lt;/a&gt; &amp;#8211; The Gesture Control Armband&lt;/h4&gt;
+&lt;iframe frameborder='0' height='315' src='http://www.youtube-nocookie.com/embed/oWu9TFJjHaM?wmode=transparent;rel=0;showinfo=0;controls=0' width='560'&gt; &lt;/iframe&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It looks like Minority Report, but better: the MYO armband will let you control iTunes by snapping your fingers, command radio-controlled toys like Luke using the Force, and flash through Powerpoint presentations without using a clicker. &lt;em&gt;&amp;#8211; &lt;a href='http://www.technologyreview.com/view/512016/can-a-myoelectric-armband-replace-your-mouse/'&gt;MIT Technology Review&lt;/a&gt; (2013)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id='irobot'&gt;I-Robot&lt;/h2&gt;
+
+&lt;p&gt;This section is interested in showing how the Internet in general and IoT in particular will occupy an increasingly prominent role in the future of robotics, eventually leading to the coming of Internet-powered robots (I-Robots henceforth). Three crucial challenges for the development of robots are identified and presented, that is object recognition, information processing and control.&lt;/p&gt;
+
+&lt;h3 id='object_recognition'&gt;Object Recognition&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Object recognition is a key unresolved challenge for robotics. &lt;em&gt;&amp;#8211; Michahelles, van Kranenburg and Waibel, &lt;a href='http://www.rfidjournal.com/articles/view?9773'&gt;RFID Journal&lt;/a&gt; (2012)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Robots are by definition autonomous systems that need to interact with their specific environments. The latter observation implies that they must be able to recognize the physical objects surrounding them in a first stage in order to take appropriate actions in a second stage. Nowadays, object recognition is mainly achieved through image recognition, i.e. diverse algorithms extract specific object features from a video stream or single image and compare them with other objects sharing the same features stored in a database. Unnecessary to emphasize that such a process is both costly in terms of computations and error-prone.&lt;/p&gt;
+
+&lt;p&gt;IoT proposes a completely different way of dealing with object recognition. By making objects &amp;#8220;smart&amp;#8221; and connected, robots don&amp;#8217;t have to identify objects around them since objects automatically identify themselves to robots. To illustrate this, let&amp;#8217;s consider a very trivial example: a robot whose unique function is to prepare your wake up coffee. In such a case, object recognition could be used to track the robot&amp;#8217;s position in the kitchen, to identify a coffee mug or the coffee pot&amp;#8217;s handle via tags, e.g. a barcode indicating that the object is a mug with a specific capacity in centiliters.&lt;/p&gt;
+
+&lt;p&gt;An existing and early application of IoT-capable robots is the one developed on a large scale by &lt;a href='http://www.kivasystems.com/'&gt;Kiva Systems&lt;/a&gt;. This company, recently acquired by Amazon, proposes warehouse robots that use QR codes to sense their locations (see video below).&lt;/p&gt;
+&lt;iframe frameborder='0' height='315' src='http://www.youtube-nocookie.com/embed/QhfDKeDUvbE?wmode=transparent;rel=0;showinfo=0;controls=0' width='560'&gt; &lt;/iframe&gt;
+&lt;p&gt;Assuming that more and more objects i) will be connected to the Internet (e.g. through a wireless home network), ii) will use a common protocol to communicate and interact, iii) or will be tagged (e.g. barcodes) may sound strange and unrealistic in 2013 but this won&amp;#8217;t be the case in a few years from now.&lt;/p&gt;
+
+&lt;h3 id='information_processing'&gt;Information Processing&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A robot is a machine that gathers information about its environment and uses that information to follow instructions to do some sort of work. &lt;em&gt;&amp;#8211; &lt;a href='http://www.thetech.org/'&gt;The Tech Museum of Innovation&lt;/a&gt; (2000)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The Tech Museum&amp;#8217;s definition of robots is especially interesting because it emphasizes well the vital role played by information and information processing in robotics. Indeed, robots are &amp;#8220;intellingent&amp;#8221; systems who continuously treat and process data to achieve tasks they have been designed for. And more complex the tasks, more important is the amount of information to process, leading inevitably to heavier computations and larger costs.&lt;/p&gt;
+
+&lt;p&gt;However, a significant part of these computations does not need to take place in real-time, and it&amp;#8217;s where the Internet can help. By moving to the &lt;a href='http://cdn.thenextweb.com/wp-content/blogs.dir/1/files/2012/12/Grishin-Final-SB.jpg'&gt;cloud&lt;/a&gt; actions without hard real-time requirements, the computing power on the robot is reduced, improving then operation duration of systems and decreasing costs. For instance, a common high-level robotics task which does not require hard real-time is called &amp;#8220;mapping&amp;#8221;. Mapping is the fact to store a description of the environment to allow a robot to localize a landmark or itself, e.g. this can go from trajectories planning to object grabbing.&lt;/p&gt;
+
+&lt;p&gt;Two other obvious advantages of offloading computation to the cloud are that such a centralization can foster collaboration and simplify software updates. For example, if robots share the same clouding platform, they could build a common map, and some of their functions could be updated directly from the cloud like a smartphone&amp;#8217;s application, e.g. &lt;a href='http://www.robotappstore.com/'&gt;RobotAppStore&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Initiatives like &lt;a href='http://www.roboearth.org/what-is-roboearth'&gt;RoboEarth&lt;/a&gt;, a &amp;#8220;World Wide Web for robots&amp;#8221;, all together with its recent protocol or &lt;a href='http://en.wikipedia.org/wiki/PaaS'&gt;PaaS&lt;/a&gt; called &lt;a href='http://rapyuta.org/rapyuta-the-roboearth-cloud-engine'&gt;Rapyuta&lt;/a&gt; (see video below) are concrete illustrations of cloud robotics.&lt;/p&gt;
+&lt;iframe frameborder='0' height='315' src='http://www.youtube-nocookie.com/embed/4-ir1ieqKyc?wmode=transparent;rel=0;showinfo=0;controls=0' width='560'&gt; &lt;/iframe&gt;
+&lt;p&gt;It makes no doubt that cloud computing will be a key factor in the democratization of robots, decreasing their cost of production and maintenance, while increasing their &amp;#8220;knowledge&amp;#8221; and computing capacity thanks to collaboration and centralization.&lt;/p&gt;
+
+&lt;h3 id='control'&gt;Control&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;A robot may not injure a human being or, through inaction, allow a human being to come to harm.&lt;/li&gt;
+
+&lt;li&gt;A robot must obey any orders given to it by human beings, except where such orders would conflict with the First Law.&lt;/li&gt;
+
+&lt;li&gt;A robot must protect its own existence as long as such protection does not conflict with the First or Second Law. &lt;em&gt;&amp;#8211; Isaac Asimov, &amp;#8220;I, Robot&amp;#8221;, &lt;a href='http://en.wikipedia.org/wiki/Three_Laws_of_Robotics'&gt;The Three Laws of Robotics&lt;/a&gt; (1941)&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The Internet already has and will have a growing importance in the way humans control robots. In this section, I consider three different dimensions, depending on the features of human-robot interactions (HRI). Please also note that as a matter of personal preference, the word &amp;#8220;communication&amp;#8221; is used instead of &amp;#8220;control&amp;#8221; in the next lines.&lt;/p&gt;
+
+&lt;h4 id='hard_communication'&gt;Hard Communication&lt;/h4&gt;
+
+&lt;p&gt;I define hard communication as the fact to communicate with an I-Robot using a physical or hard object connected to the Internet, e.g. a smartphone, a tablet, a laptop, some &lt;a href='http://www.google.com/glass/start/what-it-does/'&gt;Google&amp;#8217;s glasses&lt;/a&gt; or IoT-capable items. Assuming that more and more robots and things will be connected to the Internet, hard communication will become increasingly important. For instance, we will communicate with a robot present in our home while we are away via a specific application installed on our smartphones. By making communication between a robot and a human as easy as a touch on a screen via pre-configured software, this type of communication will certainly democratize the use of robots.&lt;/p&gt;
+
+&lt;p&gt;An early and fun illustration of hard communication is proposed by LEGO with its &amp;#8221;&lt;a href='http://mindstorms.lego.com/en-us/default.aspx'&gt;Mindstorms&lt;/a&gt;&amp;#8221; (see video below).&lt;/p&gt;
+&lt;iframe frameborder='0' height='315' src='http://www.youtube-nocookie.com/embed/RHdiBvpq7Dg?wmode=transparent;rel=0;showinfo=0;controls=0' width='560'&gt; &lt;/iframe&gt;
+&lt;h4 id='soft_communication'&gt;Soft Communication&lt;/h4&gt;
+
+&lt;p&gt;Soft communication regroups Internet technologies which allow more natural or softer ways to communicate with robots. Specifically, soft communication is close to the field of artificial intelligence (&lt;a href='http://en.wikipedia.org/wiki/AI'&gt;AI&lt;/a&gt;). The main idea here is that cloud robotics will increase the amount of data available to robots, making them &amp;#8220;smarter&amp;#8221; and so more prone to interact and communicate with humans in a soft way. For example, text-to-speech (&lt;a href='https://en.wikipedia.org/wiki/Text_to_speech'&gt;TTS&lt;/a&gt;) technology is promised to a bright future in robotics, robots being able to understand, interpret and reply to requests when we will talk to them.&lt;/p&gt;
+
+&lt;h4 id='raw_communication'&gt;Raw Communication&lt;/h4&gt;
+
+&lt;p&gt;I define raw communication as the fact to communicate with robots using programming languages. This is the raw basis of every kind of HRI. Here, the introduction of IoT and cloud computing into robotics will surely have important effects on the type of languages (e.g. Python) and data formats (e.g. JSON) robots will rest on, encouraging the adoption of tools and methods already commonly used by Web developers.&lt;/p&gt;
+
+&lt;p&gt;The coming generation of I-Robots will also certainly encourage the creation of new &lt;a href='http://en.wikipedia.org/wiki/API'&gt;API&lt;/a&gt;s, e.g. to facilitate the communication between robots and diverse IoT objects. Finally, we can expect to observe a growing enthusiasm for the development and sharing of robot-targeted scripts on platforms like &lt;a href='https://github.com/'&gt;Github&lt;/a&gt;, constantly increasing the possibilities and fonctionalities of our beloved autonomous systems.&lt;/p&gt;
+
+&lt;h2 id='challenges__future_directions'&gt;Challenges &amp;amp; Future Directions&lt;/h2&gt;
+
+&lt;p&gt;We have seen that the Internet can foster the development and democratization of robotics in many respects. Specifically, IoT provides a completely different way of dealing with object recognition, by making key objects in our daily lives capable of communicating with autonomous systems. Cloud computing decreases the amount of computations that a robot needs to do on its own by centralizing a consequent part of data and calculations in the cloud, encouraging so collaboration and facilitating software maintenance. Finally, the Internet transforms the way we communicate with robots, by making control easier, more natural and more open. To be concise and to summarize, the Internet provides a promising new platform for the development of smarter and cheaper robots.&lt;/p&gt;
+
+&lt;p&gt;However, if we want these changes to be viable and sustainable in the long run, there are a few challenges ahead we need to be aware of and willing to deal with, namely standardization, data privacy, technological solutionism and legal framework for HRI.&lt;/p&gt;
+
+&lt;h3 id='standardization'&gt;Standardization&lt;/h3&gt;
+
+&lt;p&gt;In a perfect world, IoT would rest on a unique &amp;#8220;API&amp;#8221;, allowing every object connected to the Internet to communicate and to interact with other ones using a common &amp;#8220;language&amp;#8221;. Now, this is far from reality. The Internet of Things is an emerging market, and current IoT companies all propose products that use their own specific protocol. If things go on like that, we will end up with a situation where Internet-capable things from company X will be able to communicate between themselves but won&amp;#8217;t be capable of interacting with objects from company Y or company Z, limiting then the promises and possibilities of the Internet [of Things].&lt;/p&gt;
+
+&lt;h4 id='one_api_to_rule_them_all'&gt;One API to rule them all?&lt;/h4&gt;
+
+&lt;p&gt;The main challenge we&amp;#8217;re facing is that unlike the creation of the Web, the development of IoT is primarily businness driven. The Internet favorizing a &amp;#8220;winner-takes-the-most&amp;#8221; market structure, this implies that a very few IoT companies will be the unquestioned leaders of this sector in a few years from now. Knowing this, some different scenarios could lead to the emergence of a standard. For instance, if one or several of the latter companies would decide to make their API open-source at a certain point of time, this could encourage start-ups active in the Internet of Things to adopt it, independent developers to write scripts based on it and so on&amp;#8230; leading eventually to the birth of a sound and major standard controlled by an independent and international organization, like the &lt;a href='http://en.wikipedia.org/wiki/W3C'&gt;W3C&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id='data_privacy'&gt;Data Privacy&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Certainly any time you have something autonomous or semi-autonomous, you should worry about who controls it. &lt;em&gt;&amp;#8211; Bruce Schneier, author of &lt;a href='http://www.schneier.com/book-lo.html'&gt;Liars and Outliers&lt;/a&gt; - in &lt;a href='http://thenetwork.cisco.com/'&gt;The Network&lt;/a&gt; (2013)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In the coming years, the Internet of Things and Cloud Robotics will clearly produce a lot more information about ourselves, our consumption, our habits, etc. While the &amp;#8220;data privacy &amp;amp; security&amp;#8221; topic is not new at all, it seems important to make people sensitive to the fact that the dimensions and completeness of information stored about themselves will grow exponentially in the next few years. We will need to accompany this new dynamics with a continuing and increasing legal and technological effort.&lt;/p&gt;
+
+&lt;h3 id='technological_solutionism'&gt;Technological Solutionism&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[&amp;#8230;] A pervasive and dangerous ideology that I call &amp;#8220;solutionism&amp;#8221;: an intellectual pathology that recognizes problems as problems based on just one criterion: whether they are &amp;#8220;solvable&amp;#8221; with a nice and clean technological solution at our disposal. Thus, forgetting and inconsistency become &amp;#8220;problems&amp;#8221; simply because we have the tools to get rid of them — and not because we&amp;#8217;ve weighed all the philosophical pros and cons. &lt;em&gt;&amp;#8211; Evgeny Morozov in &lt;a href='http://www.nytimes.com/2013/03/03/opinion/sunday/the-perils-of-perfection.html/'&gt;The New York Times&lt;/a&gt; (2013)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href='http://www.evgenymorozov.com/'&gt;Morozov&lt;/a&gt;&amp;#8217;s solutionism is somehow linked to the code of ethics we need to keep in mind whenever creating or developing a new technology. Put differently, technological progress should be always envisaged in terms of &lt;a href='http://market.subwiki.org/wiki/Social_surplus'&gt;social surplus&lt;/a&gt;, i.e. the overall value of this technology for the whole society and not only for a given group of individuals.&lt;/p&gt;
+
+&lt;h3 id='legal_framework_for_humanrobot_interactions'&gt;Legal Framework for Human-Robot Interactions&lt;/h3&gt;
+
+&lt;p&gt;Besides ethics, we will need to think of an efficient legal framework in order to accompany a new environment and a new kind of interactions between machines and human beings. Murphy and Woods revisited in 2009 the legendary three &lt;a href='http://en.wikipedia.org/wiki/Three_Laws_of_Robotics'&gt;laws of robotics&lt;/a&gt; first proposed by Asimov in the 1940s, and called them &amp;#8220;The Three Laws of Responsible Robotics&amp;#8221;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;A human may not deploy a robot without the human-robot work system meeting the highest legal and professional standards of safety and ethics.&lt;/li&gt;
+
+&lt;li&gt;A robot must respond to humans as appropriate for their roles.&lt;/li&gt;
+
+&lt;li&gt;A robot must be endowed with sufficient situated autonomy to protect its own existence as long as such protection provides smooth transfer of control which does not conflict with the First and Second Laws.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Those could represent a good start&amp;#8230;&lt;/p&gt;
+
+&lt;h2 id='short_conclusion'&gt;Short Conclusion&lt;/h2&gt;
+
+&lt;p&gt;No doubt that the Internet and robots are made to evolve together. By the end of the decade, their technological symbiosis will have significantly transformed our daily lives. Let&amp;#8217;s just hope that we will do everything to ensure that such an important and promising technological progress will benefit to the whole Human kind&amp;#8230;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Robots will naturally interact with people both physically and cognitively based on advanced communication and information processing – in all areas of our lives. Robotics will be a key element for dealing with societal challenges Europe is facing. From ageing society, to creation and retention of jobs, growing security threats and increasing worldwide competition for production sites - robotics is a solution provider. &lt;em&gt;&amp;#8211; &lt;a href='http://www.eurobotics-project.eu/press-room/eurobotics-press-releases/robots-save-jobs-in-europe.html'&gt;EU Robotics&lt;/a&gt; (2011)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Eventually, the word robot will disappear, the point of acceptance [will be] when [we will] stop thinking of robots as robots and just in terms of functionality. &lt;em&gt;&amp;#8211; Sabine Hauert, &lt;a href='http://videos.liftconference.com/video/1178752/sabine-hauert-robotics-today?player_id=1176439'&gt;Lift Conference&lt;/a&gt; (2011)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;em&gt;Credits: Banner picture from the movie &quot;I, Robot&quot; (2004), © 20th Century Fox.&lt;/em&gt;</content>
+ </entry>
  
  <entry>
    <title>I Know Who You are!</title>

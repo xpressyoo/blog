@@ -8,6 +8,7 @@ http://blog.florianbersier.com/sitemap.txt
 http://blog.florianbersier.com/sitemap.xml
 http://blog.florianbersier.com/categories.html
 
+http://blog.florianbersier.com/when-robots-meet-internet
 http://blog.florianbersier.com/i-know-who-you-are
 http://blog.florianbersier.com/facebook-bug
 http://blog.florianbersier.com/implementation-social-sharing-jekyll
