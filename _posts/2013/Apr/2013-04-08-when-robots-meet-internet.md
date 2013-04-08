@@ -138,7 +138,7 @@ In the coming years, the Internet of Things and Cloud Robotics will clearly prod
 
 > \[...\] A pervasive and dangerous ideology that I call "solutionism": an intellectual pathology that recognizes problems as problems based on just one criterion: whether they are "solvable" with a nice and clean technological solution at our disposal. Thus, forgetting and inconsistency become "problems" simply because we have the tools to get rid of them — and not because we've weighed all the philosophical pros and cons. _-- Evgeny Morozov in [The New York Times](http://www.nytimes.com/2013/03/03/opinion/sunday/the-perils-of-perfection.html/) (2013)_
 
-[Morozov](http://www.evgenymorozov.com/)'s solutionism is somehow linked to the code of ethics we need to keep in mind whenever creating or developing a new technology. Put differently, technological progress should be always envisaged in terms of [social surplus](http://market.subwiki.org/wiki/Social_surplus), i.e. the overall value of the technology for the whole society and not only for a given group of individuals.
+[Morozov](http://www.evgenymorozov.com/)'s solutionism is somehow linked to the code of ethics we need to keep in mind whenever creating or developing a new technology. Put differently, technological progress should be always envisaged in terms of [social surplus](http://market.subwiki.org/wiki/Social_surplus), i.e. the overall value of a technology for the whole society and not only for a given group of individuals.
 
 ### Legal Framework for Human-Robot Interactions
 
