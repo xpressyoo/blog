@@ -4,7 +4,7 @@
  <title>Florian Bersier | Blog</title>
  <link href="http://blog.florianbersier.com/atom.xml" rel="self"/>
  <link href="http://blog.florianbersier.com"/>
- <updated>2013-04-08T15:26:38+02:00</updated>
+ <updated>2013-04-08T16:28:37+02:00</updated>
  <id>http://blog.florianbersier.com</id>
  <author>
    <name>Florian Bersier</name>
@@ -33,7 +33,7 @@
 &lt;p&gt;Like something out of a sci-fi movie, the Internet of Things promises to transform our daily lives. &lt;em&gt;&amp;#8211; Daniel Saks, AppDirect &lt;a href='http://www.wired.com/insights/2013/03/faster-please-breaking-down-barriers-to-the-internet-of-things/'&gt;in Wired&lt;/a&gt; (2013)&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;To achieve this, IoT mainly rests on Radio-frequency identification (&lt;a href='http://en.wikipedia.org/wiki/RFID'&gt;RFID&lt;/a&gt;), i.e. the wireless non-contact use of radio-frequency electromagnetic fields to transfer data, in order to identify and track tags attached to objects. For instance, RFID tags can report sensor data such as motion, temperature or humidity, identification data (e.g. biometric passports) and so on and so forth. Note that IoT also commonly uses barcodes and other 2D-codes (e.g. QR codes) for identification purposes. Another crucial (coming) technological feature of IoT is the unique adressability of things, meaning that every object is identified by a singular IP address. Thanks to the &lt;a href='http://en.wikipedia.org/wiki/IPv6'&gt;IPv6 protocol&lt;/a&gt; and its extremely large address space (roughly 2&lt;sup&gt;128&lt;/sup&gt; IP addresses), this won&amp;#8217;t be too much of a problem!&lt;/p&gt;
+&lt;p&gt;To achieve this, IoT mainly rests on Radio-frequency identification (&lt;a href='http://en.wikipedia.org/wiki/RFID'&gt;RFID&lt;/a&gt;), i.e. the wireless non-contact use of radio-frequency electromagnetic fields to transfer data, in order to identify and track tags attached to objects. For instance, RFID tags can report sensor data such as motion, temperature or humidity, identification data (e.g. biometric passports) and so on and so forth. Note that IoT also commonly uses barcodes and other 2D-codes (e.g. &lt;a href='https://en.wikipedia.org/wiki/Qr_code'&gt;QR codes&lt;/a&gt;) for identification purposes. Another crucial (coming) technological feature of IoT is the unique adressability of things, meaning that every object is identified by a singular IP address. Thanks to the &lt;a href='http://en.wikipedia.org/wiki/IPv6'&gt;IPv6 protocol&lt;/a&gt; and its extremely large address space (roughly 2&lt;sup&gt;128&lt;/sup&gt; IP addresses), this won&amp;#8217;t be too much of a problem!&lt;/p&gt;
 
 &lt;h3 id='a_few_examples'&gt;A Few Examples&lt;/h3&gt;
 
@@ -135,7 +135,7 @@
 
 &lt;h4 id='one_api_to_rule_them_all'&gt;One API to rule them all?&lt;/h4&gt;
 
-&lt;p&gt;The main challenge we&amp;#8217;re facing is that unlike the creation of the Web, the development of IoT is primarily businness driven. The Internet favorizing a &amp;#8220;winner-takes-the-most&amp;#8221; market structure, this implies that a very few IoT companies will be the unquestioned leaders of this sector in a few years from now. Knowing this, some different scenarios could lead to the emergence of a standard. For instance, if one or several of the latter companies would decide to make their API open-source at a certain point of time, this could encourage start-ups active in the Internet of Things to adopt it, independent developers to write scripts based on it and so on&amp;#8230; leading eventually to the birth of a sound and major standard controlled by an independent and international organization, like the &lt;a href='http://en.wikipedia.org/wiki/W3C'&gt;W3C&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The main challenge we&amp;#8217;re facing is that unlike the creation of the Web, the development of IoT is primarily businness driven. The Internet favorizing a &amp;#8220;winner-takes-the-most&amp;#8221; market structure, this implies that a very few IoT companies will be the unquestioned leaders of this sector in a few years from now. Knowing this, some different scenarios could lead to the emergence of a standard. For instance, if one or several of the latter companies would decide to make their API open-source at a certain point of time, this could encourage start-ups active in the Internet of Things to adopt it, independent developers to write scripts based on it and so on&amp;#8230; leading eventually to the birth of a sound and major standard controlled by an independent and international organization, like the &lt;a href='http://en.wikipedia.org/wiki/W3C'&gt;W3C&lt;/a&gt; for the Web.&lt;/p&gt;
 
 &lt;h3 id='data_privacy'&gt;Data Privacy&lt;/h3&gt;
 
@@ -151,7 +151,7 @@
 &lt;p&gt;[&amp;#8230;] A pervasive and dangerous ideology that I call &amp;#8220;solutionism&amp;#8221;: an intellectual pathology that recognizes problems as problems based on just one criterion: whether they are &amp;#8220;solvable&amp;#8221; with a nice and clean technological solution at our disposal. Thus, forgetting and inconsistency become &amp;#8220;problems&amp;#8221; simply because we have the tools to get rid of them — and not because we&amp;#8217;ve weighed all the philosophical pros and cons. &lt;em&gt;&amp;#8211; Evgeny Morozov in &lt;a href='http://www.nytimes.com/2013/03/03/opinion/sunday/the-perils-of-perfection.html/'&gt;The New York Times&lt;/a&gt; (2013)&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;a href='http://www.evgenymorozov.com/'&gt;Morozov&lt;/a&gt;&amp;#8217;s solutionism is somehow linked to the code of ethics we need to keep in mind whenever creating or developing a new technology. Put differently, technological progress should be always envisaged in terms of &lt;a href='http://market.subwiki.org/wiki/Social_surplus'&gt;social surplus&lt;/a&gt;, i.e. the overall value of this technology for the whole society and not only for a given group of individuals.&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://www.evgenymorozov.com/'&gt;Morozov&lt;/a&gt;&amp;#8217;s solutionism is somehow linked to the code of ethics we need to keep in mind whenever creating or developing a new technology. Put differently, technological progress should be always envisaged in terms of &lt;a href='http://market.subwiki.org/wiki/Social_surplus'&gt;social surplus&lt;/a&gt;, i.e. the overall value of the technology for the whole society and not only for a given group of individuals.&lt;/p&gt;
 
 &lt;h3 id='legal_framework_for_humanrobot_interactions'&gt;Legal Framework for Human-Robot Interactions&lt;/h3&gt;
 
