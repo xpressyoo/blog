@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Person" dir="ltr" lang="en">
+<head>
+<meta charset="utf-8">
+<title>When Robots Meet the Internet | Florian Bersier</title>
+<!--STYLE-->
+<link rel="stylesheet" type="text/css" href="http://florianbersier.com/css/style.css">
+<link rel="stylesheet" type="text/css" href="/assets/themes/fb/css/fonts.css" />
+<link rel="stylesheet" type="text/css" href="/assets/themes/fb/css/blog.css" />
+<!--[if IE 7]>
+	<link rel="stylesheet" href="http://florianbersier.com/css/ie.css">
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--META-->
+<meta name="description" content="How the Internet in general and the Internet of Things in particular will make robotics part of our everyday lives.">
+<meta name="author" content="Florian Bersier">
+<meta property="fb:admins" content="10150829234450007" />
+<meta property="fb:app_id" content="205602882797935" />
+<meta itemprop="image" content="/assets/themes/fb/img/posts/thumbs/when-robots-meet-internet.jpg">
+<link rel="image_src" type="image/jpg" href="/assets/themes/fb/img/posts/thumbs/when-robots-meet-internet.jpg" />
+<!-- Prefetch -->
+<link rel="prefetch" href="http://florianbersier.com/lib/ab.jpg">
+<link rel="prerender" href="http://florianbersier.com/lib/ab.jpg">
+<link rel="prefetch" href="http://florianbersier.com/lib/raptor.png">
+<link rel="prerender" href="http://florianbersier.com/lib/raptor.png">
+<!--Analytics-->
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12817064-1']);
+  _gaq.push(['_setDomainName', 'florianbersier.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="global">
+<!--FEATURED-->
+<div id="featured"><div id="closef" class="transition"><i class="icon-remove space"></i> close</div>
+<!--data--><div id="vide0" data-id="cumTHJHoHIM" data-nb="4"></div>
+</div>
+
+<!--NAV-->
+<div id="nav" class="fixed">
+<a id="logo" class="" href="http://florianbersier.com" title="FB | Back home"></a>
+<ul role="navigation">
+<li><a class="" href="http://florianbersier.com/about/">Bio</a>
+<li><a class="" href="http://florianbersier.com/hacking/">Hacking</a>
+<li><a class="" href="http://florianbersier.com/research/">Research</a>
+<li><a class="selected" href="http://blog.florianbersier.com">Blog</a>
+<li><a class="mob" href="http://be.net/bersier" target="_blank">Folio</a>
+<li><a id="contact" href="#contact">Contact</a>
+<li><a id="back-top" class="mob" title="Scroll to Top"><i class="icon-chevron-up"></i> <span>top</span></a>
+</ul>
+</div>
+<!--#NAV-->
+
+<!--Track of the Month-->
+<div id="openf" class="mob">
+<ul class="ulno">
+<li class="opa">This Month's Track: <span id="track"></span> 
+<li class="opb transition"><span><i class="icon-headphones space"></i>Discover it</span>
+</ul>
+</div>
+
+<!--Picture-->
+<div class="picture p1 transition coverblog" style="background:url('/assets/themes/fb/img/posts/when-robots-meet-internet.jpg') no-repeat;"></div>
+
+<div class="wrapper blog">
+
+<!-- SNS -->
+<div class="bkgclear sns">
+<ul class="subscribe">
+<li class="stay"><span class="mob">Stay in the Know...</span>
+<li><a class="twi transition" href="https://twitter.com/xpressyoo" target="_blank" title="Subscribe on Twitter"><i class="icon-twitter"></i></a>
+<li><a class="fac transition" href="https://facebook.com/florian.bersier" target="_blank" title="Subscribe on Facebook"><i class="icon-facebook"></i></a>
+<li><a class="goo transition" href="https://plus.google.com/111297306144520956414" target="_blank" title="Subscribe on Google+"><i class="icon-google-plus"></i></a>
+<li class="stay"><span class="mob">... And Say Hi !</span>
+</ul>
+</div>
+
+<!--CONTENT-->
+<div class="content">
+<div class="left">
+<section>
+<!-- Excerpts -->
+
+<div class="page-header"><h1>When Robots Meet the Internet</h1><h2 class="post-tagline">Or how the Internet will make robotics part of our everyday lives</h2></div>
+
+
+  
+  		<div id="fb-root"></div>
+
+<ul class="post-share ulno mob">
+
+<!-- Hacker News -->
+<li><i class="icon-hn">Y</i>
+
+<!-- -->
+<li><i class="icon-twitter"></i>
+
+<!-- Google+ -->
+<li><i class="icon-google-plus"></i>
+
+<!-- Facebook -->
+<li><i class="icon-facebook"></i>
+
+<ul class="post-share-active ulno mob transition">
+
+<!-- Hacker News -->
+<li class="hn o"><span id="hnews"></span> 
+
+<!-- Twitter -->
+<li class="tw o"><a href="https://twitter.com/share" class="twitter-share-button" data-text="When Robots Meet the Internet" data-via="" data-related="xpressyoo" data-count="" data-size="">Tweet</a>
+
+<!-- Google+ -->
+<li class="gp o"><div class="g-plusone" data-size="medium" data-annotation="bubble" data-width=""></div>
+
+<!-- Facebook -->
+<li class="fb o"><div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-font=""></div>
+
+<!-- Reddit
+<li class="o"><script type="text/javascript" src="http://www.reddit.com/buttonlite.js?i=4"></script> -->
+</ul>
+
+</ul>
+
+
+
+
+<script>
+  
+(function(doc, script) {
+ 	
+	//Async Social Buttons
+    var js, 
+        fjs = doc.getElementsByTagName(script)[0],
+        add = function(url, id) {
+            if (doc.getElementById(id)) {return;}
+            js = doc.createElement(script);
+            js.src = url;
+            id && (js.id = id);
+            fjs.parentNode.insertBefore(js, fjs);
+        };
+    
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    // Google+ button
+    add('https://apis.google.com/js/plusone.js');
+    
+    // Facebook SDK
+    add('//connect.facebook.net/en_GB/all.js#xfbml=1&appId=205602882797935', 'facebook-jssdk');
+    
+    //Hacker News Button 	
+ 	var hn_like = document.createElement('iframe');
+      hn_like.frameborder="no";
+      hn_like.scrolling="no";
+      hn_like.height="28px";
+      hn_like.width="110px";
+      hn_like.src = "http://hnlike.com/upvote.php?link="
+                    + encodeURIComponent(document.location)
+                    + "&title="
+                    + encodeURIComponent("When Robots Meet the Internet");
+      hn_like.innerHTML="iframes not supported by your browser";
+      
+      var where = document.getElementById("hnews");
+      where.parentNode.insertBefore(
+        hn_like,
+        where
+      );
+}(document, 'script'));
+
+</script>
+
+  
+
+
+
+
+<div class="date"><span class="mob">Published on </span><span>April  8, 2013</span></div>
+
+<div class="tags">
+    <i class="icon-tags space"></i><span class="mob">Tags : </span><ul class="tag_box ulno">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#IoT-ref">IoT <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#opinion-ref">opinion <span>4</span></a></li>
+     
+    	<li><a href="/tags.html#robotics-ref">robotics <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+</div>
+
+<div class="clear"></div>
+
+<div class="row">
+  <div class="span8">
+    <p>Robots generally get a bad role in the movies, travelling back in time to hunt us down or turning against their creators and endangering the Human race. Outside of fiction, robots are still perceived in the collective imagination as a <a href='https://encrypted.google.com/search?hl=en&amp;q=robots%20employment%20threat'>threat to employment</a>. Such a poor reputation is largely explained by the fear of the unknown and the difficulty to apprehend the whys and wherefores of robotics. Hopefully, things are about to change and the Internet is probably going to be the driving force behind the evolution of mindsets and the demystification of robots. The Internet and more precisely the Internet of Things indeed propose tools and protocols that can tackle efficiently key challenges for the development and democratization of robotics, i.e. object recognition, information processing and control.</p>
+
+<blockquote>
+<p>The Internet is continuously being supplied with eyes and ears, but it still misses arms and legs to take action! [&#8230;] Robots seem the logical candidates that take on the role of gateways of information flows. <em>&#8211; CFP for <a href='http://www.theinternetofthings.eu/prepublication-robotics-meets-internet-things-soon-be-cfp'>Cloud Robotics and the Internet of Things</a> (2012)</em></p>
+</blockquote>
+
+<p>This post starts with a brief definition and some illustrations of what is the Internet of Things. Then I move to the identification and description of three crucial axes for the development of robotics, namely object recognition, information processing and control. The raison-d&#8217;être of this section is to share some insights concerning the way the Internet and IoT could provide interesting and natural answers to the latter dimensions. I conclude by highlighting some points that might endanger the sustainability of an environment made of Internet-powered/aware robots, that is a lack of standardization and integration, (cloud) data privacy concerns, the risk of technological &#8220;solutionism&#8221; and vague human-robots interaction laws.</p>
+
+<h2 id='internet_of_things_iot'>Internet of Things (IoT)</h2>
+
+<p>No need to define what is the Internet, or more precisely, what is the first version of the Internet, that is a global system of interconnected computer networks which makes available thanks to a specific protocol (<a href='http://en.wikipedia.org/wiki/Internet_protocol_suite'>TCP/IP</a>) a growing amount of data created by human beings. The Internet of Things is sometimes described as the next version of the Internet and is all about data created by things. As its name indicates, the Internet of Things (IoT hereafter) refers to physical and uniquely identifiable objects (or things) that are connected to the Internet and are so able to identify themselves to other devices and to communicate with them. In other words, IoT moves the boundaries of the information system from the online world to the physical world.</p>
+
+<blockquote>
+<p>Like something out of a sci-fi movie, the Internet of Things promises to transform our daily lives. <em>&#8211; Daniel Saks, AppDirect <a href='http://www.wired.com/insights/2013/03/faster-please-breaking-down-barriers-to-the-internet-of-things/'>in Wired</a> (2013)</em></p>
+</blockquote>
+
+<p>To achieve this, IoT mainly rests on Radio-frequency identification (<a href='http://en.wikipedia.org/wiki/RFID'>RFID</a>), i.e. the wireless non-contact use of radio-frequency electromagnetic fields to transfer data, in order to identify and track tags attached to objects. For instance, RFID tags can report sensor data such as motion, temperature or humidity, identification data (e.g. biometric passports) and so on and so forth. Note that IoT also commonly uses barcodes and other 2D-codes (e.g. QR codes) for identification purposes. Another crucial (coming) technological feature of IoT is the unique adressability of things, meaning that every object is identified by a singular IP address. Thanks to the <a href='http://en.wikipedia.org/wiki/IPv6'>IPv6 protocol</a> and its extremely large address space (roughly 2<sup>128</sup> IP addresses), this won&#8217;t be too much of a problem!</p>
+
+<h3 id='a_few_examples'>A Few Examples</h3>
+
+<p>An over-used and quite limited (to not say dumb) illustration of IoT is the &#8221;<a href='http://fuckyeahinternetfridge.tumblr.com/'>smart fridge</a>&#8221;, or the fact to have a fridge able to notify you when you run out of milk and even order some if needed. Instead of talking about fridges, I focus in the coming lines on three different IoT-related products and ideas I find convincing and promising. The first example highlights the ability for objects to communicate between each others, the second one shows how things can become smart and autonomous, and the third and last example provides a meaningful illustration of what sensors-powered objects can do.</p>
+
+<h4 id='i_automatic__your_car_and_smartphone_connected'>i) <a href='http://www.automatic.com/'>Automatic</a> &#8211; Your Car and Smartphone, Connected</h4>
+
+<p><em>Nota Bene: To play/pause a video, just click on it.</em></p>
+<iframe frameborder='0' height='315' src='http://www.youtube-nocookie.com/embed/_AyXNeRbpRk?wmode=transparent;rel=0;showinfo=0;controls=0' width='560'> </iframe>
+<blockquote>
+<p>The device [Automatic] combines two burgeoning trends—the &#8220;Internet of things&#8221;, where traditionally offline gadgets are connected to the Internet to amplify their usefulness, and the mining of data that&#8217;s collected by our devices for meaning. By putting these two together, the company thinks it can get users to conserve gas and spend less—and make a profit itself while doing so. <em>&#8211; <a href='http://www.technologyreview.com/news/512211/gadget-gets-under-the-hood-to-bring-analytics-to-driving/'>MIT Technology Review</a> (2013)</em></p>
+</blockquote>
+
+<h4 id='ii_nest__the_learning_thermostat'>ii) <a href='http://www.nest.com/'>Nest</a> &#8211; The Learning Thermostat</h4>
+<iframe frameborder='0' height='315' src='http://www.youtube-nocookie.com/embed/L8TkhHgkBsg?wmode=transparent;rel=0;showinfo=0;controls=0' width='560'> </iframe>
+<blockquote>
+<p>The Nest is a game changer. [&#8230; It] learns from user behavior and eventually adjusts the home&#8217;s climate control based on previous activity. <em>&#8211; <a href='http://techcrunch.com/2011/12/22/nest-arm-zigbee/'>TechCrunch</a> (2011)</em></p>
+</blockquote>
+
+<h4 id='iii_myo__the_gesture_control_armband'>iii) <a href='https://getmyo.com/'>MYO</a> &#8211; The Gesture Control Armband</h4>
+<iframe frameborder='0' height='315' src='http://www.youtube-nocookie.com/embed/oWu9TFJjHaM?wmode=transparent;rel=0;showinfo=0;controls=0' width='560'> </iframe>
+<blockquote>
+<p>It looks like Minority Report, but better: the MYO armband will let you control iTunes by snapping your fingers, command radio-controlled toys like Luke using the Force, and flash through Powerpoint presentations without using a clicker. <em>&#8211; <a href='http://www.technologyreview.com/view/512016/can-a-myoelectric-armband-replace-your-mouse/'>MIT Technology Review</a> (2013)</em></p>
+</blockquote>
+
+<h2 id='irobot'>I-Robot</h2>
+
+<p>This section is interested in showing how the Internet in general and IoT in particular will occupy an increasingly prominent role in the future of robotics, eventually leading to the coming of Internet-powered robots (I-Robots henceforth). Three crucial challenges for the development of robots are identified and presented, that is object recognition, information processing and control.</p>
+
+<h3 id='object_recognition'>Object Recognition</h3>
+
+<blockquote>
+<p>Object recognition is a key unresolved challenge for robotics. <em>&#8211; Michahelles, van Kranenburg and Waibel, <a href='http://www.rfidjournal.com/articles/view?9773'>RFID Journal</a> (2012)</em></p>
+</blockquote>
+
+<p>Robots are by definition autonomous systems that need to interact with their specific environments. The latter observation implies that they must be able to recognize the physical objects surrounding them in a first stage in order to take appropriate actions in a second stage. Nowadays, object recognition is mainly achieved through image recognition, i.e. diverse algorithms extract specific object features from a video stream or single image and compare them with other objects sharing the same features stored in a database. Unnecessary to emphasize that such a process is both costly in terms of computations and error-prone.</p>
+
+<p>IoT proposes a completely different way of dealing with object recognition. By making objects &#8220;smart&#8221; and connected, robots don&#8217;t have to identify objects around them since objects automatically identify themselves to robots. To illustrate this, let&#8217;s consider a very trivial example: a robot whose unique function is to prepare your wake up coffee. In such a case, object recognition could be used to track the robot&#8217;s position in the kitchen, to identify a coffee mug or the coffee pot&#8217;s handle via tags, e.g. a barcode indicating that the object is a mug with a specific capacity in centiliters.</p>
+
+<p>An existing and early application of IoT-capable robots is the one developed on a large scale by <a href='http://www.kivasystems.com/'>Kiva Systems</a>. This company, recently acquired by Amazon, proposes warehouse robots that use QR codes to sense their locations (see video below).</p>
+<iframe frameborder='0' height='315' src='http://www.youtube-nocookie.com/embed/QhfDKeDUvbE?wmode=transparent;rel=0;showinfo=0;controls=0' width='560'> </iframe>
+<p>Assuming that more and more objects i) will be connected to the Internet (e.g. through a wireless home network), ii) will use a common protocol to communicate and interact, iii) or will be tagged (e.g. barcodes) may sound strange and unrealistic in 2013 but this won&#8217;t be the case in a few years from now.</p>
+
+<h3 id='information_processing'>Information Processing</h3>
+
+<blockquote>
+<p>A robot is a machine that gathers information about its environment and uses that information to follow instructions to do some sort of work. <em>&#8211; <a href='http://www.thetech.org/'>The Tech Museum of Innovation</a> (2000)</em></p>
+</blockquote>
+
+<p>The Tech Museum&#8217;s definition of robots is especially interesting because it emphasizes well the vital role played by information and information processing in robotics. Indeed, robots are &#8220;intellingent&#8221; systems who continuously treat and process data to achieve tasks they have been designed for. And more complex the tasks, more important is the amount of information to process, leading inevitably to heavier computations and larger costs.</p>
+
+<p>However, a significant part of these computations does not need to take place in real-time, and it&#8217;s where the Internet can help. By moving to the <a href='http://cdn.thenextweb.com/wp-content/blogs.dir/1/files/2012/12/Grishin-Final-SB.jpg'>cloud</a> actions without hard real-time requirements, the computing power on the robot is reduced, improving then operation duration of systems and decreasing costs. For instance, a common high-level robotics task which does not require hard real-time is called &#8220;mapping&#8221;. Mapping is the fact to store a description of the environment to allow a robot to localize a landmark or itself, e.g. this can go from trajectories planning to object grabbing.</p>
+
+<p>Two other obvious advantages of offloading computation to the cloud are that such a centralization can foster collaboration and simplify software updates. For example, if robots share the same clouding platform, they could build a common map, and some of their functions could be updated directly from the cloud like a smartphone&#8217;s application, e.g. <a href='http://www.robotappstore.com/'>RobotAppStore</a>.</p>
+
+<p>Initiatives like <a href='http://www.roboearth.org/what-is-roboearth'>RoboEarth</a>, a &#8220;World Wide Web for robots&#8221;, all together with its recent protocol or <a href='http://en.wikipedia.org/wiki/PaaS'>PaaS</a> called <a href='http://rapyuta.org/rapyuta-the-roboearth-cloud-engine'>Rapyuta</a> (see video below) are concrete illustrations of cloud robotics.</p>
+<iframe frameborder='0' height='315' src='http://www.youtube-nocookie.com/embed/4-ir1ieqKyc?wmode=transparent;rel=0;showinfo=0;controls=0' width='560'> </iframe>
+<p>It makes no doubt that cloud computing will be a key factor in the democratization of robots, decreasing their cost of production and maintenance, while increasing their &#8220;knowledge&#8221; and computing capacity thanks to collaboration and centralization.</p>
+
+<h3 id='control'>Control</h3>
+
+<blockquote>
+<ol>
+<li>A robot may not injure a human being or, through inaction, allow a human being to come to harm.</li>
+
+<li>A robot must obey any orders given to it by human beings, except where such orders would conflict with the First Law.</li>
+
+<li>A robot must protect its own existence as long as such protection does not conflict with the First or Second Law. <em>&#8211; Isaac Asimov, &#8220;I, Robot&#8221;, <a href='http://en.wikipedia.org/wiki/Three_Laws_of_Robotics'>The Three Laws of Robotics</a> (1941)</em></li>
+</ol>
+</blockquote>
+
+<p>The Internet already has and will have a growing importance in the way humans control robots. In this section, I consider three different dimensions, depending on the features of human-robot interactions (HRI). Please also note that as a matter of personal preference, the word &#8220;communication&#8221; is used instead of &#8220;control&#8221; in the next lines.</p>
+
+<h4 id='hard_communication'>Hard Communication</h4>
+
+<p>I define hard communication as the fact to communicate with an I-Robot using a physical or hard object connected to the Internet, e.g. a smartphone, a tablet, a laptop, some <a href='http://www.google.com/glass/start/what-it-does/'>Google&#8217;s glasses</a> or IoT-capable items. Assuming that more and more robots and things will be connected to the Internet, hard communication will become increasingly important. For instance, we will communicate with a robot present in our home while we are away via a specific application installed on our smartphones. By making communication between a robot and a human as easy as a touch on a screen via pre-configured software, this type of communication will certainly democratize the use of robots.</p>
+
+<p>An early and fun illustration of hard communication is proposed by LEGO with its &#8221;<a href='http://mindstorms.lego.com/en-us/default.aspx'>Mindstorms</a>&#8221; (see video below).</p>
+<iframe frameborder='0' height='315' src='http://www.youtube-nocookie.com/embed/RHdiBvpq7Dg?wmode=transparent;rel=0;showinfo=0;controls=0' width='560'> </iframe>
+<h4 id='soft_communication'>Soft Communication</h4>
+
+<p>Soft communication regroups Internet technologies which allow more natural or softer ways to communicate with robots. Specifically, soft communication is close to the field of artificial intelligence (<a href='http://en.wikipedia.org/wiki/AI'>AI</a>). The main idea here is that cloud robotics will increase the amount of data available to robots, making them &#8220;smarter&#8221; and so more prone to interact and communicate with humans in a soft way. For example, text-to-speech (<a href='https://en.wikipedia.org/wiki/Text_to_speech'>TTS</a>) technology is promised to a bright future in robotics, robots being able to understand, interpret and reply to requests when we will talk to them.</p>
+
+<h4 id='raw_communication'>Raw Communication</h4>
+
+<p>I define raw communication as the fact to communicate with robots using programming languages. This is the raw basis of every kind of HRI. Here, the introduction of IoT and cloud computing into robotics will surely have important effects on the type of languages (e.g. Python) and data formats (e.g. JSON) robots will rest on, encouraging the adoption of tools and methods already commonly used by Web developers.</p>
+
+<p>The coming generation of I-Robots will also certainly encourage the creation of new <a href='http://en.wikipedia.org/wiki/API'>API</a>s, e.g. to facilitate the communication between robots and diverse IoT objects. Finally, we can expect to observe a growing enthusiasm for the development and sharing of robot-targeted scripts on platforms like <a href='https://github.com/'>Github</a>, constantly increasing the possibilities and fonctionalities of our beloved autonomous systems.</p>
+
+<h2 id='challenges__future_directions'>Challenges &amp; Future Directions</h2>
+
+<p>We have seen that the Internet can foster the development and democratization of robotics in many respects. Specifically, IoT provides a completely different way of dealing with object recognition, by making key objects in our daily lives capable of communicating with autonomous systems. Cloud computing decreases the amount of computations that a robot needs to do on its own by centralizing a consequent part of data and calculations in the cloud, encouraging so collaboration and facilitating software maintenance. Finally, the Internet transforms the way we communicate with robots, by making control easier, more natural and more open. To be concise and to summarize, the Internet provides a promising new platform for the development of smarter and cheaper robots.</p>
+
+<p>However, if we want these changes to be viable and sustainable in the long run, there are a few challenges ahead we need to be aware of and willing to deal with, namely standardization, data privacy, technological solutionism and legal framework for HRI.</p>
+
+<h3 id='standardization'>Standardization</h3>
+
+<p>In a perfect world, IoT would rest on a unique &#8220;API&#8221;, allowing every object connected to the Internet to communicate and to interact with other ones using a common &#8220;language&#8221;. Now, this is far from reality. The Internet of Things is an emerging market, and current IoT companies all propose products that use their own specific protocol. If things go on like that, we will end up with a situation where Internet-capable things from company X will be able to communicate between themselves but won&#8217;t be capable of interacting with objects from company Y or company Z, limiting then the promises and possibilities of the Internet [of Things].</p>
+
+<h4 id='one_api_to_rule_them_all'>One API to rule them all?</h4>
+
+<p>The main challenge we&#8217;re facing is that unlike the creation of the Web, the development of IoT is primarily businness driven. The Internet favorizing a &#8220;winner-takes-the-most&#8221; market structure, this implies that a very few IoT companies will be the unquestioned leaders of this sector in a few years from now. Knowing this, some different scenarios could lead to the emergence of a standard. For instance, if one or several of the latter companies would decide to make their API open-source at a certain point of time, this could encourage start-ups active in the Internet of Things to adopt it, independent developers to write scripts based on it and so on&#8230; leading eventually to the birth of a sound and major standard controlled by an independent and international organization, like the <a href='http://en.wikipedia.org/wiki/W3C'>W3C</a>.</p>
+
+<h3 id='data_privacy'>Data Privacy</h3>
+
+<blockquote>
+<p>Certainly any time you have something autonomous or semi-autonomous, you should worry about who controls it. <em>&#8211; Bruce Schneier, author of <a href='http://www.schneier.com/book-lo.html'>Liars and Outliers</a> - in <a href='http://thenetwork.cisco.com/'>The Network</a> (2013)</em></p>
+</blockquote>
+
+<p>In the coming years, the Internet of Things and Cloud Robotics will clearly produce a lot more information about ourselves, our consumption, our habits, etc. While the &#8220;data privacy &amp; security&#8221; topic is not new at all, it seems important to make people sensitive to the fact that the dimensions and completeness of information stored about themselves will grow exponentially in the next few years. We will need to accompany this new dynamics with a continuing and increasing legal and technological effort.</p>
+
+<h3 id='technological_solutionism'>Technological Solutionism</h3>
+
+<blockquote>
+<p>[&#8230;] A pervasive and dangerous ideology that I call &#8220;solutionism&#8221;: an intellectual pathology that recognizes problems as problems based on just one criterion: whether they are &#8220;solvable&#8221; with a nice and clean technological solution at our disposal. Thus, forgetting and inconsistency become &#8220;problems&#8221; simply because we have the tools to get rid of them — and not because we&#8217;ve weighed all the philosophical pros and cons. <em>&#8211; Evgeny Morozov in <a href='http://www.nytimes.com/2013/03/03/opinion/sunday/the-perils-of-perfection.html/'>The New York Times</a> (2013)</em></p>
+</blockquote>
+
+<p><a href='http://www.evgenymorozov.com/'>Morozov</a>&#8217;s solutionism is somehow linked to the code of ethics we need to keep in mind whenever creating or developing a new technology. Put differently, technological progress should be always envisaged in terms of <a href='http://market.subwiki.org/wiki/Social_surplus'>social surplus</a>, i.e. the overall value of this technology for the whole society and not only for a given group of individuals.</p>
+
+<h3 id='legal_framework_for_humanrobot_interactions'>Legal Framework for Human-Robot Interactions</h3>
+
+<p>Besides ethics, we will need to think of an efficient legal framework in order to accompany a new environment and a new kind of interactions between machines and human beings. Murphy and Woods revisited in 2009 the legendary three <a href='http://en.wikipedia.org/wiki/Three_Laws_of_Robotics'>laws of robotics</a> first proposed by Asimov in the 1940s, and called them &#8220;The Three Laws of Responsible Robotics&#8221;:</p>
+
+<blockquote>
+<ol>
+<li>A human may not deploy a robot without the human-robot work system meeting the highest legal and professional standards of safety and ethics.</li>
+
+<li>A robot must respond to humans as appropriate for their roles.</li>
+
+<li>A robot must be endowed with sufficient situated autonomy to protect its own existence as long as such protection provides smooth transfer of control which does not conflict with the First and Second Laws.</li>
+</ol>
+</blockquote>
+
+<p>Those could represent a good start&#8230;</p>
+
+<h2 id='short_conclusion'>Short Conclusion</h2>
+
+<p>No doubt that the Internet and robots are made to evolve together. By the end of the decade, their technological symbiosis will have significantly transformed our daily lives. Let&#8217;s just hope that we will do everything to ensure that such an important and promising technological progress will benefit to the whole Human kind&#8230;</p>
+
+<blockquote>
+<p>Robots will naturally interact with people both physically and cognitively based on advanced communication and information processing – in all areas of our lives. Robotics will be a key element for dealing with societal challenges Europe is facing. From ageing society, to creation and retention of jobs, growing security threats and increasing worldwide competition for production sites - robotics is a solution provider. <em>&#8211; <a href='http://www.eurobotics-project.eu/press-room/eurobotics-press-releases/robots-save-jobs-in-europe.html'>EU Robotics</a> (2011)</em></p>
+</blockquote>
+
+<blockquote>
+<p>Eventually, the word robot will disappear, the point of acceptance [will be] when [we will] stop thinking of robots as robots and just in terms of functionality. <em>&#8211; Sabine Hauert, <a href='http://videos.liftconference.com/video/1178752/sabine-hauert-robotics-today?player_id=1176439'>Lift Conference</a> (2011)</em></p>
+</blockquote>
+<em>Credits: Banner picture from the movie "I, Robot" (2004), © 20th Century Fox.</em>
+    <!--
+    <div class="sep top"></div>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/i-know-who-you-are" title="I Know Who You are!"><i class="icon-chevron-left space"></i>Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next disabled"><a>Next <i class="icon-chevron-right"></i></a>
+      
+      </ul>
+    </div>
+   <div class="sep bottom"></div>
+   -->
+   <p class="comm">Like it? Please share. Also feel free to leave your comments below.</p>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'florianbersier'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+
+</div>
+
+
+</section>
+</div><!--#left-->
+
+<div class="right">
+<section>
+<div class="author serif mob">
+<img src="/assets/themes/fb/img/i.png" width="100" height="100" alt="" />
+<p>Welcome to the weblog of Florian Bersier; a PhD candidate at the Oxford Internet Institute, Oxford University, an open-source advocate and an aspiring hacker. <a class="rtl" href="http://florianbersier.com/about/" title="About Florian">&middot;&middot;&middot;&nbsp; learn more &nbsp;&middot;&middot;&middot;</a></p>
+</div>
+
+<ul class="feeds" id="life">
+  
+    
+
+    
+    <li class="p0">
+    <a href="/when-robots-meet-internet">
+    <img alt="When Robots Meet the Internet" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//when-robots-meet-internet.jpg" />
+    <p><span class="ti">When Robots Meet the Internet</span>
+    <span class="ta">Or how the Internet will make robotics part of our everyday lives</span>
+    </p>
+    <span class="da">08 April 2013</span>
+    </a></li>
+  
+    
+      
+      
+      
+
+      
+    
+    <li class="p0">
+    <a href="/i-know-who-you-are">
+    <img alt="I Know Who You are!" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//i-know-who-you-are.jpg" />
+    <p><span class="ti">I Know Who You are!</span>
+    <span class="ta">What your Browser Can Reveal About Yourself...</span>
+    </p>
+    <span class="da">17 December 2012</span>
+    </a></li>
+  
+    
+      
+      
+      
+    
+    <li class="p0">
+    <a href="/facebook-bug">
+    <img alt="The Facebook Fail" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//facebook-bug.jpg" />
+    <p><span class="ti">The Facebook Fail</span>
+    <span class="ta">Or the Bug which was not one...</span>
+    </p>
+    <span class="da">25 September 2012</span>
+    </a></li>
+  
+    
+      
+      
+      
+    
+    <li class="p0">
+    <a href="/implementation-social-sharing-jekyll">
+    <img alt="Implementation of Social Sharing into Jekyll" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//implementation-social-sharing-jekyll.jpg" />
+    <p><span class="ti">Implementation of Social Sharing into Jekyll</span>
+    <span class="ta">How to add social sharing buttons to your Jekyll Powered Blog</span>
+    </p>
+    <span class="da">04 September 2012</span>
+    </a></li>
+  
+    
+      
+      
+      
+    
+    <li class="p0">
+    <a href="/elysee-2012-hadopi">
+    <img alt="Lettre Ouverte aux Candidats de l'Élection Présidentielle 2012" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//elysee-2012-hadopi.jpg" />
+    <p><span class="ti">Lettre Ouverte aux Candidats de l'Élection Présidentielle 2012</span>
+    <span class="ta">Perspectives Numériques, Sur le Besoin d'Abroger Hadopi</span>
+    </p>
+    <span class="da">12 January 2012</span>
+    </a></li>
+  
+    
+      
+      
+      
+
+      
+    
+    <li class="p0">
+    <a href="/primaires-socialistes">
+    <img alt="Primaires Socialistes en France" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//primaires-socialistes.jpg" />
+    <p><span class="ti">Primaires Socialistes en France</span>
+    <span class="ta">Analyse de la présence Web des différents candidats</span>
+    </p>
+    <span class="da">04 October 2011</span>
+    </a></li>
+  
+    
+      
+      
+      
+    
+    <li class="p0">
+    <a href="/etrust-homo-facebookiens">
+    <img alt="How Homo-Facebookiens will kill Homo-Sapiens?" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//etrust-homo-facebookiens.jpg" />
+    <p><span class="ti">How Homo-Facebookiens will kill Homo-Sapiens?</span>
+    <span class="ta">Or How Facebook Envisions the Future of Our Digital Lives And Why It's Not a Good Idea</span>
+    </p>
+    <span class="da">23 September 2011</span>
+    </a></li>
+  
+</ul>
+
+<a class="serif back rtl" href="http://blog.florianbersier.com">&middot;&middot;&middot;&nbsp; back to the index &nbsp;&middot;&middot;&middot;</a>
+<br /><br />
+</section>
+</div><!--#right-->
+
+</div>
+<!--#CONTENT-->
+
+<!--FOOTER-->
+<div class="clear" id="footer">
+<ul>
+<li>&copy;<span id="yr"></span> Florian Bersier
+<li class="mob"><a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">Legal stuff</a>
+<li><span class="myem"></span>
+<li class="mob"><a href="http://blog.florianbersier.com/sitemap.xml" target="_blank">Sitemap</a>
+<li class="mob"><a href="http://florianbersier.com/humans.txt" target="_blank">Humans</a>
+<li class="no sp"><a href="https://twitter.com/xpressyoo" target="_blank" title="Florian on Twitter"><i class="icon-twitter"></i></a>
+<li class="no"><a href="https://facebook.com/florian.bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook"></i></a>
+<li class="no"><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus"></i></a>
+<li class="no"><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin"></i></a>
+<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github-alt"></i></a>
+</ul>
+</div>
+<!--#FOOTER-->
+</div><!--#WRAP-->
+</div><!--#GLOBAL-->
+
+<!--CONTACT-->
+<div id="contact-box" class="hidden">
+<a id="close" title="close window"><i class="icon-remove icon-large"></i></a>
+<div class="txt">
+<h2>Let's keep in touch</h2>
+<h3><i id="mstatusi" class="space"></i> Email me</h3>
+<p>For job enquiries, press information, research questions and stuff related to Gmelius or XpressYoo, please send a good 'ol email to <span id="myemb"></span>. FYI, my local time is close to the UTC one (<span id="time"></span>).</p>
+<p class="note mob"><strong>Note to recruiters and head-hunters:</strong> Failure to send a message containing the name of the company, a description of the job, location and expected salary will result in your email getting deleted with no reply. Many thanks and looking forward to hearing from you!</p>
+
+<h3 class="two"><i class="icon-retweet space"></i>Follow me</h3>
+<p>It would be nice to keep in touch, so don't hesitate to add me to your network. The social platforms where I'm the most active are the following ones:</p>
+<div class="socials">
+<ul>
+<li><a href="https://twitter.com/xpressyoo" target="_blank" title="Florian on Twitter"><i class="icon-twitter-sign twitter"></i></a>
+<li><a href="https://facebook.com/florian.bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook-sign facebook"></i></a>
+<li><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus-sign googleplus"></i></a>
+<li><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin-sign linkedin"></i></a>
+<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github-sign github"></i></a>
+</ul>
+</div><!--#socials-->
+</div><!--#txt-->
+</div><!--#contactbox-->
+
+<!--JS-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="http://florianbersier.com/js/global.js"></script>
+<script src="/assets/themes/fb/js/blog.js"></script>
+</body>
+</html>
+
