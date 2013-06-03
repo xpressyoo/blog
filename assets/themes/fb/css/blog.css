@@ -12,6 +12,21 @@
     border:none;
 	}
 
+.content .left {
+	width: 60%;
+	color: #555;
+	padding-right: 3%;
+	margin-bottom: 4%;
+}
+
+.content .right {
+	width: 34%;
+	font-size: .9em;
+	color: #888;
+	padding: 0;
+	margin: 0 auto 4%;
+}
+
 a {outline:none}
 
 .blog .left {margin-top:30px}
@@ -165,6 +180,22 @@ font-style:italic !important;
 	background-color:#bbb
 	}
 
+.fac,#footer .icon-facebook:hover {
+	background-color: #3b5998;
+}
+
+.twi,#footer .icon-twitter:hover {
+	background-color: #00bbf5;
+}
+
+#footer .icon-linkedin:hover {
+	background-color: #61abcf;
+}
+
+#footer .icon-google-plus:hover {
+	background-color: #f1f1f1;
+	color: #333;
+}
 
 .feeds{display:inline-block;width:100%}
 
