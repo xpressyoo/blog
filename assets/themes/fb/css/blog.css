@@ -10,6 +10,9 @@
 .blog .content{
     margin-top:40px;
     border:none;
+    width: 92%;
+	margin: 0;
+	padding: 2% 4% 0;
 	}
 
 .content .left {
@@ -513,7 +516,7 @@ pre code{padding:0;color:inherit;background-color:transparent;border:0;}
 }
 
 @media only screen and (max-width: 48.5em) {
-h1{text-align:center}
+h1, h2, h3 {text-align:center}
 .page-header h1:first-letter,#blog-index h2 a:first-letter{display:inline;background-color:transparent!important;width:auto;height:auto;padding:0;margin:0;color:inherit;font-size:1em !important;float:none;font-weight:normal}
 #blog-index h3{margin:0 auto}
 .post-details{margin:0 0 4% 0;padding:0}
