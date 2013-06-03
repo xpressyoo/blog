@@ -490,6 +490,28 @@ pre code{padding:0;color:inherit;background-color:transparent;border:0;}
 .feeds .p0 a:hover:after,.feeds .seld a:after{margin:-24px 0 0 0 !important;text-align:center;border-radius:0 15px 0 0;width:100px !important;}
 }
 
+@media screen and (max-width:800px) {
+
+
+
+	.content .left {
+		width: 100%;
+		border: 0;
+		padding: 0;
+	}
+	
+	.content .right {
+		width: 100%;
+		padding: 2% 0 0;
+		border-top: 4px double #d5d5d5;
+		background: #fff;
+		margin: 0 auto 8%;
+		border: 0;
+		float: none;
+	}
+
+}
+
 @media only screen and (max-width: 48.5em) {
 h1{text-align:center}
 .page-header h1:first-letter,#blog-index h2 a:first-letter{display:inline;background-color:transparent!important;width:auto;height:auto;padding:0;margin:0;color:inherit;font-size:1em !important;float:none;font-weight:normal}
