@@ -180,21 +180,16 @@ font-style:italic !important;
 	background-color:#bbb
 	}
 
-.fac,#footer .icon-facebook:hover {
+.fac {
 	background-color: #3b5998;
 }
 
-.twi,#footer .icon-twitter:hover {
+.twi {
 	background-color: #00bbf5;
 }
 
-#footer .icon-linkedin:hover {
-	background-color: #61abcf;
-}
-
-#footer .icon-google-plus:hover {
-	background-color: #f1f1f1;
-	color: #333;
+.goo {
+	background-color: #d54432;
 }
 
 .feeds{display:inline-block;width:100%}
@@ -230,7 +225,7 @@ overflow:hidden
     overflow:hidden;
     }
 .feeds .ti {font-size:1.1em;}
-.feeds .ta {display:block;color:#999;font-style:italic;margin-top:8px}
+.feeds .taa {display:block;color:#999;font-style:italic;margin-top:8px}
 .feeds .da {display:block;font-weight:bold;text-align:right;font-size:0.85em;color:#ccc;margin-right:8px}
 
 .feeds li a{color:#777}
