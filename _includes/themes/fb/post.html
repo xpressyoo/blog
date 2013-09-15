@@ -1,7 +1,7 @@
 <div class="page-header"><h1><span itemprop="name">{{ page.title }}</span></h1><h2 class="post-tagline">{{ page.tagline }}</h2></div>
 {% include JB/sharing %}
 
-<div class="date_tags"><span class="mob">Published on </span><span itemprop="datePublished" content="{{ page.date | date: '%B' }}-{{ page.date | date: '%e' }}-{{ page.date | date: '%Y' }}">{{ page.date | date: '%B' }} {{ page.date | date: '%e' }}, {{ page.date | date: '%Y' }}</span>
+<div class="date_tags"><span class="mob">Published on </span><span itemprop="datePublished" content="{{ page.date | date: '%Y' }}-{{ page.date | date: '%m' }}-{{ page.date | date: '%d' }}">{{ page.date | date: '%B' }} {{ page.date | date: '%e' }}, {{ page.date | date: '%Y' }}</span>
 {% unless page.tags == empty %}
     <ul class="tag_box ulno">
     <li>Tags: </li>
