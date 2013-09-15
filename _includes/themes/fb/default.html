@@ -6,7 +6,7 @@
 <!--STYLE-->
 <link rel="stylesheet" type="text/css" href="http://florianbersier.com/css/style.css">
 <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/fonts.css" />
-<link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/blog.css" />
+<link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/blog2.css" />
 <!--[if IE 7]>
 	<link rel="stylesheet" href="http://florianbersier.com/css/ie.css">
 <![endif]-->
@@ -41,12 +41,8 @@
 </script>
 </head>
 
-<body>
-<div class="global">
-<!--FEATURED-->
-<div id="featured"><div id="closef" class="transition"><i class="icon-remove space"></i> close</div>
-<!--data--><div id="vide0" data-id="FJt7gNi3Nr4" data-nb="5"></div>
-</div>
+<body class="blog">
+<div  itemscope itemtype="http://schema.org/Article" class="global">
 
 <!--NAV-->
 <div id="nav" class="fixed" role="navigation">
@@ -63,20 +59,14 @@
 </div>
 <!--#NAV-->
 
-<!--Track of the Month-->
-<div id="openf" class="mob">
-<ul class="ulno">
-<li class="opa">This Month's Track: <span id="track"></span> 
-<li class="opb transition"><span><i class="icon-headphones space"></i>Discover it</span>
-</ul>
+<!--Picture-->
+<div class="picture p1 transition blog_cover" style="background:url('{{ ASSET_PATH }}/img/posts{{ page.url }}.jpg') no-repeat;">
+<meta itemprop="image" content="{{ ASSET_PATH }}/img/posts{{ page.url }}.jpg"></div>
 </div>
 
-<!--Picture-->
-<div class="picture p1 transition coverblog" style="background:url('{{ ASSET_PATH }}/img/posts{{ page.url }}.jpg') no-repeat;"></div>
 
-<div class="wrapper blog">
 
-<!-- SNS -->
+<!-- SNS
 <div class="bkgclear sns">
 <ul class="subscribe">
 <li class="stay"><span class="mob">Stay in the Know...</span>
@@ -85,22 +75,28 @@
 <li><a class="goo transition" href="https://plus.google.com/111297306144520956414" target="_blank" title="Subscribe on Google+"><i class="icon-google-plus"></i></a>
 <li class="stay"><span class="mob">... And Say Hi !</span>
 </ul>
-</div>
+</div> -->
+
+<div class="wrapper blog_bkg">
 
 <!--CONTENT-->
-<div class="content">
-<div class="left">
-<section>
+<div class="content" role="main">
+
+<div class="post">
+<section itemprop="articleBody">
 <!-- Excerpts -->
 {{ content }}
 </section>
-</div><!--#left-->
+</div><!-- .post -->
 
-<div class="right">
+<div class="sidebar">
 <section>
-<div class="author serif mob">
-<img src="{{ ASSET_PATH }}/img/i.png" width="100" height="100" alt="" />
-<p>Welcome to the weblog of Florian Bersier; a PhD candidate at the Oxford Internet Institute, Oxford University, an open-source advocate and an aspiring hacker. <a class="rtl" href="http://florianbersier.com/about/" title="About Florian">&middot;&middot;&middot;&nbsp; learn more &nbsp;&middot;&middot;&middot;</a></p>
+<div class="author">
+<h3>Web:Log by <a href="http://florianbersier.com"><span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<span itemprop="name">Florian Bersier</span></span></a></h3>
+<!--<img src="{{ ASSET_PATH }}/img/i.png" width="100" height="100" alt="" />-->
+<p>Oxford Internet Institute. Economist. Hacker.</p>
+<p class="alinks"><a id="connect"><i class="icon-angle-down"></i> connect</a><span>|</span><a id="lmore" href="http://florianbersier.com/about/" title="About Florian">learn more <i class="icon-angle-right"></i></a></p>
 </div>
 
 <ul class="feeds" id="life">
@@ -116,27 +112,25 @@
     {% endunless %}
     <li class="p0">
     <a href="{{ post.url }}">
-    <img alt="{{ post.title }}" width="150" height="150" src="{{ ASSET_PATH }}/img/posts/thumbs/{{ post.url }}.jpg" />
+    <img alt="{{ post.title }}" width="345" height="150" src="{{ ASSET_PATH }}/img/posts/thumbs/{{ post.url }}.jpg" />
+    <span class="da">{{ post.date | date: "%d %B %Y" }}</span>
     <p><span class="ti">{{ post.title }}</span>
     <span class="taa">{{ post.tagline }}</span>
     </p>
-    <span class="da">{{ post.date | date: "%d %B %Y" }}</span>
     </a></li>
   {% endfor %}
 </ul>
 
-<a class="serif back rtl" href="http://blog.florianbersier.com">&middot;&middot;&middot;&nbsp; back to the index &nbsp;&middot;&middot;&middot;</a>
-<br /><br />
 </section>
-</div><!--#right-->
+</div><!--.sidebar-->
+<div class="clear"></div>
 
-</div>
-<!--#CONTENT-->
+</div><!-- .content -->
 
 <!--FOOTER-->
 <div class="clear" id="footer">
 <ul class="foot1">
-<li>&copy;<span id="yr"></span> Florian Bersier
+<li>&copy; <span id="yr"></span> Florian Bersier
 <li><a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">Legal stuff</a>
 <li><span class="myem"></span>
 <li class="mob"><a href="../sitemap.xml" target="_blank">Sitemap</a>
@@ -145,6 +139,12 @@
 </div><!-- .footer -->
 </div><!-- .wrapper -->
 </div><!-- .global -->
+
+<!--FEATURED-->
+<div id="lightbox" class="abs none">
+<a class="close" href=""><i class="icon-eye-open"></i><i class="icon-eye-close"></i> To close this window, <span class="mob">click</span><span class="mob1">tap</span> here<span class="mob"> or press Esc</span></a>
+<div id="vide0" data-id="FJt7gNi3Nr4" data-nb="5"></div>
+<div></div></div>
 
 <!--CONTACT-->
 <div id="contact-box" class="hidden">

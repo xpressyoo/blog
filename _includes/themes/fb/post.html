@@ -1,10 +1,10 @@
-<div class="page-header"><h1>{{ page.title }}</h1><h2 class="post-tagline">{{ page.tagline }}</h2></div>
+<div class="page-header"><h1><span itemprop="name">{{ page.title }}</span></h1><h2 class="post-tagline">{{ page.tagline }}</h2></div>
 {% include JB/sharing %}
 
-<div class="date"><span class="mob">Published on </span><span>{{ page.date | date: '%B' }} {{ page.date | date: '%e' }}, {{ page.date | date: '%Y' }}</span></div>
-
-<div class="tags">{% unless page.tags == empty %}
-    <i class="icon-tags space"></i><span class="mob">Tags : </span><ul class="tag_box ulno">
+<div class="date_tags"><span class="mob">Published on </span><span itemprop="datePublished" content="{{ page.date | date: '%B' }}-{{ page.date | date: '%e' }}-{{ page.date | date: '%Y' }}">{{ page.date | date: '%B' }} {{ page.date | date: '%e' }}, {{ page.date | date: '%Y' }}</span>
+{% unless page.tags == empty %}
+    <ul class="tag_box ulno">
+    <li>Tags: </li>
     {% assign tags_list = page.tags %}
     {% include JB/tags_list %}
     </ul>
@@ -16,6 +16,7 @@
 <div class="row">
   <div class="span8">
     {{ content }}
+    
     <!--
     <div class="sep top"></div>
     <div class="pagination">
@@ -35,6 +36,7 @@
     </div>
    <div class="sep bottom"></div>
    -->
+   <a class="none" itemprop="url" href="{{ page.url }}">{{ page.url }}</a>
    <p class="comm">Like it? Please share. Also feel free to leave your comments below.</p>
     {% include JB/comments %}
   </div>

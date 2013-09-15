@@ -23,12 +23,13 @@ $(function() {
     if ($('#blog-index').length) {
         $('#xcf').css('display', 'none');
     }
-    $('#openf').on('click', function() {
-        $('#featured').fadeIn('slow').addClass('go');
-    });
-    $('#closef').on('click', function() {
-        $('#featured').fadeOut('slow');
-    });
+
+	$('.blog a.lightbox').on('click', function() {
+		openLight();
+		$('#featured').fadeIn('slow').addClass('go');
+	});
+
+
     //////////Youtube
     var id;
     var video = document.getElementById('vide0');

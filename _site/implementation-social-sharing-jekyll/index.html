@@ -7,7 +7,7 @@
 <!--STYLE-->
 <link rel="stylesheet" type="text/css" href="http://florianbersier.com/css/style.css">
 <link rel="stylesheet" type="text/css" href="/assets/themes/fb/css/fonts.css" />
-<link rel="stylesheet" type="text/css" href="/assets/themes/fb/css/blog.css" />
+<link rel="stylesheet" type="text/css" href="/assets/themes/fb/css/blog2.css" />
 <!--[if IE 7]>
 	<link rel="stylesheet" href="http://florianbersier.com/css/ie.css">
 <![endif]-->
@@ -27,8 +27,11 @@
 <!--Analytics-->
 <script>
   var _gaq = _gaq || [];
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
   _gaq.push(['_setAccount', 'UA-12817064-1']);
   _gaq.push(['_setDomainName', 'florianbersier.com']);
+  _gaq.push(['_setAllowLinker', true]);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -39,17 +42,13 @@
 </script>
 </head>
 
-<body>
-<div class="global">
-<!--FEATURED-->
-<div id="featured"><div id="closef" class="transition"><i class="icon-remove space"></i> close</div>
-<!--data--><div id="vide0" data-id="FJt7gNi3Nr4" data-nb="5"></div>
-</div>
+<body class="blog">
+<div  itemscope itemtype="http://schema.org/Article" class="global">
 
 <!--NAV-->
-<div id="nav" class="fixed">
+<div id="nav" class="fixed" role="navigation">
 <a id="logo" class="" href="http://florianbersier.com" title="FB | Back home"></a>
-<ul role="navigation">
+<ul>
 <li><a class="" href="http://florianbersier.com/about/">Bio</a>
 <li><a class="" href="http://florianbersier.com/hacking/">Hacking</a>
 <li><a class="" href="http://florianbersier.com/research/">Research</a>
@@ -61,20 +60,14 @@
 </div>
 <!--#NAV-->
 
-<!--Track of the Month-->
-<div id="openf" class="mob">
-<ul class="ulno">
-<li class="opa">This Month's Track: <span id="track"></span> 
-<li class="opb transition"><span><i class="icon-headphones space"></i>Discover it</span>
-</ul>
+<!--Picture-->
+<div class="picture p1 transition blog_cover" style="background:url('/assets/themes/fb/img/posts/implementation-social-sharing-jekyll.jpg') no-repeat;">
+<meta itemprop="image" content="/assets/themes/fb/img/posts/implementation-social-sharing-jekyll.jpg"></div>
 </div>
 
-<!--Picture-->
-<div class="picture p1 transition coverblog" style="background:url('/assets/themes/fb/img/posts/implementation-social-sharing-jekyll.jpg') no-repeat;"></div>
 
-<div class="wrapper blog">
 
-<!-- SNS -->
+<!-- SNS
 <div class="bkgclear sns">
 <ul class="subscribe">
 <li class="stay"><span class="mob">Stay in the Know...</span>
@@ -83,15 +76,18 @@
 <li><a class="goo transition" href="https://plus.google.com/111297306144520956414" target="_blank" title="Subscribe on Google+"><i class="icon-google-plus"></i></a>
 <li class="stay"><span class="mob">... And Say Hi !</span>
 </ul>
-</div>
+</div> -->
+
+<div class="wrapper blog_bkg">
 
 <!--CONTENT-->
-<div class="content">
-<div class="left">
-<section>
+<div class="content" role="main">
+
+<div class="post">
+<section itemprop="articleBody">
 <!-- Excerpts -->
 
-<div class="page-header"><h1>Implementation of Social Sharing into Jekyll</h1><h2 class="post-tagline">How to add social sharing buttons to your Jekyll Powered Blog</h2></div>
+<div class="page-header"><h1><span itemprop="name">Implementation of Social Sharing into Jekyll</span></h1><h2 class="post-tagline">How to add social sharing buttons to your Jekyll Powered Blog</h2></div>
 
 
   
@@ -187,10 +183,10 @@
 
 
 
-<div class="date"><span class="mob">Published on </span><span>September  4, 2012</span></div>
+<div class="date_tags"><span class="mob">Published on </span><span itemprop="datePublished" content="September- 4-2012">September  4, 2012</span>
 
-<div class="tags">
-    <i class="icon-tags space"></i><span class="mob">Tags : </span><ul class="tag_box ulno">
+    <ul class="tag_box ulno">
+    <li>Tags: </li>
     
     
 
@@ -374,6 +370,7 @@
 </code></pre>
 </div>
 <p>That&#8217;s it, you&#8217;re set!</p>
+    
     <!--
     <div class="sep top"></div>
     <div class="pagination">
@@ -389,6 +386,7 @@
     </div>
    <div class="sep bottom"></div>
    -->
+   <a class="none" itemprop="url" href="/implementation-social-sharing-jekyll">/implementation-social-sharing-jekyll</a>
    <p class="comm">Like it? Please share. Also feel free to leave your comments below.</p>
     
 
@@ -417,13 +415,16 @@
 
 
 </section>
-</div><!--#left-->
+</div><!-- .post -->
 
-<div class="right">
+<div class="sidebar">
 <section>
-<div class="author serif mob">
-<img src="/assets/themes/fb/img/i.png" width="100" height="100" alt="" />
-<p>Welcome to the weblog of Florian Bersier; a PhD candidate at the Oxford Internet Institute, Oxford University, an open-source advocate and an aspiring hacker. <a class="rtl" href="http://florianbersier.com/about/" title="About Florian">&middot;&middot;&middot;&nbsp; learn more &nbsp;&middot;&middot;&middot;</a></p>
+<div class="author">
+<h3>Web:Log by <a href="http://florianbersier.com"><span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<span itemprop="name">Florian Bersier</span></span></a></h3>
+<!--<img src="/assets/themes/fb/img/i.png" width="100" height="100" alt="" />-->
+<p>Oxford Internet Institute. Economist. Hacker.</p>
+<p class="alinks"><a id="connect"><i class="icon-angle-down"></i> connect</a><span>|</span><a id="lmore" href="http://florianbersier.com/about/" title="About Florian">learn more <i class="icon-angle-right"></i></a></p>
 </div>
 
 <ul class="feeds" id="life">
@@ -433,11 +434,11 @@
     
     <li class="p0">
     <a href="/when-robots-meet-internet">
-    <img alt="When Robots Meet the Internet" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//when-robots-meet-internet.jpg" />
-    <p><span class="ti">When Robots Meet the Internet</span>
-    <span class="ta">Or how the Internet will make robotics part of our everyday lives</span>
-    </p>
+    <img alt="When Robots Meet the Internet" width="345" height="150" src="/assets/themes/fb/img/posts/thumbs//when-robots-meet-internet.jpg" />
     <span class="da">08 April 2013</span>
+    <p><span class="ti">When Robots Meet the Internet</span>
+    <span class="taa">Or how the Internet will make robotics part of our everyday lives</span>
+    </p>
     </a></li>
   
     
@@ -449,11 +450,11 @@
     
     <li class="p0">
     <a href="/i-know-who-you-are">
-    <img alt="I Know Who You are!" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//i-know-who-you-are.jpg" />
-    <p><span class="ti">I Know Who You are!</span>
-    <span class="ta">What your Browser Can Reveal About Yourself...</span>
-    </p>
+    <img alt="I Know Who You are!" width="345" height="150" src="/assets/themes/fb/img/posts/thumbs//i-know-who-you-are.jpg" />
     <span class="da">17 December 2012</span>
+    <p><span class="ti">I Know Who You are!</span>
+    <span class="taa">What your Browser Can Reveal About Yourself...</span>
+    </p>
     </a></li>
   
     
@@ -463,11 +464,11 @@
     
     <li class="p0">
     <a href="/facebook-bug">
-    <img alt="The Facebook Fail" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//facebook-bug.jpg" />
-    <p><span class="ti">The Facebook Fail</span>
-    <span class="ta">Or the Bug which was not one...</span>
-    </p>
+    <img alt="The Facebook Fail" width="345" height="150" src="/assets/themes/fb/img/posts/thumbs//facebook-bug.jpg" />
     <span class="da">25 September 2012</span>
+    <p><span class="ti">The Facebook Fail</span>
+    <span class="taa">Or the Bug which was not one...</span>
+    </p>
     </a></li>
   
     
@@ -477,11 +478,11 @@
     
     <li class="p0">
     <a href="/implementation-social-sharing-jekyll">
-    <img alt="Implementation of Social Sharing into Jekyll" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//implementation-social-sharing-jekyll.jpg" />
-    <p><span class="ti">Implementation of Social Sharing into Jekyll</span>
-    <span class="ta">How to add social sharing buttons to your Jekyll Powered Blog</span>
-    </p>
+    <img alt="Implementation of Social Sharing into Jekyll" width="345" height="150" src="/assets/themes/fb/img/posts/thumbs//implementation-social-sharing-jekyll.jpg" />
     <span class="da">04 September 2012</span>
+    <p><span class="ti">Implementation of Social Sharing into Jekyll</span>
+    <span class="taa">How to add social sharing buttons to your Jekyll Powered Blog</span>
+    </p>
     </a></li>
   
     
@@ -491,11 +492,11 @@
     
     <li class="p0">
     <a href="/elysee-2012-hadopi">
-    <img alt="Lettre Ouverte aux Candidats de l'Élection Présidentielle 2012" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//elysee-2012-hadopi.jpg" />
-    <p><span class="ti">Lettre Ouverte aux Candidats de l'Élection Présidentielle 2012</span>
-    <span class="ta">Perspectives Numériques, Sur le Besoin d'Abroger Hadopi</span>
-    </p>
+    <img alt="Lettre Ouverte aux Candidats de l'Élection Présidentielle 2012" width="345" height="150" src="/assets/themes/fb/img/posts/thumbs//elysee-2012-hadopi.jpg" />
     <span class="da">12 January 2012</span>
+    <p><span class="ti">Lettre Ouverte aux Candidats de l'Élection Présidentielle 2012</span>
+    <span class="taa">Perspectives Numériques, Sur le Besoin d'Abroger Hadopi</span>
+    </p>
     </a></li>
   
     
@@ -507,11 +508,11 @@
     
     <li class="p0">
     <a href="/primaires-socialistes">
-    <img alt="Primaires Socialistes en France" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//primaires-socialistes.jpg" />
-    <p><span class="ti">Primaires Socialistes en France</span>
-    <span class="ta">Analyse de la présence Web des différents candidats</span>
-    </p>
+    <img alt="Primaires Socialistes en France" width="345" height="150" src="/assets/themes/fb/img/posts/thumbs//primaires-socialistes.jpg" />
     <span class="da">04 October 2011</span>
+    <p><span class="ti">Primaires Socialistes en France</span>
+    <span class="taa">Analyse de la présence Web des différents candidats</span>
+    </p>
     </a></li>
   
     
@@ -521,67 +522,58 @@
     
     <li class="p0">
     <a href="/etrust-homo-facebookiens">
-    <img alt="How Homo-Facebookiens will kill Homo-Sapiens?" width="150" height="150" src="/assets/themes/fb/img/posts/thumbs//etrust-homo-facebookiens.jpg" />
-    <p><span class="ti">How Homo-Facebookiens will kill Homo-Sapiens?</span>
-    <span class="ta">Or How Facebook Envisions the Future of Our Digital Lives And Why It's Not a Good Idea</span>
-    </p>
+    <img alt="How Homo-Facebookiens will kill Homo-Sapiens?" width="345" height="150" src="/assets/themes/fb/img/posts/thumbs//etrust-homo-facebookiens.jpg" />
     <span class="da">23 September 2011</span>
+    <p><span class="ti">How Homo-Facebookiens will kill Homo-Sapiens?</span>
+    <span class="taa">Or How Facebook Envisions the Future of Our Digital Lives And Why It's Not a Good Idea</span>
+    </p>
     </a></li>
   
 </ul>
 
-<a class="serif back rtl" href="http://blog.florianbersier.com">&middot;&middot;&middot;&nbsp; back to the index &nbsp;&middot;&middot;&middot;</a>
-<br /><br />
 </section>
-</div><!--#right-->
+</div><!--.sidebar-->
+<div class="clear"></div>
 
-</div>
-<!--#CONTENT-->
+</div><!-- .content -->
 
 <!--FOOTER-->
 <div class="clear" id="footer">
-<ul>
-<li>&copy;<span id="yr"></span> Florian Bersier
-<li class="mob"><a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">Legal stuff</a>
+<ul class="foot1">
+<li>&copy; <span id="yr"></span> Florian Bersier
+<li><a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode" target="_blank">Legal stuff</a>
 <li><span class="myem"></span>
-<li class="mob"><a href="http://blog.florianbersier.com/sitemap.xml" target="_blank">Sitemap</a>
-<li class="mob"><a href="http://florianbersier.com/humans.txt" target="_blank">Humans</a>
-<li class="no sp"><a href="https://twitter.com/xpressyoo" target="_blank" title="Florian on Twitter"><i class="icon-twitter"></i></a>
-<li class="no"><a href="https://facebook.com/florian.bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook"></i></a>
-<li class="no"><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus"></i></a>
-<li class="no"><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin"></i></a>
-<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github-alt"></i></a>
+<li class="mob"><a href="../sitemap.xml" target="_blank">Sitemap</a>
+<li class="mob"><a href="../humans.txt" target="_blank">Humans</a>
 </ul>
-</div>
-<!--#FOOTER-->
-</div><!--#WRAP-->
-</div><!--#GLOBAL-->
+</div><!-- .footer -->
+</div><!-- .wrapper -->
+</div><!-- .global -->
+
+<!--FEATURED-->
+<div id="lightbox" class="abs none">
+<a class="close" href=""><i class="icon-eye-open"></i><i class="icon-eye-close"></i> To close this window, <span class="mob">click</span><span class="mob1">tap</span> here<span class="mob"> or press Esc</span></a>
+<div id="vide0" data-id="FJt7gNi3Nr4" data-nb="5"></div>
+<div></div></div>
 
 <!--CONTACT-->
 <div id="contact-box" class="hidden">
-<a id="close" title="close window"><i class="icon-remove icon-large"></i></a>
-<div class="txt">
-<h2>Let's keep in touch</h2>
-<h3><i id="mstatusi" class="space"></i> Email me</h3>
-<p>For job enquiries, press information, research questions and stuff related to Gmelius or XpressYoo, please send a good 'ol email to <span id="myemb"></span>. FYI, my local time is close to the UTC one (<span id="time"></span>).</p>
-<p class="note mob"><strong>Note to recruiters and head-hunters:</strong> Failure to send a message containing the name of the company, a description of the job, location and expected salary will result in your email getting deleted with no reply. Many thanks and looking forward to hearing from you!</p>
-
-<h3 class="two"><i class="icon-retweet space"></i>Follow me</h3>
-<p>It would be nice to keep in touch, so don't hesitate to add me to your network. The social platforms where I'm the most active are the following ones:</p>
-<div class="socials">
-<ul>
-<li><a href="https://twitter.com/xpressyoo" target="_blank" title="Florian on Twitter"><i class="icon-twitter-sign twitter"></i></a>
-<li><a href="https://facebook.com/florian.bersier" target="_blank" title="Florian on Facebook"><i class="icon-facebook-sign facebook"></i></a>
-<li><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Florian on Google+"><i class="icon-google-plus-sign googleplus"></i></a>
-<li><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Florian on Linkedin"><i class="icon-linkedin-sign linkedin"></i></a>
-<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Florian on Github"><i class="icon-github-sign github"></i></a>
-</ul>
-</div><!--#socials-->
-</div><!--#txt-->
+<a class="close" href=""><i class="icon-eye-open"></i><i class="icon-eye-close"></i> To close this window, <span class="mob">click</span><span class="mob1">tap</span> here<span class="mob"> or press Esc</span></a>
+<div class="insi">
+<span id="myemb"></span>
+<p>OR</p>
+<ul class="socials">
+<li><a href="https://twitter.com/xpressyoo" target="_blank" title="Contact me on Twitter"><i class="icon-twitter-sign twitter"></i></a>
+<li><a href="https://facebook.com/florian.bersier" target="_blank" title="Contact me on Facebook"><i class="icon-facebook-sign facebook"></i></a>
+<li><a href="https://plus.google.com/111297306144520956414?rel=author" target="_blank" title="Contact me on Google+"><i class="icon-google-plus-sign googleplus"></i></a>
+<li><a href="https://www.linkedin.com/in/florianbersier" target="_blank" title="Contact me on Linkedin"><i class="icon-linkedin-sign linkedin"></i></a>
+<li class="no"><a href="https://github.com/xpressyoo" target="_blank" title="Contact me on Github"><i class="icon-github-sign github"></i></a>
+</ul><!--#socials-->
+</div>
 </div><!--#contactbox-->
 
 <!--JS-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="http://florianbersier.com/js/global.js"></script>
 <script src="/assets/themes/fb/js/blog.js"></script>
 </body>
