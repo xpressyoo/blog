@@ -7,49 +7,21 @@ $(function() {
             $('#life li:eq(' + i + ')').removeClass('p0').addClass('seld');
         }
     }
-    // Color Randomizer
-    /*var array = ["a", "b", "c"];
-    function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    	}
-    return array[0];
-	}
-    $('.page-header h1').addClass(shuffleArray(array));*/
-    //
+
     if ($('#blog-index').length) {
         $('#xcf').css('display', 'none');
     }
 
-	$('.blog a.lightbox').on('click', function() {
-		openLight();
-		$('#featured').fadeIn('slow').addClass('go');
+	$('#connect-a').on('click', function() {
+		$(this).addClass('nonei');
+		$('#connect-b').removeClass('nonei');
+		$('#subscribe').fadeIn('slow').removeClass('nonei');
 	});
 
+	$('#connect-b').on('click', function() {
+		$(this).addClass('nonei');
+		$('#connect-a').removeClass('nonei');
+		$('#subscribe').fadeOut('slow').addClass('nonei');
+	});
 
-    //////////Youtube
-    var id;
-    var video = document.getElementById('vide0');
-    if (video === undefined) {
-        id = 'Xqw4wo8vdY8';
-        nb = '3';
-    } else {
-        id = video.getAttribute('data-id');
-        nb = video.getAttribute('data-nb');
-    }
-    $.ajax({
-        type: 'GET',
-        url: 'http://gdata.youtube.com/feeds/api/videos/' + id + '?&v=2&alt=jsonc',
-        dataType: 'jsonp',
-        success: function(yt) {
-            var title0 = yt.data.title.split(' ').splice(0, nb).join(' ').replace(/[`~!@#$%\^&*()_|+\=?;:,.<>\{\}\[\]\\\/]/gi, '');
-            var title = yt.data.title;
-            var play = 0;
-            $("#track").append(title0);
-            $("#vide0").append('<iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/' + id + '?showinfo=0&theme=dark&autoplay=' + play + '" frameborder="0" allowfullscreen></iframe><h4>Track of the Month : <a href="http://youtu.be/' + id + '" target="_blank" title="Watch it on Youtube">' + title + '</a></h4>');
-        }
-    }); //#Youtube
 });

@@ -36,7 +36,7 @@ body.blog {
 }
 
 .post .row p:first-child {
-	background:#f5f5f5;
+	background:#eee;
 	line-height:1.55em;
 	padding:2%
 	}
@@ -130,14 +130,15 @@ text-decoration: inherit;
 	border:none
 	}
 
-.author #lmore{
-	
+#subscribe {
+	margin-bottom:17px
 	}
 
-.author #subscribe li a{
-	color:#bbb;
-	font-size:1.2em
+.author #subscribe{
+	color:#999;
+	font-size:.85em;
 	}
+
 
 /* FEEDS */
 
